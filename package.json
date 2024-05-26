@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "medium-zoom": "latest",
     "vitepress": "^1.2.2"
   },
   "scripts": {

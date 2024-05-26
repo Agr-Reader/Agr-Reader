@@ -2,9 +2,17 @@
     --vp-c-brand-1: #63A002;
     --vp-c-brand-2: #85976E;
     --vp-c-brand-3: #4D9D98;
-  }
+}
 
-  :root {
+:root {
     --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #63A002, #85976E, #4D9D98);
-  }
+}
+
+.medium-zoom-overlay {
+    z-index: 30;
+}
+
+.medium-zoom-image {
+    z-index: 31;
+}
