@@ -1,7 +1,9 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  cleanUrls: true,
   title: "Agr Reader",
   description: "Android端Material3风格的极简优美的RSS阅读器",
   head: [
@@ -35,6 +37,18 @@ export default defineConfig({
     },
     search: {
       provider: 'local'
+    }
+  },
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VpButton\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./components/CustomVpButton.vue', import.meta.url)
+          )
+        }
+      ]
     }
   }
 })

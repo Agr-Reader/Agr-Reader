@@ -1,0 +1,7 @@
+{
+    "versionName": "1.7.0",
+    "versionCode": 1007000,
+    "changelog": "\u003cul\u003e\u003cli\u003efeature: 在订阅源打开翻译设置后阅读页将自动启用翻译\n未打开则可在阅读页手动点击翻译当前文章\u003c/li\u003e\u003cli\u003efeature: 新增Deelplx翻译选项\u003c/li\u003e\u003cli\u003efeature: 增加订阅源关键词过滤设置\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.0.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.0.apk"
+}

@@ -11,11 +11,11 @@ hero:
     alt: Agr Reader
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 立即下载
+      link: /resources/Agr_Reader_1.7.0.apk
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 导航
+      link: /navigation/index
 
 features:
   - icon: 🎨
