@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Agr Reader"
-  tagline: 一款Android端Material3, Minimalistic, Graceful RSS阅读器
+  tagline: Android端Material3风格的极简优美的RSS阅读器
   image:
     src: /logo.png
     alt: Agr Reader

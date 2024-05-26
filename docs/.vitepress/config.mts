@@ -9,21 +9,21 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Changelog', link: '/changelog/index' }
+      { text: '主页', link: '/' },
+      { text: '导航', link: '/navigation/index' },
+      { text: '更新日志', link: '/changelog/index' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
+    sidebar: {
+      '/navigation/': [
+        {
+          text: '目录',
+          items: [
+            { text: '微信公众号RSS', link: '/navigation/wechat' },
+          ]
+        }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Agr-Reader/Agr-Reader' }
     ],
