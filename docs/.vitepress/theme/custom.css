@@ -16,3 +16,31 @@
 .medium-zoom-image {
     z-index: 31;
 }
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 36px;
+}
+
+.horizontal-scroll img {
+    max-height: 400px;
+    /* Adjust the height as needed */
+    margin-right: 16px;
+    /* Space between images */
+}
+
+.horizontal-scroll img:last-child {
+    margin-right: 0;
+    /* No margin for the last image */
+}
+
+.image_screenshot {
+    border-radius: 16px;
+    box-shadow: 0 12px 48px rgba(17, 16, 62, .12);
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    width: 100%;
+}

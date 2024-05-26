@@ -36,3 +36,15 @@ features:
     title: 支持沉浸式翻译效果
     details: 支持文章在列表中的标题翻译，支持文章内容的沉浸式翻译，轻松阅读外文RSS文章，不再有语言障碍
 ---
+
+### 截图
+<div class="horizontal-scroll">
+
+  <img src="/screenshots/1.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/2.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/3.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/4.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/5.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/6.webp" data-zoomable class="image_screenshot medium-zoom-image">
+
+</div>
