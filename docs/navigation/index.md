@@ -11,7 +11,7 @@
 
 ### RSS订阅源推荐:  
 - [https://rss-source.com/](https://rss-source.com/)
-  - <a href="https://www.agrreader.xyz/AgrReader-rss-source.opml" download="AgrReader-rss-source.opml">rss-source网站全部订阅打包OPML文件下载</a>
+  - <a href="https://www.agrreader.xyz/resources/AgrReader-rss-source.opml" download="AgrReader-rss-source.opml">rss-source网站全部订阅打包OPML文件下载</a>
 - [https://plink.anyfeeder.com/](https://plink.anyfeeder.com/)
 - [https://feedx.best/](https://feedx.best/)
 - [https://github.com/AboutRSS/ALL-about-RSS](https://github.com/AboutRSS/ALL-about-RSS)
@@ -53,4 +53,4 @@
   - 异星软件空间
   - NASA Image of the Day
 
-<a href="https://www.agrreader.xyz/AgrReader.opml" download="Agr_Reader.opml">AgrReader.OPML 文件下载</a> 通过OPML文件可以一次性批量导入以上RSS源
+<a href="https://www.agrreader.xyz/resources/AgrReader.opml" download="Agr_Reader.opml">AgrReader.OPML 文件下载</a> 通过OPML文件可以一次性批量导入以上RSS源

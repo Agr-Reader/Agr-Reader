@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>Agr Reader</title>
+  </head>
+  <body>
+    <outline text="综合" title="综合">
+      <outline type="rss" title="知乎热榜" xmlUrl="https://plink.anyfeeder.com/zhihu/hotlist" />
+      <outline type="rss" title="知乎日报" xmlUrl="https://www.zhihu.com/rss" />
+      <outline type="rss" title="澎湃新闻" xmlUrl="https://plink.anyfeeder.com/thepaper" />
+      <outline type="rss" title="豆瓣最受欢迎的书评" xmlUrl="https://www.douban.com/feed/review/book" />
+      <outline type="rss" title="ONE · 一个" xmlUrl="https://feedx.run/rss/one.xml" />
+    </outline>
+    <outline text="科技" title="科技">
+      <outline type="rss" title="少数派" xmlUrl="https://sspai.com/feed" />
+      <outline type="rss" title="虎嗅网" xmlUrl="https://www.huxiu.com/rss/0.xml" />
+      <outline type="rss" title="36氪" xmlUrl="https://36kr.com/feed" />
+      <outline type="rss" title="爱范儿" xmlUrl="https://www.ifanr.com/feed" />
+      <outline type="rss" title="果壳网" xmlUrl="http://www.guokr.com/handpick/rss/?display=rss" />
+      <outline type="rss" title="奇客Solidot–传递最新科技情报" xmlUrl="https://www.solidot.org/index.rss" />
+      <outline type="rss" title="阮一峰" xmlUrl="http://www.ruanyifeng.com/blog/atom.xml" />
+      <outline type="rss" title="极客公园" xmlUrl="http://www.geekpark.net/rss" />
+      <outline type="rss" title="IT之家" xmlUrl="http://www.ithome.com/rss/" />
+    </outline>
+    <outline text="娱乐" title="娱乐">
+      <outline type="rss" title="开眼" xmlUrl="https://feedx.run/kaiyan" />
+      <outline type="rss" title="煎蛋" xmlUrl="https://plink.anyfeeder.com/jiandan" />
+      <outline type="rss" title="喷嚏图卦" xmlUrl="https://feedx.run/rss/pentitugua.xml" />
+      <outline type="rss" title="游研社" xmlUrl="http://www.yystv.cn/rss/feed" />
+      <outline type="rss" title="机核" xmlUrl="https://www.gcores.com/rss" />
+      <outline type="rss" title="GameLook" xmlUrl="http://www.gamelook.com.cn/feed" />
+      <outline type="rss" title="游戏葡萄" xmlUrl="https://youxiputao.com/feed" />
+    </outline>
+    <outline text="知识" title="知识">
+      <outline type="rss" title="书格" xmlUrl="https://new.shuge.org/feed/" />
+      <outline type="rss" title="BBC 英语教学" xmlUrl="https://plink.anyfeeder.com/bbc/learningenglish" />
+      <outline type="rss" title="VOA Learning English" xmlUrl="https://feedx.run/rss/voalearningenglish.xml" />
+    </outline>
+    <outline text="其他" title="其他">
+      <outline type="rss" title="NASA Image of the Day" xmlUrl="https://www.nasa.gov/feeds/iotd-feed/" />
+      <outline type="rss" title="小众软件" xmlUrl="https://feeds.appinn.com/appinns/" />
+      <outline type="rss" title="异星软件空间" xmlUrl="https://www.yxssp.com/feed" />
+      <outline type="rss" title="异次元软件世界" xmlUrl="http://feed.iplaysoft.com" />
+    </outline>
+  </body>
+</opml>
