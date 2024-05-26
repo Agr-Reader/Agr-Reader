@@ -20,6 +20,6 @@ export default {
         watch(
             () => route.path,
             () => nextTick(() => initZoom())
-        );
+          );
     },
 };

@@ -2,11 +2,14 @@
     --vp-c-brand-1: #63A002;
     --vp-c-brand-2: #85976E;
     --vp-c-brand-3: #4D9D98;
-}
 
-:root {
     --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #63A002, #85976E, #4D9D98);
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #4D9D98, #BBF293, #63A002);
+
+    /* 图标背景 */
+    --vp-home-hero-image-background-image: radial-gradient(#bbf2939c 40%, #bbecea9f 10%);
+    --vp-home-hero-image-filter: blur(100px);
+
 }
 
 .medium-zoom-overlay {
