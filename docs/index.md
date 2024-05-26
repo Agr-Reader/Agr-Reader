@@ -38,14 +38,28 @@ features:
     details: 支持文章在列表中的标题翻译，支持文章内容的沉浸式翻译，轻松阅读外文RSS文章，不再有语言障碍
 ---
 
-### 截图
+## 截图
 <div class="horizontal-scroll">
-
   <img src="/screenshots/1.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/2.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/3.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/4.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/5.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/6.webp" data-zoomable class="image_screenshot medium-zoom-image">
+</div>
 
+## 联系
+### 国内版
+<div class="contact_container">
+<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=JlYfUDj9TJyDYThTY0uvYb8d7xjtffBt&amp;authKey=HTv2E4fBPQkDxeHQbLAosC7rfSaRE41J7bj10%2F8OFwlyqIg%2FnnqN2pqeL2DLFfID&amp;noverify=0&amp;group_code=607586011">
+  <img src="/contact_qq_group.svg" class="img_contact">
+</a>
+<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=0Ldhq8TtMi0QQnGcQqQde50rPM9No5l3&amp;authKey=hrkLB3QNfo5%2Fm6lhZSXrhy7qiEQ5Qc%2F6AS2hvwemksFg1fOeqaTvTxqD7OUYvNdy&amp;noverify=0&amp;group_code=721626283">
+  <img src="/contact_qq_group2.svg" class="img_contact">
+</a>
+</div>
+
+### Google Play版 (TBD)
+<div class="contact_container">
+<a href="https://t.me/agrreader"> <img src="/contact_telegram_group.svg" class="img_contact"> </a>
 </div>

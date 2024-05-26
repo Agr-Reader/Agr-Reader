@@ -47,3 +47,7 @@
     transition: all .3s ease-in-out;
     width: 100%;
 }
+.contact_container{
+    display: flex;
+    gap: 24px;
+}
