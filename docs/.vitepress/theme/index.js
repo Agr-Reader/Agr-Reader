@@ -7,7 +7,7 @@ import './custom.css'
 
 
 export default {
-    ...DefaultTheme,
+    extends: DefaultTheme,
     setup() {
         const route = useRoute();
         const initZoom = () => {

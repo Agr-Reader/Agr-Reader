@@ -43,9 +43,9 @@ export default defineConfig({
     resolve: {
       alias: [
         {
-          find: /^.*\/VpButton\.vue$/,
+          find: /^.*\/VPButton\.vue$/,
           replacement: fileURLToPath(
-            new URL('./components/CustomVpButton.vue', import.meta.url)
+            new URL('./components/VPButton.vue', import.meta.url)
           )
         }
       ]
