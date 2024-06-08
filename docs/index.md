@@ -46,6 +46,7 @@ features:
   <img src="/screenshots/4.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/5.webp" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/6.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/7.webp" data-zoomable class="image_screenshot medium-zoom-image">
 </div>
 
 ## 联系
