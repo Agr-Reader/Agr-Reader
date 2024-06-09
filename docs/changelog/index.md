@@ -1,3 +1,6 @@
+
+> 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
+
 ## 1.7.2(2024.05.29)
 - fix: 修复Fever Api同步失败的问题
 - fix: 修复RSS服务icon加载失败的问题
