@@ -1,6 +1,16 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.3(2024.06.11)
+- feature: 阅读页增加TTS功能
+- feature: 增加内嵌网页强制深色模式（实验功能）
+  - 设置->显示中开启
+- feature: 平板模式下首页侧边栏默认展开与订阅源列表同屏
+- opt: 优化文字列表左右滑动效果
+- fix: 修复部分场景图片下载失败的问题
+- fix: 修复部分机型下载按钮消失的兼容性问题
+- fix: 修复FreshRss Api闪退的问题
+
 ## 1.7.2(2024.05.29)
 - fix: 修复Fever Api同步失败的问题
 - fix: 修复RSS服务icon加载失败的问题
