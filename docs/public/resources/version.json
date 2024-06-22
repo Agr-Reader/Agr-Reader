@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.3",
-    "versionCode": 1007003,
-    "changelog": "\u003cul\u003e\u003cli\u003efeature: 阅读页增加TTS功能\u003c/li\u003e\u003cli\u003efeature: 增加内嵌网页强制深色模式（实验功能）设置-\u003e显示中开启\u003c/li\u003e\u003cli\u003efeature: 平板模式下首页侧边栏默认展开与订阅源列表同屏\u003c/li\u003e\u003cli\u003eopt: 优化文字列表左右滑动效果\u003c/li\u003e\u003cli\u003efix: 修复部分场景图片下载失败的问题\u003c/li\u003e\u003cli\u003efix: 修复部分机型下载按钮消失的兼容性问题\u003c/li\u003e\u003cli\u003efix: 修复FreshRss Api闪退的问题\u003c/li\u003e\u003c/ul\u003e",
-    "fileKey": "Agr_Reader_1.7.3.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.3.apk"
+    "versionName": "1.7.4",
+    "versionCode": 1007004,
+    "changelog": "\u003cul\u003e\u003cli\u003efeature: 桌面组件支持列表滚动\u003c/li\u003e\u003cli\u003efix: 修复桌面组件跳转文章阅读页闪退的问题\u003c/li\u003e\u003cli\u003efix: 修复从桌面组件多次打开文章时文章加载失败的问题\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.4.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.4.apk"
 }

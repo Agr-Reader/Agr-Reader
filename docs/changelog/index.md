@@ -1,6 +1,11 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.4(2024.06.22)
+- feature: 桌面组件支持列表滚动
+- fix: 修复桌面组件跳转文章阅读页闪退的问题
+- fix: 修复从桌面组件多次打开文章时文章加载失败的问题
+
 ## 1.7.3(2024.06.11)
 - feature: 阅读页增加TTS功能
 - feature: 增加内嵌网页强制深色模式（实验功能）
