@@ -54,3 +54,8 @@
   - NASA Image of the Day
 
 <a href="https://www.agrreader.xyz/resources/AgrReader.opml" download="Agr_Reader.opml">AgrReader.OPML 文件下载</a> 通过OPML文件可以一次性批量导入以上RSS源
+
+## RSS工具
+
+- OPML在线编辑器(https://opml.imadij.com/)
+  - 可以在线编辑OPML文件，批量操作订阅源
