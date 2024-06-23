@@ -23,6 +23,7 @@ export default defineConfig({
         {
           text: '目录',
           items: [
+            { text: 'RSS服务接入教程', link: '/navigation/rss-service' },
             { text: '订阅源设置', link: '/navigation/feed-info' },
             { text: '备份设置', link: '/navigation/webdav' },
             { text: '微信公众号RSS', link: '/navigation/wechat' },
