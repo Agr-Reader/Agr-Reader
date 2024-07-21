@@ -1,6 +1,17 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.5(2024.07.20)
+- feature: 新增The Old Reader接入，以及RSS服务接入指南
+- feature: 全部已读按钮位置支持自定义
+- feature: 增加标题去重，使用jaccard相似性算法
+- feature: 小组件增加更新订阅源按钮
+- fix: 修复平板模式下标记当前选中文章为未读时失效的问题
+- fix: 修复Api接入证书校验问题
+- refactor: 部分底层逻辑重构以迁移Desktop端
+
+<img src=../public/images/desktop_screenshot.png width=88% />
+
 ## 1.7.4(2024.06.22)
 - feature: 桌面组件支持列表滚动
 - fix: 修复桌面组件跳转文章阅读页闪退的问题

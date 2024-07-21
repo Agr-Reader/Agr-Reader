@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.4",
-    "versionCode": 1007004,
-    "changelog": "\u003cul\u003e\u003cli\u003efeature: 桌面组件支持列表滚动\u003c/li\u003e\u003cli\u003efix: 修复桌面组件跳转文章阅读页闪退的问题\u003c/li\u003e\u003cli\u003efix: 修复从桌面组件多次打开文章时文章加载失败的问题\u003c/li\u003e\u003c/ul\u003e",
-    "fileKey": "Agr_Reader_1.7.4.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.4.apk"
+    "versionName": "1.7.5",
+    "versionCode": 1007005,
+    "changelog": "\u003cul\u003e\u003cli\u003efeature: 新增The Old Reader接入，以及RSS服务接入指南\u003c/li\u003e\u003cli\u003efeature: 全部已读按钮位置支持自定义\u003c/li\u003e\u003cli\u003efeature: 增加标题去重，使用jaccard相似性算法\u003c/li\u003e\u003cli\u003efeature: 小组件增加更新订阅源按钮\u003c/li\u003e\u003cli\u003efix: 修复平板模式下标记当前选中文章为未读时失效的问题\u003c/li\u003e\u003cli\u003erefactor: 底层重构以迁移Desktop端\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.5.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.5.apk"
 }
