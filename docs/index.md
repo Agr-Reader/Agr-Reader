@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 立即下载
-      link: /resources/Agr_Reader_1.7.5.apk
+      link: /resources/Agr_Reader_1.7.4.apk
     - theme: alt
       text: 导航
       link: /navigation/index
