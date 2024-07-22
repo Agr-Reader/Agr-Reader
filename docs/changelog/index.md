@@ -1,7 +1,7 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
-## 1.7.5(2024.07.20)
+## 1.7.6(2024.07.22)
 - feature: 新增The Old Reader接入，以及RSS服务接入指南
 - feature: 全部已读按钮位置支持自定义
 - feature: 增加标题去重，使用jaccard相似性算法
