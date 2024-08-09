@@ -15,7 +15,8 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '导航', link: '/navigation/index' },
-      { text: '更新日志', link: '/changelog/index' }
+      { text: '更新日志', link: '/changelog/index' },
+      { text: '隐私政策', link: '/privacy' }
     ],
 
     sidebar: {
