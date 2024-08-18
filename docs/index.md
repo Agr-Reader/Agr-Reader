@@ -1,7 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
   name: "Agr Reader"
   text: Material3. Concise. Graceful. RSS Reader
@@ -40,27 +39,29 @@ features:
 
 ## 截图
 <div class="horizontal-scroll">
-  <img src="/screenshots/1.webp" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/2.webp" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/3.webp" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/4.webp" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/5.webp" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/6.webp" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/7.webp" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/1.webp" alt="简洁而又优美的Material3风格，各种主题随心选择" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/2.webp" alt="强力且有效的网页全文解析" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/3.webp" alt="桌面小组件，一触即达" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/4.webp" alt="丰富的自定义阅读样式配置" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/5.webp" alt="支持FreshRSS, Miniflux, Tiny Tiny RSS托管服务" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/6.webp" alt="沉浸式翻译，轻松阅读外文RSS" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/7.webp" alt="平板模式" data-zoomable class="image_screenshot medium-zoom-image">
 </div>
 
-## 联系
-### 国内版
-<div class="contact_container">
-<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=JlYfUDj9TJyDYThTY0uvYb8d7xjtffBt&amp;authKey=HTv2E4fBPQkDxeHQbLAosC7rfSaRE41J7bj10%2F8OFwlyqIg%2FnnqN2pqeL2DLFfID&amp;noverify=0&amp;group_code=607586011">
-  <img src="/contact_qq_group.svg" class="img_contact">
-</a>
-<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=0Ldhq8TtMi0QQnGcQqQde50rPM9No5l3&amp;authKey=hrkLB3QNfo5%2Fm6lhZSXrhy7qiEQ5Qc%2F6AS2hvwemksFg1fOeqaTvTxqD7OUYvNdy&amp;noverify=0&amp;group_code=721626283">
-  <img src="/contact_qq_group2.svg" class="img_contact">
-</a>
-</div>
+## 常见问题
+::: details 什么是RSS ？
+RSS，全称为 Really Simple Syndication（简易信息聚合），是一种用于订阅和分发网站内容的格式。通过RSS，网站可以以结构化的方式提供文章的标题、摘要、全文等信息，用户只需订阅网站的RSS链接，就能在一个RSS阅读器中集中查看多个网站的更新内容。
 
-### Google Play版 (TBD)
-<div class="contact_container">
-<a href="https://t.me/agrreader"> <img src="/contact_telegram_group.svg" class="img_contact"> </a>
-</div>
+简而言之，RSS让用户可以在一个地方看到多个信息源的最新内容，不必逐一访问每个网站。这种方式为用户提供了更高的内容获取效率和更强的自主性，避免了依赖算法推荐的随机性和信息过载问题。
+:::
+
+::: details 为什么选择 RSS？
+在信息爆炸的时代，社交媒体和聚合阅读工具通过算法推荐大量内容，这些内容可能让我们感兴趣，但也会导致信息过载，使我们接触的资讯类型变得狭窄。
+
+RSS（Really Simple Syndication）提供了解决方案。它让我们自主选择和订阅信息源，不受算法干扰，并按时间顺序显示内容。这样，我们能够有效地掌控接收的信息，避免信息过载。
+
+尽管RSS使用门槛较高，但它的“听话”特性，正如一个按时完成任务的学生，让我们可以高效地获取所需信息，是应对现代资讯过量的理想工具。
+:::
+::: details 我要怎么寻找 RSS 订阅源？
+可见：https://www.agrreader.xyz/navigation/
+:::
