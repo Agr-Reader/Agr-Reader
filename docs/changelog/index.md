@@ -1,6 +1,16 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.7(2024.08.18)
+- feature: 支持Android 14预测性返回特性
+- feature: DeepLX支持自定义接口地址
+- feature: 支持对单个订阅源下拉刷新
+- fix: 修复订阅源无文章时无法下拉刷新的问题
+- fix: 修复无法导入字体问题
+- fix: 移除Google Reader API 2000条数量限制
+- fix: 修复部分导致闪退的问题
+- refactor: 底层逻辑继续迁移中...
+
 ## 1.7.6(2024.07.22)
 - feature: 新增The Old Reader接入，以及RSS服务接入指南
 - feature: 全部已读按钮位置支持自定义

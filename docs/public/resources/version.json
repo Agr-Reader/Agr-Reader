@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.6",
-    "versionCode": 1007006,
-    "changelog": "\u003cul\u003e\u003cli\u003efeature: 新增The Old Reader接入，以及RSS服务接入指南\u003c/li\u003e\u003cli\u003efeature: 全部已读按钮位置支持自定义\u003c/li\u003e\u003cli\u003efeature: 增加标题去重，使用jaccard相似性算法\u003c/li\u003e\u003cli\u003efeature: 小组件增加更新订阅源按钮\u003c/li\u003e\u003cli\u003efix: 修复平板模式下标记当前选中文章为未读时失效的问题\u003c/li\u003e\u003cli\u003erefactor: 底层重构以迁移Desktop端\u003c/li\u003e\u003c/ul\u003e",
-    "fileKey": "Agr_Reader_1.7.6.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.6.apk"
+    "versionName": "1.7.7",
+    "versionCode": 1007007,
+    "changelog": "\u003cul\u003e\u003cli\u003efeature: 支持Android 14预测性返回特性\u003c/li\u003e\u003cli\u003efeature: DeepLX支持自定义接口地址\u003c/li\u003e\u003cli\u003efeature: 支持对单个订阅源下拉刷新\u003c/li\u003e\u003cli\u003efix: 修复订阅源无文章时无法下拉刷新的问题\u003c/li\u003e\u003cli\u003efix: 修复无法导入字体问题\u003c/li\u003e\u003cli\u003efix: 移除Google Reader API 2000条数量限制\u003c/li\u003e\u003cli\u003efix: 修复部分导致闪退的问题\u003c/li\u003e\u003cli\u003erefactor: 底层逻辑继续迁移中...\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.7.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.7.apk"
 }
