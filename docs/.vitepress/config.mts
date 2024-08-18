@@ -55,5 +55,8 @@ export default defineConfig({
         }
       ]
     }
+  },
+  sitemap: {
+    hostname: 'https://www.agrreader.xyz'
   }
 })
