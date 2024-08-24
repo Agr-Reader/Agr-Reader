@@ -29,7 +29,7 @@ const component = computed(() => {
 <template>
   <component :is="component" class="VPButton" :class="[size, theme]" :href="href ? normalizeLink(href) : undefined"
     :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.7.7.apk' : undefined">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.7.8.apk' : undefined">
     <img v-if="theme === 'brand'" src="/logo.png" alt="Icon" class="icon">
     <span class="text">{{ text }}</span>
   </component>

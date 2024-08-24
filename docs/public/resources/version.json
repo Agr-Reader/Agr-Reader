@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.7",
-    "versionCode": 1007007,
-    "changelog": "\u003cul\u003e\u003cli\u003efeature: 支持Android 14预测性返回特性\u003c/li\u003e\u003cli\u003efeature: DeepLX支持自定义接口地址\u003c/li\u003e\u003cli\u003efeature: 支持对单个订阅源下拉刷新\u003c/li\u003e\u003cli\u003efix: 修复订阅源无文章时无法下拉刷新的问题\u003c/li\u003e\u003cli\u003efix: 修复无法导入字体问题\u003c/li\u003e\u003cli\u003efix: 移除Google Reader API 2000条数量限制\u003c/li\u003e\u003cli\u003efix: 修复部分导致闪退的问题\u003c/li\u003e\u003cli\u003erefactor: 底层逻辑继续迁移中...\u003c/li\u003e\u003c/ul\u003e",
-    "fileKey": "Agr_Reader_1.7.7.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.7.apk"
+    "versionName": "1.7.8",
+    "versionCode": 1007008,
+    "changelog": "\u003cul\u003e\u003cli\u003efix: 文章列表标题空格变成+号问题\u003c/li\u003e\u003cli\u003efix: 分享文章闪退\u003c/li\u003e\u003cli\u003efix: 滚动标记已读选项消失\u003c/li\u003e\u003cli\u003efix: Webdav已配置但是未展示配置信息\u003c/li\u003e\u003cli\u003efix: 翻译设置中不展示目标语言\u003c/li\u003e\u003cli\u003efix: 部分文案展示不正常\u003c/li\u003e\u003cli\u003efix: 回退预测性返回\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.8.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.8.apk"
 }

@@ -1,6 +1,15 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.8(2024.08.24)
+- fix: 文章列表标题空格变成+号问题
+- fix: 分享文章闪退
+- fix: 滚动标记已读选项消失
+- fix: Webdav已配置但是未展示配置信息
+- fix: 翻译设置中不展示目标语言
+- fix: 部分文案展示不正常
+- fix: 回退预测性返回
+
 ## 1.7.7(2024.08.18)
 - feature: 支持Android 14预测性返回特性
 - feature: DeepLX支持自定义接口地址
