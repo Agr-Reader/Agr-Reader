@@ -26,7 +26,9 @@ Telegram 群: [@agrreader](https://t.me/agrreader)
 - [ALL-about-RSS](https://github.com/AboutRSS/ALL-about-RSS)
 - [https://morerss.com/zh.php](https://morerss.com/zh.php)
 - [https://plink.anyfeeder.com/](https://plink.anyfeeder.com/)
-- [https://feedx.best/](https://feedx.best/)
+- [Feed Show](https://feed.hocgin.com/feed/search)
+- [BestBlogs.dev](https://www.bestblogs.dev/sources)
+- [KOTOMI RSS](https://moe4sale.in/): 一个Anime/ 动漫RSS 索引站
 <hr>
 
 ### 部分RSS订阅源推荐（2024.02.24更新）
