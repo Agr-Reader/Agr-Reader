@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.8",
-    "versionCode": 1007008,
-    "changelog": "\u003cul\u003e\u003cli\u003efix: 文章列表标题空格变成+号问题\u003c/li\u003e\u003cli\u003efix: 分享文章闪退\u003c/li\u003e\u003cli\u003efix: 滚动标记已读选项消失\u003c/li\u003e\u003cli\u003efix: Webdav已配置但是未展示配置信息\u003c/li\u003e\u003cli\u003efix: 翻译设置中不展示目标语言\u003c/li\u003e\u003cli\u003efix: 部分文案展示不正常\u003c/li\u003e\u003cli\u003efix: 回退预测性返回\u003c/li\u003e\u003c/ul\u003e",
-    "fileKey": "Agr_Reader_1.7.8.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.8.apk"
+    "versionName": "1.7.9",
+    "versionCode": 1007009,
+    "changelog": "\u003cul\u003e\u003cli\u003efeat: 文章列表支持调整标题字号\u003c/li\u003e\u003cli\u003efix: 修复Webdav配置问题\u003c/li\u003e\u003cli\u003efix: 修复低版本Android设置语言失效的问题\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.9.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.9.apk"
 }

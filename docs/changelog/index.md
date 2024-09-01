@@ -1,6 +1,11 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.9(2024.09.01)
+- feat: 文章列表支持调整标题字号
+- fix: 修复Webdav配置问题
+- fix: 修复低版本Android设置语言失效的问题
+
 ## 1.7.8(2024.08.24)
 - fix: 文章列表标题空格变成+号问题
 - fix: 分享文章闪退
