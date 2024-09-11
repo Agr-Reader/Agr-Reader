@@ -1,7 +1,7 @@
 # Feed Source Settings
 Long press on a feed source to enter the feed settings interface, as shown below:
 
-![Feed Source Settings](../public/images/feed-info1.webp)
+![Feed Source Settings](/images/feed-info1.webp)
 
 ## Edit
 You can customize and modify the feed source name and subscription link. After making changes, click the save button in the top right corner to apply.

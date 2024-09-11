@@ -14,11 +14,11 @@ The Old Reader的接入较为简单。
 > FreshRSS默认使用Google Reader API接入。
 
 进入设置-> 账户管理界面。
-![FreshRSS账户管理](../public/images/freshrss1.png)
+![FreshRSS账户管理](/images/freshrss1.png)
 
 输入API 密码后点击提交更新。然后点击下方链接跳转到FreshRSS API endpoints页面。
 
-![FreshRSS账户管理](../public/images/freshrss2.png)
+![FreshRSS账户管理](/images/freshrss2.png)
 
 ::: tip
 - 域名：FreshRSS API endpoints界面对应的Google Reader compatible API以greader.php结尾的地址。
@@ -31,7 +31,7 @@ The Old Reader的接入较为简单。
 
 进入设置-> 集成设置中，展开Google Reader 选项。
 
-![Miniflux集成](../public/images/miniflux1.png)
+![Miniflux集成](/images/miniflux1.png)
 
 
 选中“启动Google Reader API”，然后设置Google Reader用户名与密码即可。
@@ -44,14 +44,14 @@ The Old Reader的接入较为简单。
 > Tiny Tiny RSS目前仅支持Fever API且需要开启对应插件，操作比较麻烦而且Fever API功能太少，不太推荐。
 
 1. 打开插件列表搜索“Fever”并开启Fever插件
-![Fever插件](../public/images/tinytinyrss2.png)
+![Fever插件](/images/tinytinyrss2.png)
 
 2. 在偏好设置中，启用API，勾选“允许外部客户端通过 API 来访问该账户”
-![启用API](../public/images/tinytinyrss1.png)
+![启用API](/images/tinytinyrss1.png)
 
 3. 在Fever插件安装好后，进入偏好设置->Fever Emulation设置
 设置Fever API密码，域名为黄色高亮处链接（**注意使用时去掉“.local”**），如：https://ttrss.xxx/plugins/fever/
-![Fever设置](../public/images/tinytinyrss3.png)
+![Fever设置](/images/tinytinyrss3.png)
 
 ::: tip
 - 域名：Fever Emulation设置中提供：https://ttrss.xxx/plugins/fever/ (**注意去掉“.local”**）)

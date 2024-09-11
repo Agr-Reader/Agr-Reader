@@ -19,7 +19,7 @@ Many popular cloud storage services support backup using the WebDAV protocol. He
 3. Click on Security Options -> Add Application, and follow the prompts.
 4. Enter the application name and generate an application password, which will be used later.
 5. Configure the settings in Agr Reader by entering the following: server address, account, and application password.
-![WebDAV Setting](../public/images/webdav1.png)
+![WebDAV Setting](/images/webdav1.png)
 
 ::: info
 Currently, WebDAV supports only manual backups. A scheduled backup feature will be added in future updates.

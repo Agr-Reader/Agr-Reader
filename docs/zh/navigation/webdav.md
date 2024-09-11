@@ -18,7 +18,7 @@
 3. 点击安全选项->添加应用，按照提示操作
 4. 输入应用名称，生成应用密码，后续将会使用
 5. 在Agr Reader中配置依次输入：服务器地址、账户、应用密码即可
-![WebDAV配置](../public/images/webdav1.png)
+![WebDAV配置](/images/webdav1.png)
 
 ::: info
 目前WebDAV只支持手动备份，后续会新增定时备份功能
