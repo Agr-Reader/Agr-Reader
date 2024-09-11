@@ -1,26 +1,26 @@
-# 订阅源设置
-长按订阅源进入订阅源设置界面，如下图所示：
+# Feed Source Settings
+Long press on a feed source to enter the feed settings interface, as shown below:
 
-![订阅源设置](../public/images/feed-info1.webp)
+![Feed Source Settings](../public/images/feed-info1.webp)
 
-## 编辑
-可以自定义修改订阅源名称和订阅链接，修改完成后点击右上角保存按钮应用。
+## Edit
+You can customize and modify the feed source name and subscription link. After making changes, click the save button in the top right corner to apply.
 
-## 设置
-### 文章内容来源
-当文章内容存在展示问题时可尝试切换。
-- 内容摘要：展示由订阅源提供的文章摘要内容，当全文解析效果不佳时可选择；
-- 全文解析：默认选项，AgrReader将解析文章原文获取内容，部分订阅源可以效果不佳；
-- 内嵌网页：内嵌浏览器形式，之间加载文章网页页面；
+## Settings
+### Article Content Source
+If there are display issues with the article content, you can try switching the source:
+- Content Summary: Displays the article summary provided by the feed source. Use this option when full-text parsing is not ideal.
+- Full-text Parsing: The default option where AgrReader parses the original article content. Note that this may not work perfectly for some feeds.
+- Embedded Webpage: Loads the article page directly in an embedded browser format.
 
-### 推送通知
-开启“是否允许推送通知”选项后，订阅源有更新时将推送通知，如果需要后台通知能力需要不限制后台行为以及电池策略，耗电量根据设置的同步频率而定，通常不会太高。
+### Push Notifications
+When the "Enable Push Notifications" option is turned on, you will receive notifications when there are updates to the feed. For background notification capabilities, ensure that background activity and battery policies are unrestricted. Power consumption depends on the sync frequency set, but it's usually minimal.
 
-### 拦截网页资源加载
-当部分网页存在图片加载失败或者无法展示等问题时可尝试开启。
+### Block Web Resource Loading
+If images or other content fail to load on some web pages, try enabling this option.
 
-### 过滤规则配置
-黑名单策略，匹配文章标题，当标题包含设置的规则词时将会被过滤。
+### Filter Rule Configuration
+Blacklist strategy based on article titles. When the title contains specified keywords, the article will be filtered out.
 
-## 翻译设置
-开启后将打开该订阅源的文章时自动启用沉浸式翻译，未开启则需要手动点击翻译按钮进行翻译。
+## Translation Settings
+When enabled, immersive translation will be automatically applied when opening articles from this feed. If not enabled, translation needs to be triggered manually by clicking the translation button.

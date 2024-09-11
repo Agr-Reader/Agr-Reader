@@ -4,64 +4,70 @@ layout: home
 hero:
   name: "Agr Reader"
   text: Material3. Concise. Graceful. RSS Reader
-  tagline: Android端Material3风格的极简优美的RSS阅读器
+  tagline: A minimalist and elegant Material3-style RSS reader for Android
   image:
     src: /logo.png
     alt: Agr Reader
   actions:
     - theme: brand
-      text: 立即下载(V1.7.9)
+      text: Download Now(V1.7.9)
       link: /resources/Agr_Reader_1.7.9.apk
     - theme: alt
-      text: 导航
+      text: Navigation
       link: /navigation/index
 
 features:
   - icon: 🎨
-    title: 简洁而又优美 Material3 风格，各种主题色随心选择
-    details: 完全遵循material3规范，带来视觉上一一致体验。
+    title: Elegant Material3 Design with Customizable Themes
+    details: Fully compliant with Material3 guidelines, providing a visually consistent experience with customizable theme colors.
   - icon: 👍
-    title: 强力且有效的全文解析
-    details: 大部分页面都是可以全文解析的，并且默认支持离线阅读，给你带来纯净的阅读体验
+    title: Powerful Full-text Parsing
+    details: Most pages support full-text parsing and offline reading by default, offering a clean and distraction-free reading experience.
   - icon: 📱
-    title: 桌面小组件，一触即达
-    details: 方便你第一时间获取新的推送文章，不落下每一篇推文
-  - icon: ✏
-    title: 丰富的自定义阅读样式配置
-    details: 字体大小、字重间距等等，满足你的各项阅读体验需求
+    title: Convenient Home Screen Widgets
+    details: Instantly access the latest articles from your feeds directly from the home screen, ensuring you never miss an update.
+  - icon: 🛠️
+    title: Rich Customization Options
+    details: Configure reading page text styles, mark all as read, scroll marking options, and more for a tailored reading experience.
   - icon: 👏
-    title: 支持接入FreshRSS, Tiny Tiny RSS, Miniflux
-    details: 主流自托管服务均可支持，inoreader、feedly正在逐步支持中...
+    title: Supports Various RSS Services
+    details: Compatible with popular self-hosted services such as FreshRSS, Tiny Tiny RSS, Miniflux, The Old Reader, and more, including Google Reader API and Fever API.
   - icon: 🔠
-    title: 支持沉浸式翻译效果
-    details: 支持文章在列表中的标题翻译，支持文章内容的沉浸式翻译，轻松阅读外文RSS文章，不再有语言障碍
+    title: Immersive Translation Features
+    details: Enjoy automatic translation of titles in lists and immersive translation of article content, making it easy to read foreign-language RSS articles without language barriers.
+  - icon: 🖥️
+    title: Widescreen Mode
+    details: Take full advantage of your tablet or large-screen device with a side-by-side display of article lists and reading views, allowing you to browse, read, and switch between stories seamlessly.\
+  - icon: ☁️
+    title: WebDAV Backup
+    details: Support WebDAV Backup&Restore to prevent data loss due to unexpected situations.
 ---
 
 ## 截图
 <div class="horizontal-scroll">
-  <img src="/screenshots/1.webp" alt="简洁而又优美的Material3风格，各种主题随心选择" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/2.webp" alt="强力且有效的网页全文解析" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/3.webp" alt="桌面小组件，一触即达" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/4.webp" alt="丰富的自定义阅读样式配置" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/5.webp" alt="支持FreshRSS, Miniflux, Tiny Tiny RSS托管服务" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/6.webp" alt="沉浸式翻译，轻松阅读外文RSS" data-zoomable class="image_screenshot medium-zoom-image">
-  <img src="/screenshots/7.webp" alt="平板模式" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/1.webp" alt="Elegant Material3 Design with Customizable Themes" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/2.webp" alt="Powerful Full-text Parsing" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/3.webp" alt="Convenient Home Screen Widgets" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/4.webp" alt="Extensive Customizable Reading Styles" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/5.webp" alt="Supports Various RSS Services" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/6.webp" alt="Immersive Translation Features" data-zoomable class="image_screenshot medium-zoom-image">
+  <img src="/screenshots/en/7.webp" alt="Widescreen Mode" data-zoomable class="image_screenshot medium-zoom-image">
 </div>
 
 ## 常见问题
-::: details 什么是RSS ？
-RSS，全称为 Really Simple Syndication（简易信息聚合），是一种用于订阅和分发网站内容的格式。通过RSS，网站可以以结构化的方式提供文章的标题、摘要、全文等信息，用户只需订阅网站的RSS链接，就能在一个RSS阅读器中集中查看多个网站的更新内容。
+::: details What is RSS?
+RSS, short for Really Simple Syndication, is a format used for subscribing to and distributing website content. Through RSS, websites can provide structured information such as article titles, summaries, and full texts. Users can subscribe to a website’s RSS link and view updates from multiple sites in one RSS reader.
 
-简而言之，RSS让用户可以在一个地方看到多个信息源的最新内容，不必逐一访问每个网站。这种方式为用户提供了更高的内容获取效率和更强的自主性，避免了依赖算法推荐的随机性和信息过载问题。
+In short, RSS allows users to see the latest content from multiple sources in one place without visiting each site individually. This approach provides higher efficiency and greater autonomy in content consumption, avoiding the randomness and overload of algorithm-driven recommendations.
 :::
 
-::: details 为什么选择 RSS？
-在信息爆炸的时代，社交媒体和聚合阅读工具通过算法推荐大量内容，这些内容可能让我们感兴趣，但也会导致信息过载，使我们接触的资讯类型变得狭窄。
+::: details Why Choose RSS?
+In the age of information overload, social media and content aggregation tools use algorithms to recommend a large amount of content that may interest us but can also lead to information overload and narrow the types of information we encounter.
 
-RSS（Really Simple Syndication）提供了解决方案。它让我们自主选择和订阅信息源，不受算法干扰，并按时间顺序显示内容。这样，我们能够有效地掌控接收的信息，避免信息过载。
+RSS (Really Simple Syndication) offers a solution. It allows us to independently choose and subscribe to information sources without algorithm interference, displaying content in chronological order. This way, we can effectively control the information we receive, avoiding information overload.
 
-尽管RSS使用门槛较高，但它的“听话”特性，正如一个按时完成任务的学生，让我们可以高效地获取所需信息，是应对现代资讯过量的理想工具。
+Although RSS has a higher learning curve, its reliability—like a diligent student who completes tasks on time—allows us to efficiently obtain the information we need, making it an ideal tool for managing modern information excess.
 :::
-::: details 我要怎么寻找 RSS 订阅源？
-可见：https://www.agrreader.xyz/navigation/
+::: details How Do I Find RSS Feeds?
+Visit: https://www.agrreader.xyz/navigation/
 :::

@@ -1,25 +1,26 @@
-# 备份设置
+# Backup Settings
 
-处于隐私安全的考虑AgrReader的数据不会同步至服务器，因此目前提供了两种方式的备份数据。
-- 本地备份：在设置->通用->导出为OPML选项中，可以将本地所有的订阅源导出为OPML文件，可供后续的恢复或迁移。
-- WebDAV备份：在设置->备份&恢复选项中，提供了基于**WebDAV**协议的数据备份功能，可以将订阅源数据备份到云端。
+To ensure privacy and data security, Agr Reader does not sync data to the server. Currently, two methods are provided for backing up your data:
+- Local Backup: In Settings -> General -> Export to OPML, you can export all your local subscriptions as an OPML file, which can be used for future restoration or migration.
+- WebDAV Backup: In Settings -> Backup & Restore, a backup function based on the WebDAV protocol is provided, allowing you to back up subscription data to the cloud.
 
-> 推荐通过WebDAV来定期备份数据。避免手机的损坏、遗失、误操作等各种意外情况导致数据丢失的问题出现。
+> Recommendation: Use WebDAV for regular backups to prevent data loss due to unexpected situations such as phone damage, loss, or accidental deletion.
 
-## 本地备份
-设置->通用->导出为OPML即可
+## Local Backup
+Go to Settings -> General -> Export to OPML to export your subscriptions.
 
-## WebDAV备份
-主流的云盘服务通常都会提供WebDAV协议的备份功能，以常用的[坚果云](https://www.jianguoyun.com/)为例。
 
-### 坚果云WebDAV使用指南
-1. 注册坚果云账户
-2. 点击用户名->账户信息
-3. 点击安全选项->添加应用，按照提示操作
-4. 输入应用名称，生成应用密码，后续将会使用
-5. 在Agr Reader中配置依次输入：服务器地址、账户、应用密码即可
-![WebDAV配置](../public/images/webdav1.png)
+## WebDAV Backup
+Many popular cloud storage services support backup using the WebDAV protocol. Here's an example of using [Jianguoyun](https://www.jianguoyun.com/).
+
+### Jianguoyun WebDAV Usage Guide
+1. Register for a Jianguoyun account.
+2. Click on your username -> Account Information.
+3. Click on Security Options -> Add Application, and follow the prompts.
+4. Enter the application name and generate an application password, which will be used later.
+5. Configure the settings in Agr Reader by entering the following: server address, account, and application password.
+![WebDAV Setting](../public/images/webdav1.png)
 
 ::: info
-目前WebDAV只支持手动备份，后续会新增定时备份功能
+Currently, WebDAV supports only manual backups. A scheduled backup feature will be added in future updates.
 :::
