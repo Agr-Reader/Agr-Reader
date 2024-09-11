@@ -34,7 +34,7 @@
 - fix: 修复Api接入证书校验问题
 - refactor: 部分底层逻辑重构以迁移Desktop端
 
-<img src=../public/images/desktop_screenshot.png width=88% />
+<img src=/images/desktop_screenshot.png width=88% />
 
 ## 1.7.4(2024.06.22)
 - feature: 桌面组件支持列表滚动
