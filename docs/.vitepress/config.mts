@@ -97,6 +97,12 @@ export default defineConfig({
           replacement: fileURLToPath(
             new URL('./components/VPButton.vue', import.meta.url)
           )
+        },
+        {
+          find: /^.*\/VPHero\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./components/VPHero.vue', import.meta.url)
+          )
         }
       ]
     }

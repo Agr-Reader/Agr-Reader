@@ -9,9 +9,9 @@ hero:
     src: /logo.png
     alt: Agr Reader
   actions:
-    - theme: brand
-      text: Download Now(V1.7.9)
-      link: /resources/Agr_Reader_1.7.9.apk
+    - theme: google
+      text: '中国用户可以前往此处下载'
+      link: https://play.google.com/store/apps/details?id=com.lowae.agrreader
     - theme: alt
       text: Navigation
       link: /navigation/index

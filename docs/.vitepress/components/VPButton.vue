@@ -6,7 +6,7 @@ import { EXTERNAL_URL_RE } from 'vitepress/dist/client/shared'
 interface Props {
   tag?: string
   size?: 'medium' | 'big'
-  theme?: 'brand' | 'alt' | 'sponsor'
+  theme?: 'brand' | 'alt' | 'sponsor' | 'google'
   text: string
   href?: string
   target?: string;
@@ -27,9 +27,14 @@ const component = computed(() => {
 </script>
 
 <template>
-  <component :is="component" class="VPButton" :class="[size, theme]" :href="href ? normalizeLink(href) : undefined"
+  <component is="a" v-if="theme === 'google'" class="VPButton download" :href="href ? normalizeLink(href) : undefined"
     :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.7.9.apk' : undefined">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" download="Agr_Reader_1.7.9.apk">
+    <img src="/google-play-badge.png" style="width: 14rem;">
+  </component>
+  <component v-else :is="component" class="VPButton" :class="[size, theme]"
+    :href="href ? normalizeLink(href) : undefined" :target="props.target ?? (isExternal ? '_blank' : undefined)"
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)">
     <img v-if="theme === 'brand'" src="/logo.png" alt="Icon" class="icon">
     <span class="text">{{ text }}</span>
   </component>
@@ -44,6 +49,13 @@ const component = computed(() => {
   white-space: nowrap;
   align-items: center;
   transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+.VPButton.download {
+  display: inline-flex;
+  text-align: center;
+  white-space: nowrap;
+  align-items: center;
 }
 
 .VPButton .icon {
