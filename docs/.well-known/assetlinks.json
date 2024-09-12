@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.lowae.agrreader",
+        "sha256_cert_fingerprints": [
+          "7A:A4:6F:AB:AC:74:A0:4E:B6:D1:4E:77:88:3C:7C:7C:20:3F:C3:3D:F6:5B:DC:87:B0:F3:88:51:24:62:09:5B"
+        ]
+      }
+    }
+  ]
