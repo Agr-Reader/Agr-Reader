@@ -4,9 +4,6 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   cleanUrls: true,
-  title: "Agr Reader",
-  titleTemplate: "Material3. Concise. Graceful. RSS Reader",
-  description: "Agr Reader - A minimalist and elegant Material3-style RSS reader",
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
   ],
@@ -14,6 +11,9 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
+      title: "Agr Reader",
+      titleTemplate: "Material3. Concise. Graceful. RSS Reader",
+      description: "A minimalist and elegant Material3-style RSS reader",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/logo.png',
@@ -53,6 +53,9 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh', // 可选，将作为 `lang` 属性添加到 `html` 标签中
       link: '/zh/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
+      title: "Agr Reader",
+      titleTemplate: "Material3. Concise. Graceful. RSS Reader",
+      description: "简洁优美的Material You风格的RSS阅读器",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/logo.png',

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Agr Reader"
   text: Material3. Concise. Graceful. RSS Reader
-  tagline: A minimalist and elegant Material3-style RSS reader for Android
+  tagline: A minimalist and elegant Material3 You style RSS reader
   image:
     src: /logo.png
     alt: Agr Reader
