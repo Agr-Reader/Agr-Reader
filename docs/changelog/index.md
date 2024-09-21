@@ -1,6 +1,12 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.10 (2024.09.21)
+- feat: Tablet mode supports adaptive switching
+- feat: Multi-language adaptation, supports French and German
+- fix: Fixed some crash issues
+- opt: Optimize keyword filtering interaction style
+
 ## 1.7.9(2024.09.01)
 - feat: 文章列表支持调整标题字号
 - fix: 修复Webdav配置问题

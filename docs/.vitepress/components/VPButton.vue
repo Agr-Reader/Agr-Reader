@@ -29,7 +29,7 @@ const component = computed(() => {
 <template>
   <component is="a" v-if="theme === 'google'" class="VPButton download" :href="href ? normalizeLink(href) : undefined"
     :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" download="Agr_Reader_1.7.9.apk">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" download="Agr_Reader_1.7.10.apk">
     <img src="/google-play-badge.png" style="width: 14rem;">
   </component>
   <component v-else :is="component" class="VPButton" :class="[size, theme]"
