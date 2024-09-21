@@ -1,6 +1,12 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.10(2024.09.21)
+- feat: 平板模式支持自适应切换
+- feat: 多语言适配，支持法语、德语
+- fix: 修复部分闪退问题
+- opt: 优化关键词过滤交互样式
+
 ## 1.7.9(2024.09.01)
 - feat: 文章列表支持调整标题字号
 - fix: 修复Webdav配置问题

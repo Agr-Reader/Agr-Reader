@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.9",
-    "versionCode": 1007009,
-    "changelog": "\u003cul\u003e\u003cli\u003efeat: 文章列表支持调整标题字号\u003c/li\u003e\u003cli\u003efix: 修复Webdav配置问题\u003c/li\u003e\u003cli\u003efix: 修复低版本Android设置语言失效的问题\u003c/li\u003e\u003c/ul\u003e",
-    "fileKey": "Agr_Reader_1.7.9.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.9.apk"
+    "versionName": "1.7.10",
+    "versionCode": 10070010,
+    "changelog": "\u003cul\u003e\u003cli\u003efeat: 平板模式支持自适应切换\u003c/li\u003e\u003cli\u003efeat: 多语言适配，支持法语、德语\u003c/li\u003e\u003cli\u003efix: 修复部分闪退问题\u003c/li\u003e\u003cli\u003eopt: 优化关键词过滤交互样式\u003c/li\u003e\u003c/ul\u003e",
+    "fileKey": "Agr_Reader_1.7.10.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.10.apk"
 }
