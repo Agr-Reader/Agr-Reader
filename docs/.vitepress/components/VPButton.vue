@@ -27,14 +27,14 @@ const component = computed(() => {
 </script>
 
 <template>
-  <component is="a" v-if="theme === 'google'" class="VPButton download" :href="href ? normalizeLink(href) : undefined"
+  <component is="a" v-if="theme === 'google'" class="VPButton" :href="href ? normalizeLink(href) : undefined"
     :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" download="Agr_Reader_1.7.10.apk">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" >
     <img src="/google-play-badge.png" style="width: 14rem;">
   </component>
   <component v-else :is="component" class="VPButton" :class="[size, theme]"
     :href="href ? normalizeLink(href) : undefined" :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.7.10.apk' : undefined">
     <img v-if="theme === 'brand'" src="/logo.png" alt="Icon" class="icon">
     <span class="text">{{ text }}</span>
   </component>
