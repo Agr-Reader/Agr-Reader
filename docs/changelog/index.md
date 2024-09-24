@@ -1,7 +1,12 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
-## 1.7.10 (2024.09.21)
+## 1.7.11(2024.09.24)
+- opt: Tablet mode adopts a more relaxed strategy, and medium-sized pages are also split-screen.
+- fix: Fixed the issue that the read status is invalid when the article is saved permanently;
+- fix: The filter rule configuration count is not updated
+
+## 1.7.10(2024.09.21)
 - feat: Tablet mode supports adaptive switching
 - feat: Multi-language adaptation, supports French and German
 - fix: Fixed some crash issues
