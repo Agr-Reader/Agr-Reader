@@ -38,7 +38,7 @@
     </outline>
     <outline text="其他" title="其他">
       <outline type="rss" title="NASA Image of the Day" xmlUrl="https://www.nasa.gov/feeds/iotd-feed/" />
-      <outline type="rss" title="小众软件" xmlUrl="https://feeds.appinn.com/appinns/" />
+      <outline type="rss" title="小众软件" xmlUrl="https://www.appinn.com/feed/" />
       <outline type="rss" title="异星软件空间" xmlUrl="https://www.yxssp.com/feed" />
       <outline type="rss" title="异次元软件世界" xmlUrl="http://feed.iplaysoft.com" />
     </outline>
