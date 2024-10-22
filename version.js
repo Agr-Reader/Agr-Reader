@@ -1,9 +1,13 @@
-const changelog = `- opt: 平板模式采用更加宽松的策略，中型尺寸也进行分屏处理。
-- fix: 修复文章保存期间为永久时已读失效的问题；
-- fix: 过滤规则配置计数未更新问题`;
+const changelog = `- feat: 支持设置默认初始页面(订阅源列表或文章列表)
+- feat: 小组件可支持自定义分组(Pro)
+- feat: 小组件支持设置字体大小
+- feat: 支持Bionic Reading(仿生阅读)(Pro)
+- opt: 桌面模式分屏比例支持50%
+- fix: 修复API未同步已删除订阅源
+- fix: 修复深色模式下下载icon不可见问题`;
 
-const versionName = "1.7.11";
-const versionCode = 101007011;
+const versionName = "1.7.14";
+const versionCode = 101007014;
 
 console.log(
   JSON.stringify({

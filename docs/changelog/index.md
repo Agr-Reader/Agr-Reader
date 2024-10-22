@@ -1,6 +1,15 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.14(2024.10.22)
+- feat: Support setting a default initial page (subscription list or article list)
+- feat: Widget supports custom grouping (Pro)
+- feat: Widget supports font size customization
+- feat: Support for Bionic Reading (Pro)
+- opt: Desktop mode now supports 50% split screen ratio
+- fix: Fixed issue where the API did not sync deleted subscriptions
+- fix: Fixed issue where the download icon was not visible in dark mode
+
 ## 1.7.11(2024.09.24)
 - opt: Tablet mode adopts a more relaxed strategy, and medium-sized pages are also split-screen.
 - fix: Fixed the issue that the read status is invalid when the article is saved permanently;
