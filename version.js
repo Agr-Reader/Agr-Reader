@@ -1,13 +1,10 @@
-const changelog = `- feat: 支持设置默认初始页面(订阅源列表或文章列表)
-- feat: 小组件可支持自定义分组(Pro)
-- feat: 小组件支持设置字体大小
-- feat: 支持Bionic Reading(仿生阅读)(Pro)
-- opt: 桌面模式分屏比例支持50%
-- fix: 修复API未同步已删除订阅源
-- fix: 修复深色模式下下载icon不可见问题`;
+const changelog = `- feature: 文章来源增加外部浏览器选项，支持以自定义标签页或外部浏览器直接打开文章
+- opt: 加强标题去重范围，目前是整体去重
+- opt: 优化多语言下订阅源设置选项的文案展示
+- fix: 修复标题翻译失效的问题`;
 
-const versionName = "1.7.14";
-const versionCode = 101007014;
+const versionName = "1.7.16";
+const versionCode = 101007016;
 
 console.log(
   JSON.stringify({

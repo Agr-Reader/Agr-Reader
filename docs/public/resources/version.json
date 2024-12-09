@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.14",
-    "versionCode": 101007014,
-    "changelog": "- feat: 支持设置默认初始页面(订阅源列表或文章列表)\n- feat: 小组件可支持自定义分组(Pro)\n- feat: 小组件支持设置字体大小\n- feat: 支持Bionic Reading(仿生阅读)(Pro)\n- opt: 桌面模式分屏比例支持50%\n- fix: 修复API未同步已删除订阅源\n- fix: 修复深色模式下下载icon不可见问题",
-    "fileKey": "Agr_Reader_1.7.14.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.14.apk"
+    "versionName": "1.7.16",
+    "versionCode": 101007016,
+    "changelog": "- feature: 文章来源增加外部浏览器选项，支持以自定义标签页或外部浏览器直接打开文章\n- opt: 加强标题去重范围，目前是整体去重\n- opt: 优化多语言下订阅源设置选项的文案展示\n- fix: 修复标题翻译失效的问题",
+    "fileKey": "Agr_Reader_1.7.16.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.16.apk"
 }
