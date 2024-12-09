@@ -1,6 +1,18 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.16 (2024.12.9)
+- feature: Added an external browser option for article sources, allowing articles to be opened directly in a custom tab or external browser.
+- opt: Enhanced title deduplication scope, now applies globally.
+- opt: Optimized the text display of subscription settings options in multi-language environments.
+- fix: Fixed the issue where title translation was not working.
+
+## 1.7.15 (2024.10.27)
+- feat: Added Japanese language support.
+- fix: Fixed translation options on the subscription adding page.
+- fix: Fixed the issue where title translation was not working.
+- fix: Fixed the issue where WeChat public account images could not be loaded.
+
 ## 1.7.14(2024.10.22)
 - feat: Support setting a default initial page (subscription list or article list)
 - feat: Widget supports custom grouping (Pro)
