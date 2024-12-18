@@ -1,6 +1,9 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.7.17 (2024.12.18)
+- fix: Fixed the problem that the unread articles in today's mode could not be opened
+
 ## 1.7.16 (2024.12.9)
 - feature: Added an external browser option for article sources, allowing articles to be opened directly in a custom tab or external browser.
 - opt: Enhanced title deduplication scope, now applies globally.

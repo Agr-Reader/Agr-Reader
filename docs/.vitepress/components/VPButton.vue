@@ -34,7 +34,7 @@ const component = computed(() => {
   </component>
   <component v-else :is="component" class="VPButton" :class="[size, theme]"
     :href="href ? normalizeLink(href) : undefined" :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.7.16.apk' : undefined">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.7.17.apk' : undefined">
     <img v-if="theme === 'brand'" src="/logo.png" alt="Icon" class="icon">
     <span class="text">{{ text }}</span>
   </component>
