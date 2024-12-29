@@ -1,8 +1,7 @@
-const changelog = `- fix: 修复平板模式下今日未读无法打开文章的问题
-- fix: 修复赞助功能无法跳转的问题`;
+const changelog = `- feat: RSSHub Agr Reader自部署服务已上线：rsshub.agrreader.xyz`;
 
-const versionName = "1.7.17";
-const versionCode = 101007017;
+const versionName = "1.8.0";
+const versionCode = 101008000;
 
 console.log(
   JSON.stringify({

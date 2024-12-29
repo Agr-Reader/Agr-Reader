@@ -10,8 +10,8 @@ hero:
     alt: Agr Reader
   actions:
     - theme: brand
-      text: 立即下载(V1.7.17)
-      link: /resources/Agr_Reader_1.7.17.apk
+      text: 立即下载(V1.8.0)
+      link: /resources/Agr_Reader_1.8.0.apk
     - theme: alt
       text: 导航
       link: /navigation/index
@@ -52,6 +52,31 @@ features:
   <img src="/screenshots/5.webp" alt="支持FreshRSS, Miniflux, Tiny Tiny RSS托管服务" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/6.webp" alt="沉浸式翻译，轻松阅读外文RSS" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/7.webp" alt="平板模式" data-zoomable class="image_screenshot medium-zoom-image">
+</div>
+
+## RSSHub <Badge type="tip" text="自建服务" />
+详细内容可见👉[Agr Reader's RSSHub](/navigation/#agr-reader-s-rsshub)
+<div style="padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; background-color: var(--vp-c-bg-soft); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <img src="/images/rsshub-logo.webp" alt="RSSHub" width="100" loading="lazy" style="margin-bottom: 20px;"/>
+  <h1 style="margin-bottom: 20px; text-align: center;">Welcome to <span style="color:var(--vp-c-brand-1);"><a href="https://rsshub.agrreader.xyz/">Agr Reader's</a></span> <span style="color: #FF5722; ">RSSHub</span>!</h1>
+  <button 
+    onclick="window.location.href='https://rsshub.agrreader.xyz/';" 
+    style="
+      background-color: #FF5722; 
+      color: white; 
+      padding: 10px 40px; 
+      border-radius: 20px; 
+      cursor: pointer; 
+      font-size: 16px; 
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      "
+      onmouseover="this.style.backgroundColor='#E64A19'; this.style.transform='scale(1.05)';"
+      onmouseout="this.style.backgroundColor='#FF5722'; this.style.transform='scale(1)';"
+      onmousedown="this.style.transform='scale(1.02)';"
+      onmouseup="this.style.transform='scale(1.05)';"
+      >
+    GO!
+  </button>
 </div>
 
 ## 常见问题

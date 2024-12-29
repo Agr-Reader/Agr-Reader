@@ -1,7 +1,7 @@
 {
-    "versionName": "1.7.17",
-    "versionCode": 101007017,
-    "changelog": "- fix: 修复平板模式下今日未读无法打开文章的问题\n- fix: 修复赞助功能无法跳转的问题",
-    "fileKey": "Agr_Reader_1.7.17.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.7.17.apk"
+    "versionName": "1.8.0",
+    "versionCode": 101008000,
+    "changelog": "- feat: RSSHub Agr Reader自部署服务已上线：rsshub.agrreader.xyz",
+    "fileKey": "Agr_Reader_1.8.0.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.8.0.apk"
 }

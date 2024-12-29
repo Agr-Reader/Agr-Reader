@@ -1,6 +1,9 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.8.0(2024.12.29)
+- feat: RSSHub Agr Reader self-hosted service is now avaliable: rsshub.agrreader.xyz
+
 ## 1.7.17 (2024.12.18)
 - fix: Fixed the problem that the unread articles in today's mode could not be opened
 

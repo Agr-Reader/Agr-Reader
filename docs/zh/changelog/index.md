@@ -1,6 +1,10 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.8.0(2024.12.29)
+- feat: RSSHub Agr Reader自部署服务已上线：rsshub.agrreader.xyz
+- 目前暂时只支持在App内访问。
+
 ## 1.7.17(2024.12.18)
 - fix: 修复平板模式下今日未读无法打开文章的问题
 - fix: 修复赞助功能无法跳转的问题
