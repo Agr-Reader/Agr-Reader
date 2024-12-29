@@ -55,7 +55,7 @@ features:
 </div>
 
 ## RSSHub <Badge type="tip" text="自建服务" />
-详细内容可见👉[Agr Reader's RSSHub](/navigation/#agr-reader-s-rsshub)
+详细内容可见👉[Agr Reader's RSSHub](/zh/navigation/#agr-reader-s-rsshub)
 <div style="padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; background-color: var(--vp-c-bg-soft); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
   <img src="/images/rsshub-logo.webp" alt="RSSHub" width="100" loading="lazy" style="margin-bottom: 20px;"/>
   <h1 style="margin-bottom: 20px; text-align: center;">Welcome to <span style="color:var(--vp-c-brand-1);"><a href="https://rsshub.agrreader.xyz/">Agr Reader's</a></span> <span style="color: #FF5722; ">RSSHub</span>!</h1>
