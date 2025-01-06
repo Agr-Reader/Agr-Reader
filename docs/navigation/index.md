@@ -1,5 +1,5 @@
 ## User Guide
-👉[Agr Reader User Guide](/zh/navigation/how-to-use)
+👉[Agr Reader User Guide](/navigation/how-to-use)
 
 
 ## Feedback
