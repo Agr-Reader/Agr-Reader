@@ -1,3 +1,5 @@
+## 使用教程
+👉[Agr Reader 使用教程](/zh/navigation/how-to-use)
 
 ## 问题反馈
 任何问题或者想法欢迎在下面用户反馈中交流~

@@ -29,6 +29,7 @@ export default defineConfig({
             {
               text: 'Catalog',
               items: [
+                { text: 'User Guide', link: '/navigation/how-to-use' },
                 { text: 'RSS Service Integration Guide', link: '/navigation/rss-service' },
                 { text: 'RSS Feed Settings', link: '/navigation/feed-info' },
                 { text: 'Backup Settings', link: '/navigation/webdav' },
@@ -76,6 +77,7 @@ export default defineConfig({
             {
               text: '目录',
               items: [
+                { text: '使用教程', link: '/zh/navigation/how-to-use' },
                 { text: 'RSS服务接入教程', link: '/zh/navigation/rss-service' },
                 { text: '订阅源设置', link: '/zh/navigation/feed-info' },
                 { text: '备份设置', link: '/zh/navigation/webdav' },

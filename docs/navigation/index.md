@@ -1,3 +1,6 @@
+## User Guide
+👉[Agr Reader User Guide](/zh/navigation/how-to-use)
+
 
 ## Feedback
 If you encounter any issues or have suggestions, feel free to join the discussion in the user feedback section below:
