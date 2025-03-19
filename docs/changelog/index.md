@@ -1,7 +1,7 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 > 
-## 1.8.1(2024.02.11)
+## 1.8.1(2025.02.11)
 - Feature: Support for custom input color values in theme switching
 - Feature: Add a guide popup on the first app launch
 - Feature: Support for Russian language
