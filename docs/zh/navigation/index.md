@@ -13,7 +13,7 @@
 ## 联系方式
 Email: Lowae@agrreader.xyz
 
-AgrReader QQ群1: [607586011](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=JlYfUDj9TJyDYThTY0uvYb8d7xjtffBt&amp;authKey=HTv2E4fBPQkDxeHQbLAosC7rfSaRE41J7bj10%2F8OFwlyqIg%2FnnqN2pqeL2DLFfID&amp;noverify=0&amp;group_code=607586011)
+AgrReader QQ群1(满): [607586011](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=JlYfUDj9TJyDYThTY0uvYb8d7xjtffBt&amp;authKey=HTv2E4fBPQkDxeHQbLAosC7rfSaRE41J7bj10%2F8OFwlyqIg%2FnnqN2pqeL2DLFfID&amp;noverify=0&amp;group_code=607586011)
 
 AgrReader QQ群2: [721626283](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=0Ldhq8TtMi0QQnGcQqQde50rPM9No5l3&amp;authKey=hrkLB3QNfo5%2Fm6lhZSXrhy7qiEQ5Qc%2F6AS2hvwemksFg1fOeqaTvTxqD7OUYvNdy&amp;noverify=0&amp;group_code=721626283)
 
