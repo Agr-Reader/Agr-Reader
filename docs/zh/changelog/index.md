@@ -1,7 +1,13 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
-## 1.8.1(2024.02.11)
+## 1.8.3(2025.04.19)
+- feature: 新增导出所有收藏文章功能
+- optimize: 同步间隔支持5/15分钟
+- optimize: 优化全部已读功能
+- fix: 修复部分导致闪退的问题
+
+## 1.8.1(2025.02.11)
 - feature: 应用主题切换支持自定义输入色值
 - feature: 增加首次启动App时引导弹窗
 - feature: 多语言支持俄语

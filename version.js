@@ -1,11 +1,10 @@
-const changelog = `- feature: 应用主题切换支持自定义输入色值
-- feature: 增加首次启动App时引导弹窗
-- feature: 多语言支持俄语
-- optimize: 滚动标记已读兼容触底场景
-- optimize: 文章列表页滚动时隐藏悬浮按钮`;
+const changelog = `- feature: 新增导出所有收藏文章功能
+- optimize: 同步间隔支持5/15分钟
+- optimize: 优化全部已读功能
+- fix: 修复部分导致闪退的问题`;
 
-const versionName = "1.8.1";
-const versionCode = 101008001;
+const versionName = "1.8.3";
+const versionCode = 101008003;
 
 console.log(
   JSON.stringify({

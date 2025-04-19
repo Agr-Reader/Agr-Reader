@@ -1,7 +1,7 @@
 {
-    "versionName": "1.8.1",
-    "versionCode": 101008001,
-    "changelog": "- feature: 应用主题切换支持自定义输入色值\n- feature: 增加首次启动App时引导弹窗\n- feature: 多语言支持俄语\n- optimize: 滚动标记已读兼容触底场景\n- optimize: 文章列表页滚动时隐藏悬浮按钮",
-    "fileKey": "Agr_Reader_1.8.1.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.8.1.apk"
+    "versionName": "1.8.3",
+    "versionCode": 101008003,
+    "changelog": "- feature: 新增导出所有收藏文章功能\n- optimize: 同步间隔支持5/15分钟\n- optimize: 优化全部已读功能\n- fix: 修复部分导致闪退的问题",
+    "fileKey": "Agr_Reader_1.8.3.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.8.3.apk"
 }
