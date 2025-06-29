@@ -1,7 +1,7 @@
 {
-    "versionName": "1.8.3",
-    "versionCode": 101008003,
-    "changelog": "- feature: 新增导出所有收藏文章功能\n- optimize: 同步间隔支持5/15分钟\n- optimize: 优化全部已读功能\n- fix: 修复部分导致闪退的问题",
-    "fileKey": "Agr_Reader_1.8.3.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.8.3.apk"
+    "versionName": "1.9.0",
+    "versionCode": 101009000,
+    "changelog": "- feature: 新增AI总结摘要功能，在交互->AI设置中设置API模型  \n- optimize: 阅读页面标题增加加载效果  \n- optimzie: 非Pro版本订阅源数据增加至200个",
+    "fileKey": "Agr_Reader_1.9.0.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.0.apk"
 }

@@ -1,6 +1,11 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.9.0(2025.06.29)
+- feature: Added AI summary feature; set API model via Interaction -> AI Settings  
+- optimize: Added loading effect to reading page title  
+- optimzie: Increased subscription sources to 200 for non-Pro versions
+
 ## 1.8.3(2025.04.19)
 - feature: Add export all favorite articles feature
 - optimize: Support 5/15-minute sync intervals

@@ -1,10 +1,9 @@
-const changelog = `- feature: 新增导出所有收藏文章功能
-- optimize: 同步间隔支持5/15分钟
-- optimize: 优化全部已读功能
-- fix: 修复部分导致闪退的问题`;
+const changelog = `- feature: 新增AI总结摘要功能，在交互->AI设置中设置API模型  
+- optimize: 阅读页面标题增加加载效果  
+- optimzie: 非Pro版本订阅源数据增加至200个`;
 
-const versionName = "1.8.3";
-const versionCode = 101008003;
+const versionName = "1.9.0";
+const versionCode = 101009000;
 
 console.log(
   JSON.stringify({

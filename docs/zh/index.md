@@ -10,8 +10,8 @@ hero:
     alt: Agr Reader
   actions:
     - theme: brand
-      text: 立即下载(V1.8.3)
-      link: /resources/Agr_Reader_1.8.3.apk
+      text: 立即下载(V1.9.0)
+      link: /resources/Agr_Reader_1.9.0.apk
     - theme: alt
       text: 导航
       link: /navigation/index
