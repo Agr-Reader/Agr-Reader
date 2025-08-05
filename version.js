@@ -1,9 +1,11 @@
-const changelog = `- feature: 新增AI总结摘要功能，在交互->AI设置中设置API模型  
-- optimize: 阅读页面标题增加加载效果  
-- optimzie: 非Pro版本订阅源数据增加至200个`;
+const changelog = `- feature: 阅读页增加切换内容来源提示，当页面无内容显示时可尝试切换
+- optimize: 改善阅读页滑动效果，减少横滑灵敏度
+- optimize: 增加Google模型
+- optimize: 优化阅读页图片预览显示效果
+- fix: 修复订阅源设置中内容摘要选项失效问题`;
 
-const versionName = "1.9.0";
-const versionCode = 101009000;
+const versionName = "1.9.1";
+const versionCode = 101009001;
 
 console.log(
   JSON.stringify({

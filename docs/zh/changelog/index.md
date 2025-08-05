@@ -1,6 +1,13 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.9.1(2025.08.05)
+- feature: 阅读页增加切换内容来源提示，当页面无内容显示时可尝试切换
+- optimize: 改善阅读页滑动效果，减少横滑灵敏度
+- optimize: 增加Google模型
+- optimize: 优化阅读页图片预览显示效果
+- fix: 修复订阅源设置中内容摘要选项失效问题
+
 ## 1.9.0(2025.06.29)
 - feature: 新增AI总结摘要功能，在交互->AI设置中设置API模型，支持OpenAI/Google/Anthropic API
 - optimize: 阅读页面标题增加加载效果

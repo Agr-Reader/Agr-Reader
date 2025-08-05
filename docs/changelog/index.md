@@ -1,6 +1,13 @@
 
 > 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
 
+## 1.9.1(2025.08.05)
+- feature: Added a tip on the reading page to switch content sources when no content is displayed
+- optimize: Improved scrolling experience on the reading page by reducing horizontal swipe sensitivity
+- optimize: Added Google model
+- optimize: Enhanced image preview display on the reading page
+- fix: Fixed issue where content summary option in feed settings was not working
+
 ## 1.9.0(2025.06.29)
 - feature: Added AI summary feature; set API model via Interaction -> AI Settings; supports OpenAI/Google/Anthropic API
 - optimize: Added loading effect to reading page title  
