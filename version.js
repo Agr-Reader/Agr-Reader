@@ -4,8 +4,8 @@ const changelog = `- feature: 阅读页增加切换内容来源提示，当页�
 - optimize: 优化阅读页图片预览显示效果
 - fix: 修复订阅源设置中内容摘要选项失效问题`;
 
-const versionName = "1.9.1";
-const versionCode = 101009001;
+const versionName = "1.9.2";
+const versionCode = 101009002;
 
 console.log(
   JSON.stringify({

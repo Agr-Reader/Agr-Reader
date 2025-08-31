@@ -1,5 +1,8 @@
 
-> 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
+## 1.9.2（2025.08.31）
+- feature: Add scheduled cleanup for unread articles
+- optimize: Improve swipe sensitivity on the article list page
+- fix: Fix cursor issue in the subscription page input field
 
 ## 1.9.1(2025.08.05)
 - feature: Added a tip on the reading page to switch content sources when no content is displayed

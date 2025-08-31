@@ -1,7 +1,7 @@
 {
-    "versionName": "1.9.1",
-    "versionCode": 101009001,
-    "changelog": "- feature: 阅读页增加切换内容来源提示，当页面无内容显示时可尝试切换\n- optimize: 改善阅读页滑动效果，减少横滑灵敏度\n- optimize: 增加Google模型\n- optimize: 优化阅读页图片预览显示效果\n- fix: 修复订阅源设置中内容摘要选项失效问题",
-    "fileKey": "Agr_Reader_1.9.1.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.1.apk"
+    "versionName": "1.9.2",
+    "versionCode": 101009002,
+    "changelog": "- feature: 新增定时清理未读文章功能\n- optimize: 优化文章列表页横滑灵敏度\n- fix: 修复订阅页面输入框光标问题",
+    "fileKey": "Agr_Reader_1.9.2.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.2.apk"
 }

@@ -1,5 +1,8 @@
 
-> 历史版本: https://github.com/Agr-Reader/Agr-Reader/releases
+## 1.9.2(2025.08.31)
+- feature: 新增定时清理未读文章功能
+- optimize: 优化文章列表页横滑灵敏度
+- fix: 修复订阅页面输入框光标问题
 
 ## 1.9.1(2025.08.05)
 - feature: 阅读页增加切换内容来源提示，当页面无内容显示时可尝试切换
