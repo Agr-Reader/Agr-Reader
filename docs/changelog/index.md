@@ -1,4 +1,7 @@
 
+## 1.9.3(2025.09.07)
+- fix: Fixed issue where FreshRSS could not sync
+
 ## 1.9.2（2025.08.31）
 - feature: Add scheduled cleanup for unread articles
 - optimize: Improve swipe sensitivity on the article list page

@@ -1,7 +1,7 @@
 {
-    "versionName": "1.9.2",
-    "versionCode": 101009002,
-    "changelog": "- feature: 新增定时清理未读文章功能\n- optimize: 优化文章列表页横滑灵敏度\n- fix: 修复订阅页面输入框光标问题",
-    "fileKey": "Agr_Reader_1.9.2.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.2.apk"
+    "versionName": "1.9.3",
+    "versionCode": 101009003,
+    "changelog": "- fix: 修复FreshRSS无法同步问题",
+    "fileKey": "Agr_Reader_1.9.3.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.3.apk"
 }
