@@ -1,7 +1,7 @@
 {
-    "versionName": "1.9.5",
-    "versionCode": 101009005,
+    "versionName": "1.10.0",
+    "versionCode": 101010000,
     "changelog": "- feature: 新增账号系统，用户可以注册/登录账号以绑定Pro会员，多设备间只需要登录同一账号即可同步Pro会员，更多同步功能将在后续支持！",
-    "fileKey": "Agr_Reader_1.9.5.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.5.apk"
+    "fileKey": "Agr_Reader_1.10.0.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.10.0.apk"
 }
