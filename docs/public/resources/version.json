@@ -1,7 +1,7 @@
 {
-    "versionName": "1.9.3",
-    "versionCode": 101009003,
-    "changelog": "- fix: 修复FreshRSS无法同步问题",
-    "fileKey": "Agr_Reader_1.9.3.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.3.apk"
+    "versionName": "1.9.5",
+    "versionCode": 101009005,
+    "changelog": "- feature: 新增账号系统，用户可以注册/登录账号以绑定Pro会员，多设备间只需要登录同一账号即可同步Pro会员，更多同步功能将在后续支持！",
+    "fileKey": "Agr_Reader_1.9.5.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.9.5.apk"
 }

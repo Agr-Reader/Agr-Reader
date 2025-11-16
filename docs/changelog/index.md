@@ -1,4 +1,7 @@
 
+## 1.9.5(2025.11.15)
+- feature: Added an account system. Users can now register/log in to bind their Pro membership. By logging in with the same account across multiple devices, the Pro membership will sync automatically. More sync features will be supported in future updates!
+
 ## 1.9.3(2025.09.07)
 - fix: Fixed issue where FreshRSS could not sync
 
