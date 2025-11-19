@@ -10,7 +10,7 @@ If you encounter any issues or have suggestions, feel free to join the discussio
 ## Contact
 Email: Lowae@agrreader.xyz
 
-Telegram Group: [@agrreader](https://t.me/agrreader)
+<!-- Telegram Group: [@agrreader](https://t.me/agrreader) -->
 
 ## RSS Feed Sources
 
