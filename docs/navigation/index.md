@@ -8,7 +8,7 @@ If you encounter any issues or have suggestions, feel free to join the discussio
 [https://github.com/Agr-Reader/Agr-Reader/issues](https://github.com/Agr-Reader/Agr-Reader/issues)
 
 ## Contact
-Email: Lowae@agrreader.xyz
+Email: Lowae@agrreader.com
 
 <!-- Telegram Group: [@agrreader](https://t.me/agrreader) -->
 
