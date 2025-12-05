@@ -3,7 +3,7 @@ const changelog = `- feature: AI功能优化，开放支持自定义Url；支持
 - optimize: AI摘要支持流式输出
 - optimize: 优化RSS订阅页面，优化拉取功能`;
 
-const versionName = "1.11.0";
+const versionName = "1.11.1";
 const versionCode = 101011000;
 
 console.log(

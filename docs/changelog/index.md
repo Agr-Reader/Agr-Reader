@@ -1,5 +1,5 @@
 
-## 1.11.0(2025.12.05)
+## 1.11.1(2025.12.05)
 - feature: AI feature optimization, new support for more providers, open custom URLs, support custom Prompt
 - feature: Added Spanish, Italian, Portuguese
 - optimize: AI summary supports streaming output, reducing summarization time
