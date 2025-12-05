@@ -1,7 +1,10 @@
-const changelog = `- feature: 新增账号系统，用户可以注册/登录账号以绑定Pro会员，多设备间只需要登录同一账号即可同步Pro会员，更多同步功能将在后续支持！`;
+const changelog = `- feature: AI功能优化，开放支持自定义Url；支持自定义Prompt
+- feature: 增加多语言文本
+- optimize: AI摘要支持流式输出
+- optimize: 优化RSS订阅页面，优化拉取功能`;
 
-const versionName = "1.10.0";
-const versionCode = 101010000;
+const versionName = "1.11.0";
+const versionCode = 101011000;
 
 console.log(
   JSON.stringify({

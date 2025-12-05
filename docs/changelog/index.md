@@ -1,4 +1,10 @@
 
+## 1.11.0(2025.12.05)
+- feature: AI feature optimization, new support for more providers, open custom URLs, support custom Prompt
+- feature: Added Spanish, Italian, Portuguese
+- optimize: AI summary supports streaming output, reducing summarization time
+- optimize: Optimized RSS subscription page, optimized fetching function
+
 ## 1.10.0(2025.11.15)
 - feature: Added an account system. Users can now register/log in to bind their Pro membership. By logging in with the same account across multiple devices, the Pro membership will sync automatically. More sync features will be supported in future updates!
 
