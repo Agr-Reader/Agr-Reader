@@ -1,4 +1,8 @@
 
+## 1.11.2(2025.12.15)
+- feature: Adapted for Android 16
+- fix: Fixed some issues
+
 ## 1.11.1(2025.12.05)
 - feature: AI feature optimization, new support for more providers, open custom URLs, support custom Prompt
 - feature: Added Spanish, Italian, Portuguese

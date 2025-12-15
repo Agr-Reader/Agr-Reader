@@ -1,7 +1,7 @@
 {
-    "versionName": "1.11.1",
-    "versionCode": 101011001,
-    "changelog": "- feature: AI功能优化，开放支持自定义Url；支持自定义Prompt\n- feature: 增加多语言文本\n- optimize: AI摘要支持流式输出\n- optimize: 优化RSS订阅页面，优化拉取功能",
-    "fileKey": "Agr_Reader_1.11.1.apk",
-    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.11.1.apk"
+    "versionName": "1.11.2",
+    "versionCode": 101011002,
+    "changelog": "- feature: 适配Android 16\n- fix: 修复部分问题",
+    "fileKey": "Agr_Reader_1.11.2.apk",
+    "url": "https://www.agrreader.xyz/resources/Agr_Reader_1.11.2.apk"
 }

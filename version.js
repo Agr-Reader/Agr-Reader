@@ -1,10 +1,8 @@
-const changelog = `- feature: AI功能优化，开放支持自定义Url；支持自定义Prompt
-- feature: 增加多语言文本
-- optimize: AI摘要支持流式输出
-- optimize: 优化RSS订阅页面，优化拉取功能`;
+const changelog = `- feature: 适配Android 16
+- fix: 修复部分问题`;
 
-const versionName = "1.11.1";
-const versionCode = 101011000;
+const versionName = "1.11.2";
+const versionCode = 101011002;
 
 console.log(
   JSON.stringify({
