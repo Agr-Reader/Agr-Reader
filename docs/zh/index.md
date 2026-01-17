@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 立即下载(V1.11.2)
-      link: https://resource.agrreader.com/f/ZGuY/Agr_Reader_1.11.2.apk
+      link: https://resource.agrreader.com/f/rzIl/Agr_Reader_1.11.2.apk
     - theme: alt
       text: 导航
       link: /navigation/index
