@@ -1,53 +1,197 @@
 :root {
-    --vp-c-brand-1: #63A002;
-    --vp-c-brand-2: #85976E;
-    --vp-c-brand-3: #4D9D98;
+  --vp-c-brand-1: #63a002;
+  --vp-c-brand-2: #85976e;
+  --vp-c-brand-3: #4d9d98;
 
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #4D9D98, #BBF293, #63A002);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #4d9d98,
+    #bbf293,
+    #63a002
+  );
 
-    /* 图标背景 */
-    --vp-home-hero-image-background-image: radial-gradient(#bbf2939c 40%, #bbecea9f 10%);
-    --vp-home-hero-image-filter: blur(100px);
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: radial-gradient(
+    #bbf2939c 40%,
+    #bbecea9f 10%
+  );
+  --vp-home-hero-image-filter: blur(100px);
 
+  --agr-download-border: #2f3a3f;
+  --agr-download-text: #1e2c30;
+  --agr-download-muted: #7b8b91;
+  --agr-download-bg: #ffffff;
+  --agr-download-shadow: rgba(25, 34, 38, 0.08);
+  --agr-download-hover: rgba(99, 160, 2, 0.12);
 }
 
 .medium-zoom-overlay {
-    z-index: 30;
+  z-index: 30;
 }
 
 .medium-zoom-image {
-    z-index: 31;
+  z-index: 31;
 }
 
 .horizontal-scroll {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 36px;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 36px;
 }
 
 .horizontal-scroll img {
-    max-height: 400px;
-    /* Adjust the height as needed */
-    margin-right: 16px;
-    /* Space between images */
+  max-height: 400px;
+  /* Adjust the height as needed */
+  margin-right: 16px;
+  /* Space between images */
 }
 
 .horizontal-scroll img:last-child {
-    margin-right: 0;
-    /* No margin for the last image */
+  margin-right: 0;
+  /* No margin for the last image */
 }
 
 .image_screenshot {
-    border-radius: 16px;
-    box-shadow: 0 12px 48px rgba(17, 16, 62, .12);
-    cursor: pointer;
-    transform: scale(1);
-    transition: all .3s ease-in-out;
-    width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 48px rgba(17, 16, 62, 0.12);
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
 }
-.contact_container{
-    display: flex;
-    gap: 24px;
+.contact_container {
+  display: flex;
+  gap: 24px;
+}
+
+.VPHomeHero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  justify-content: center;
+  max-width: 760px;
+}
+
+.VPHomeHero.has-image .actions {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.VPHomeHero .action {
+  flex: 0 1 220px;
+  max-width: 220px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  .VPHomeHero .action {
+    flex: 1 1 180px;
+    max-width: 220px;
+  }
+
+
+}
+
+.VPHomeHero .VPButton.download,
+.VPHomeHero .VPButton.download-cn,
+.VPHomeHero .VPButton[class*="download-"] {
+  position: relative;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 18px 0 64px;
+  border-radius: 16px;
+  border: 2px solid var(--agr-download-border);
+  background: var(--agr-download-bg);
+  color: var(--agr-download-text);
+  text-align: left;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: normal;
+  box-shadow: 0 6px 16px var(--agr-download-shadow);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.VPHomeHero .VPButton.download:hover,
+.VPHomeHero .VPButton.download-cn:hover,
+.VPHomeHero .VPButton[class*="download-"]:hover {
+  transform: translateY(-1px);
+  border-color: var(--vp-c-brand-1);
+  background-color: var(--agr-download-hover);
+  box-shadow: 0 10px 22px rgba(25, 34, 38, 0.12);
+}
+
+.VPHomeHero .VPButton.download:active,
+.VPHomeHero .VPButton.download-cn:active,
+.VPHomeHero .VPButton[class*="download-"]:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(25, 34, 38, 0.1);
+}
+
+.VPHomeHero .VPButton.download .download-icon,
+.VPHomeHero .VPButton.download-cn .download-icon,
+.VPHomeHero .VPButton[class*="download-"] .download-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  border: 2px solid var(--agr-download-border);
+  background-color: #f9fbfb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.VPHomeHero .VPButton.download .download-icon img,
+.VPHomeHero .VPButton.download-cn .download-icon img,
+.VPHomeHero .VPButton[class*="download-"] .download-icon img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
+.VPHomeHero .VPButton.download .subtitle,
+.VPHomeHero .VPButton.download-cn .subtitle,
+.VPHomeHero .VPButton[class*="download-"] .subtitle {
+  color: var(--agr-download-muted);
+  letter-spacing: 0.2px;
+}
+
+.VPHomeHero .download-extra {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  text-align: center;
+}
+
+.VPHomeHero .download-extra a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ProductHunt-badge {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+@media (max-width: 960px) {
+  .ProductHunt-badge {
+    align-items: center;
+    justify-content: center;
+  }
 }

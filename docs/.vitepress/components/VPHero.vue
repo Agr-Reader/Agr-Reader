@@ -5,9 +5,13 @@ import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vu
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 
 export interface HeroAction {
-    theme?: 'brand' | 'alt' | 'google'
+    theme?: string
     text: string
+    subtitle?: string
     link: string
+    icon?: string
+    iconAlt?: string
+    iconHtml?: string
     target?: string
     rel?: string
 }
@@ -30,7 +34,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
             <div class="main">
                 <slot name="home-hero-info-before" />
                 <a href="https://www.producthunt.com/products/agr-reader?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-agr&#0045;reader"
-                    target="_blank"><img
+                    target="_blank" class="ProductHunt-badge"><img
                         src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1011330&theme=light&t=1756642981749"
                         alt="Agr&#0032;Reader - Material3&#0046;&#0032;Concise&#0046;&#0032;Graceful&#0046;&#0032;RSS&#0032;Reader | Product Hunt"
                         style="width: 250px; height: 54px; margin-bottom: 8px;" width="250" height="54" /></a>
@@ -42,16 +46,17 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
                     <h3 v-if="tagline" v-html="tagline" class="tagline"></h3>
                 </slot>
                 <slot name="home-hero-info-after" />
-
                 <div v-if="actions" class="actions" style="align-items: center;">
                     <div v-for="action in actions" :key="action.link" class="action">
-                        <VPButton tag="a" size="medium" :theme="action.theme" :text="action.text" :href="action.link"
-                            :target="action.target" :rel="action.rel" />
+                        <VPButton tag="a" size="medium" :theme="action.theme" :text="action.text"
+                            :subtitle="action.subtitle" :href="action.link" :icon="action.icon"
+                            :iconAlt="action.iconAlt" :iconHtml="action.iconHtml" :target="action.target"
+                            :rel="action.rel" />
                     </div>
                 </div>
-                <a v-if="actions?.[0].theme === 'google'" href="/zh"
-                    style="text-decoration: underline; margin-left: 6px; color: var(--vp-c-text-2); font-size: 14px; font-weight: 400;">
-                    {{ actions[0].text }}
+                <a v-if="actions?.[0].text === 'Google Play'" href="/zh"
+                    style="text-decoration: underline; margin-left: 2px; color: var(--vp-c-text-2); font-size: 14px; font-weight: 400;">
+                    中国用户可前往此处下载
                 </a>
                 <slot name="home-hero-actions-after" />
             </div>

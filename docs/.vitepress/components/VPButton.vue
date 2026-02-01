@@ -6,8 +6,12 @@ import { EXTERNAL_URL_RE } from 'vitepress/dist/client/shared'
 interface Props {
   tag?: string
   size?: 'medium' | 'big'
-  theme?: 'brand' | 'alt' | 'sponsor' | 'google'
+  theme?: string
   text: string
+  subtitle?: string
+  icon?: string
+  iconAlt?: string
+  iconHtml?: string
   href?: string
   target?: string;
   rel?: string;
@@ -24,6 +28,22 @@ const isExternal = computed(
 const component = computed(() => {
   return props.tag || props.href ? 'a' : 'button'
 })
+
+const isDownloadTheme = computed(() => {
+  const theme = props.theme ?? ''
+  return theme === 'download' || theme === 'download-cn' || theme.startsWith('download-')
+})
+
+const fallbackDownloadIcon =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f3a3f' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v10'/%3E%3Cpath d='M8 10l4 4 4-4'/%3E%3Cpath d='M5 18h14'/%3E%3C/svg%3E"
+
+const resolvedIcon = computed(() => {
+  if (props.iconHtml) return ''
+  if (props.icon) return props.icon
+  if (isDownloadTheme.value) return fallbackDownloadIcon
+  if (props.theme === 'brand') return '/logo.png'
+  return ''
+})
 </script>
 
 <template>
@@ -35,8 +55,16 @@ const component = computed(() => {
   <component v-else :is="component" class="VPButton" :class="[size, theme]"
     :href="href ? normalizeLink(href) : undefined" :target="props.target ?? (isExternal ? '_blank' : undefined)"
     :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.11.2.apk' : undefined">
-    <img v-if="theme === 'brand'" src="/logo.png" alt="Icon" class="icon">
-    <span class="text">{{ text }}</span>
+    <span v-if="isDownloadTheme && props.iconHtml" class="download-icon icon-svg" aria-hidden="true" v-html="props.iconHtml"></span>
+    <span v-else-if="isDownloadTheme && resolvedIcon" class="download-icon" aria-hidden="true">
+      <img :src="resolvedIcon" :alt="props.iconAlt ?? ''">
+    </span>
+    <span v-else-if="props.iconHtml" class="icon icon-svg" aria-hidden="true" v-html="props.iconHtml"></span>
+    <img v-else-if="resolvedIcon" :src="resolvedIcon" :alt="props.iconAlt ?? ''" class="icon">
+    <span class="content">
+      <span v-if="props.subtitle" class="subtitle">{{ props.subtitle }}</span>
+      <span class="text">{{ text }}</span>
+    </span>
   </component>
 </template>
 
@@ -64,6 +92,37 @@ const component = computed(() => {
   /* 根据需要调整图片大小 */
   height: 36px;
   vertical-align: middle;
+}
+
+.VPButton .icon-svg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.VPButton .icon-svg :deep(svg) {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.VPButton .content {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.VPButton .subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  line-height: 1.2;
+}
+
+.VPButton .download-icon.icon-svg :deep(svg) {
+  width: 18px;
+  height: 18px;
 }
 
 .VPButton:active {
