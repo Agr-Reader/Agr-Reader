@@ -54,7 +54,7 @@ const resolvedIcon = computed(() => {
   </component>
   <component v-else :is="component" class="VPButton" :class="[size, theme]"
     :href="href ? normalizeLink(href) : undefined" :target="props.target ?? (isExternal ? '_blank' : undefined)"
-    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)" :download="theme === 'brand' ? 'Agr_Reader_1.11.2.apk' : undefined">
+    :rel="props.rel ?? (isExternal ? 'noreferrer' : undefined)">
     <span v-if="isDownloadTheme && props.iconHtml" class="download-icon icon-svg" aria-hidden="true" v-html="props.iconHtml"></span>
     <span v-else-if="isDownloadTheme && resolvedIcon" class="download-icon" aria-hidden="true">
       <img :src="resolvedIcon" :alt="props.iconAlt ?? ''">

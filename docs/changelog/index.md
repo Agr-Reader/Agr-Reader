@@ -1,4 +1,13 @@
 
+## 1.12.1(2026.02.01)
+- Desktop Version Official Launch: Now available on Windows and Linux. macOS support is coming soon.
+- Language Settings: Added new language options. You can now manually switch the App Interface language, AI-generated content language, and Translation language.
+- Reading Page: Expanded the functionality of the Content Source toggle.
+  - Tap to switch between "Content Summary" and "Full-Text Analysis."
+  - Long-press to switch to "Embedded Webpage."
+- Optimizations: Improved the full-text parsing for specific subscription sources.
+- Bug Fixes: Resolved an issue where the "read" status of articles was not displaying correctly in Tablet Mode.
+
 ## 1.11.2(2025.12.15)
 - feature: Adapted for Android 16
 - fix: Fixed some issues
