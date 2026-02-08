@@ -2,12 +2,7 @@
 👉[Agr Reader 使用教程](/zh/navigation/how-to-use)
 
 ## 问题反馈
-任何问题或者想法欢迎在下面用户反馈中交流~
-
-[https://support.qq.com/products/606839](https://support.qq.com/products/606839)
-
-或者在Github中直接提issue也可
-
+任何问题或者想法欢迎提issue或邮件联系~
 [https://github.com/Agr-Reader/Agr-Reader/issues](https://github.com/Agr-Reader/Agr-Reader/issues)
 
 ## 联系方式
