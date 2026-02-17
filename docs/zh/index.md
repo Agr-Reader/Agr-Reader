@@ -60,6 +60,7 @@ features:
 
 ## 截图
 <div class="horizontal-scroll">
+  <img src="/screenshots/mobile_cover.webp" alt="Android" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/desktop_cover.webp" alt="Windows/Linux/Macos" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/1.webp" alt="简洁而又优美的Material3风格，各种主题随心选择" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/2.webp" alt="强力且有效的网页全文解析" data-zoomable class="image_screenshot medium-zoom-image">

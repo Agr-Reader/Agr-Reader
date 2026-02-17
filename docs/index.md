@@ -62,6 +62,7 @@ features:
 
 ## Screenshots
 <div class="horizontal-scroll">
+  <img src="/screenshots/mobile_cover.webp" alt="Android" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/desktop_cover.webp" alt="Windows/Linux/Macos" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/en/1.webp" alt="Elegant Material3 Design with Customizable Themes" data-zoomable class="image_screenshot medium-zoom-image">
   <img src="/screenshots/en/2.webp" alt="Powerful Full-text Parsing" data-zoomable class="image_screenshot medium-zoom-image">
