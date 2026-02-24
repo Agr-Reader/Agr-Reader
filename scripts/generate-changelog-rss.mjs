@@ -1,8 +1,10 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createMarkdownRenderer } from 'vitepress'
 
-const SITE_URL = 'https://www.agrreader.xyz'
+const SITE_URL = 'https://www.agrreader.com'
+const MAX_ITEMS = 50
 
 const FEED_CONFIGS = [
   {
@@ -27,6 +29,7 @@ const FEED_CONFIGS = [
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url))
 const ROOT_DIR = path.resolve(SCRIPT_DIR, '..')
+const DOCS_DIR = path.resolve(ROOT_DIR, 'docs')
 
 function parseHeading(headingText) {
   const headingWithDate = headingText.match(/^([^\s(（]+)\s*[\(（]([^)）]+)[\)）]\s*$/)
@@ -126,7 +129,7 @@ function parseEntries(markdownText) {
 }
 
 function escapeXml(value) {
-  return value
+  return String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
@@ -138,7 +141,21 @@ function toAbsoluteUrl(relativePath) {
   return `${SITE_URL}${relativePath}`
 }
 
-function buildFeedXml(config, entries) {
+function toCData(value) {
+  return `<![CDATA[${value.replaceAll(']]>', ']]]]><![CDATA[>')}]]>`
+}
+
+function toDescriptionHtml(markdownRenderer, entry) {
+  const markdownBody = entry.description || entry.heading
+  const html = markdownRenderer.render(markdownBody).trim()
+  if (html.length > 0) {
+    return html
+  }
+
+  return `<p>${escapeXml(entry.heading)}</p>`
+}
+
+function buildFeedXml(config, entries, markdownRenderer) {
   const now = new Date()
   const lastBuildDate = entries.find((entry) => entry.publishedAt)?.publishedAt ?? now
   const channelLink = toAbsoluteUrl(config.channelPath)
@@ -146,7 +163,7 @@ function buildFeedXml(config, entries) {
 
   const itemsXml = entries.map((entry) => {
     const title = entry.dateText ? `${entry.version} (${entry.dateText})` : entry.version
-    const descriptionText = entry.description || entry.heading
+    const descriptionHtml = toDescriptionHtml(markdownRenderer, entry)
     const guid = `${channelLink}#${encodeURIComponent(entry.version)}`
     const pubDateXml = entry.publishedAt
       ? `\n      <pubDate>${entry.publishedAt.toUTCString()}</pubDate>`
@@ -156,12 +173,13 @@ function buildFeedXml(config, entries) {
       <title>${escapeXml(title)}</title>
       <link>${escapeXml(channelLink)}</link>
       <guid isPermaLink="false">${escapeXml(guid)}</guid>${pubDateXml}
-      <description>${escapeXml(descriptionText)}</description>
+      <description>${toCData(descriptionHtml)}</description>
+      <content:encoded>${toCData(descriptionHtml)}</content:encoded>
     </item>`
   }).join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>${escapeXml(config.title)}</title>
     <link>${escapeXml(channelLink)}</link>
@@ -175,12 +193,12 @@ ${itemsXml}
 `
 }
 
-async function generateSingleFeed(config) {
+async function generateSingleFeed(config, markdownRenderer) {
   const sourceFile = path.resolve(ROOT_DIR, config.sourcePath)
   const outputFile = path.resolve(ROOT_DIR, config.outputPath)
   const sourceMarkdown = await readFile(sourceFile, 'utf8')
-  const entries = parseEntries(sourceMarkdown)
-  const rssXml = buildFeedXml(config, entries)
+  const entries = parseEntries(sourceMarkdown).slice(0, MAX_ITEMS)
+  const rssXml = buildFeedXml(config, entries, markdownRenderer)
 
   await mkdir(path.dirname(outputFile), { recursive: true })
   await writeFile(outputFile, rssXml, 'utf8')
@@ -188,7 +206,8 @@ async function generateSingleFeed(config) {
 }
 
 async function main() {
-  const results = await Promise.all(FEED_CONFIGS.map(generateSingleFeed))
+  const markdownRenderer = await createMarkdownRenderer(DOCS_DIR)
+  const results = await Promise.all(FEED_CONFIGS.map((config) => generateSingleFeed(config, markdownRenderer)))
   for (const result of results) {
     const relativePath = path.relative(ROOT_DIR, result.outputFile)
     console.log(`[rss] generated ${relativePath} (${result.itemCount} items)`)

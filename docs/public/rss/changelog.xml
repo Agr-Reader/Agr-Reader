@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Agr Reader Changelog</title>
     <link>https://www.agrreader.xyz/changelog/index</link>
@@ -12,649 +12,1272 @@
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.13.0</guid>
       <pubDate>Tue, 24 Feb 2026 00:00:00 GMT</pubDate>
-      <description>- New Features:
-  - Added support for more account providers, including Feedly email login, Feedbin username/password login, and BazQux.
-  - Added support for Alibaba Qwen and OpenRouter as AI provider options.
-  - Added a setting to adjust article list elevation for a more personalized reading look.
-- Improvements:
-  - Improved initial article rendering speed for a faster reading start.
-  - Improved content-source switching so immersive translation continues more reliably.
-  - Improved translation output by excluding AI summary text from translation.
-- Bug Fixes:
-  - Fixed Feedly subscription flow reliability issues.
-  - Fixed Feedbin subtitle parsing errors.
-  - Fixed incorrect default language behavior for AI summaries.</description>
+      <description><![CDATA[<ul>
+<li>New Features:
+<ul>
+<li>Added support for more account providers, including Feedly email login, Feedbin username/password login, and BazQux.</li>
+<li>Added support for Alibaba Qwen and OpenRouter as AI provider options.</li>
+<li>Added a setting to adjust article list elevation for a more personalized reading look.</li>
+</ul>
+</li>
+<li>Improvements:
+<ul>
+<li>Improved initial article rendering speed for a faster reading start.</li>
+<li>Improved content-source switching so immersive translation continues more reliably.</li>
+<li>Improved translation output by excluding AI summary text from translation.</li>
+</ul>
+</li>
+<li>Bug Fixes:
+<ul>
+<li>Fixed Feedly subscription flow reliability issues.</li>
+<li>Fixed Feedbin subtitle parsing errors.</li>
+<li>Fixed incorrect default language behavior for AI summaries.</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>New Features:
+<ul>
+<li>Added support for more account providers, including Feedly email login, Feedbin username/password login, and BazQux.</li>
+<li>Added support for Alibaba Qwen and OpenRouter as AI provider options.</li>
+<li>Added a setting to adjust article list elevation for a more personalized reading look.</li>
+</ul>
+</li>
+<li>Improvements:
+<ul>
+<li>Improved initial article rendering speed for a faster reading start.</li>
+<li>Improved content-source switching so immersive translation continues more reliably.</li>
+<li>Improved translation output by excluding AI summary text from translation.</li>
+</ul>
+</li>
+<li>Bug Fixes:
+<ul>
+<li>Fixed Feedly subscription flow reliability issues.</li>
+<li>Fixed Feedbin subtitle parsing errors.</li>
+<li>Fixed incorrect default language behavior for AI summaries.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.12.1 (2026.02.01)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.12.1</guid>
       <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
-      <description>- Desktop Version Official Launch: Now available on Windows and Linux. macOS support is coming soon.
-- Language Settings: Added new language options. You can now manually switch the App Interface language, AI-generated content language, and Translation language.
-- Reading Page: Expanded the functionality of the Content Source toggle.
-  - Tap to switch between &quot;Content Summary&quot; and &quot;Full-Text Analysis.&quot;
-  - Long-press to switch to &quot;Embedded Webpage.&quot;
-- Optimizations: Improved the full-text parsing for specific subscription sources.
-- Bug Fixes: Resolved an issue where the &quot;read&quot; status of articles was not displaying correctly in Tablet Mode.</description>
+      <description><![CDATA[<ul>
+<li>Desktop Version Official Launch: Now available on Windows and Linux. macOS support is coming soon.</li>
+<li>Language Settings: Added new language options. You can now manually switch the App Interface language, AI-generated content language, and Translation language.</li>
+<li>Reading Page: Expanded the functionality of the Content Source toggle.
+<ul>
+<li>Tap to switch between &quot;Content Summary&quot; and &quot;Full-Text Analysis.&quot;</li>
+<li>Long-press to switch to &quot;Embedded Webpage.&quot;</li>
+</ul>
+</li>
+<li>Optimizations: Improved the full-text parsing for specific subscription sources.</li>
+<li>Bug Fixes: Resolved an issue where the &quot;read&quot; status of articles was not displaying correctly in Tablet Mode.</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>Desktop Version Official Launch: Now available on Windows and Linux. macOS support is coming soon.</li>
+<li>Language Settings: Added new language options. You can now manually switch the App Interface language, AI-generated content language, and Translation language.</li>
+<li>Reading Page: Expanded the functionality of the Content Source toggle.
+<ul>
+<li>Tap to switch between &quot;Content Summary&quot; and &quot;Full-Text Analysis.&quot;</li>
+<li>Long-press to switch to &quot;Embedded Webpage.&quot;</li>
+</ul>
+</li>
+<li>Optimizations: Improved the full-text parsing for specific subscription sources.</li>
+<li>Bug Fixes: Resolved an issue where the &quot;read&quot; status of articles was not displaying correctly in Tablet Mode.</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.11.2 (2025.12.15)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.11.2</guid>
       <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
-      <description>- feature: Adapted for Android 16
-- fix: Fixed some issues</description>
+      <description><![CDATA[<ul>
+<li>feature: Adapted for Android 16</li>
+<li>fix: Fixed some issues</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Adapted for Android 16</li>
+<li>fix: Fixed some issues</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.11.1 (2025.12.05)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.11.1</guid>
       <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
-      <description>- feature: AI feature optimization, new support for more providers, open custom URLs, support custom Prompt
-- feature: Added Spanish, Italian, Portuguese
-- optimize: AI summary supports streaming output, reducing summarization time
-- optimize: Optimized RSS subscription page, optimized fetching function</description>
+      <description><![CDATA[<ul>
+<li>feature: AI feature optimization, new support for more providers, open custom URLs, support custom Prompt</li>
+<li>feature: Added Spanish, Italian, Portuguese</li>
+<li>optimize: AI summary supports streaming output, reducing summarization time</li>
+<li>optimize: Optimized RSS subscription page, optimized fetching function</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: AI feature optimization, new support for more providers, open custom URLs, support custom Prompt</li>
+<li>feature: Added Spanish, Italian, Portuguese</li>
+<li>optimize: AI summary supports streaming output, reducing summarization time</li>
+<li>optimize: Optimized RSS subscription page, optimized fetching function</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.10.0 (2025.11.15)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.10.0</guid>
       <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
-      <description>- feature: Added an account system. Users can now register/log in to bind their Pro membership. By logging in with the same account across multiple devices, the Pro membership will sync automatically. More sync features will be supported in future updates!</description>
+      <description><![CDATA[<ul>
+<li>feature: Added an account system. Users can now register/log in to bind their Pro membership. By logging in with the same account across multiple devices, the Pro membership will sync automatically. More sync features will be supported in future updates!</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Added an account system. Users can now register/log in to bind their Pro membership. By logging in with the same account across multiple devices, the Pro membership will sync automatically. More sync features will be supported in future updates!</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.9.3 (2025.09.07)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.9.3</guid>
       <pubDate>Sun, 07 Sep 2025 00:00:00 GMT</pubDate>
-      <description>- fix: Fixed issue where FreshRSS could not sync</description>
+      <description><![CDATA[<ul>
+<li>fix: Fixed issue where FreshRSS could not sync</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>fix: Fixed issue where FreshRSS could not sync</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.9.2 (2025.08.31)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.9.2</guid>
       <pubDate>Sun, 31 Aug 2025 00:00:00 GMT</pubDate>
-      <description>- feature: Add scheduled cleanup for unread articles
-- optimize: Improve swipe sensitivity on the article list page
-- fix: Fix cursor issue in the subscription page input field</description>
+      <description><![CDATA[<ul>
+<li>feature: Add scheduled cleanup for unread articles</li>
+<li>optimize: Improve swipe sensitivity on the article list page</li>
+<li>fix: Fix cursor issue in the subscription page input field</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Add scheduled cleanup for unread articles</li>
+<li>optimize: Improve swipe sensitivity on the article list page</li>
+<li>fix: Fix cursor issue in the subscription page input field</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.9.1 (2025.08.05)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.9.1</guid>
       <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
-      <description>- feature: Added a tip on the reading page to switch content sources when no content is displayed
-- optimize: Improved scrolling experience on the reading page by reducing horizontal swipe sensitivity
-- optimize: Added Google model
-- optimize: Enhanced image preview display on the reading page
-- fix: Fixed issue where content summary option in feed settings was not working</description>
+      <description><![CDATA[<ul>
+<li>feature: Added a tip on the reading page to switch content sources when no content is displayed</li>
+<li>optimize: Improved scrolling experience on the reading page by reducing horizontal swipe sensitivity</li>
+<li>optimize: Added Google model</li>
+<li>optimize: Enhanced image preview display on the reading page</li>
+<li>fix: Fixed issue where content summary option in feed settings was not working</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Added a tip on the reading page to switch content sources when no content is displayed</li>
+<li>optimize: Improved scrolling experience on the reading page by reducing horizontal swipe sensitivity</li>
+<li>optimize: Added Google model</li>
+<li>optimize: Enhanced image preview display on the reading page</li>
+<li>fix: Fixed issue where content summary option in feed settings was not working</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.9.0 (2025.06.29)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.9.0</guid>
       <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
-      <description>- feature: Added AI summary feature; set API model via Interaction -&gt; AI Settings; supports OpenAI/Google/Anthropic API
-- optimize: Added loading effect to reading page title  
-- optimzie: Increased subscription sources to 200 for non-Pro versions</description>
+      <description><![CDATA[<ul>
+<li>feature: Added AI summary feature; set API model via Interaction -&gt; AI Settings; supports OpenAI/Google/Anthropic API</li>
+<li>optimize: Added loading effect to reading page title</li>
+<li>optimzie: Increased subscription sources to 200 for non-Pro versions</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Added AI summary feature; set API model via Interaction -&gt; AI Settings; supports OpenAI/Google/Anthropic API</li>
+<li>optimize: Added loading effect to reading page title</li>
+<li>optimzie: Increased subscription sources to 200 for non-Pro versions</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.8.3 (2025.04.19)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.8.3</guid>
       <pubDate>Sat, 19 Apr 2025 00:00:00 GMT</pubDate>
-      <description>- feature: Add export all favorite articles feature
-- optimize: Support 5/15-minute sync intervals
-- optimize: Optimize &quot;mark all as read&quot; feature
-- fix: Fix some issues that caused crashes</description>
+      <description><![CDATA[<ul>
+<li>feature: Add export all favorite articles feature</li>
+<li>optimize: Support 5/15-minute sync intervals</li>
+<li>optimize: Optimize &quot;mark all as read&quot; feature</li>
+<li>fix: Fix some issues that caused crashes</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Add export all favorite articles feature</li>
+<li>optimize: Support 5/15-minute sync intervals</li>
+<li>optimize: Optimize &quot;mark all as read&quot; feature</li>
+<li>fix: Fix some issues that caused crashes</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.8.1 (2025.02.11)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.8.1</guid>
       <pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate>
-      <description>- Feature: Support for custom input color values in theme switching
-- Feature: Add a guide popup on the first app launch
-- Feature: Support for Russian language
-- Optimize: Mark as read on scroll, compatible with reaching the bottom scenario
-- Optimize: Hide floating button when scrolling on the article list page</description>
+      <description><![CDATA[<ul>
+<li>Feature: Support for custom input color values in theme switching</li>
+<li>Feature: Add a guide popup on the first app launch</li>
+<li>Feature: Support for Russian language</li>
+<li>Optimize: Mark as read on scroll, compatible with reaching the bottom scenario</li>
+<li>Optimize: Hide floating button when scrolling on the article list page</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>Feature: Support for custom input color values in theme switching</li>
+<li>Feature: Add a guide popup on the first app launch</li>
+<li>Feature: Support for Russian language</li>
+<li>Optimize: Mark as read on scroll, compatible with reaching the bottom scenario</li>
+<li>Optimize: Hide floating button when scrolling on the article list page</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.8.0 (2024.12.29)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.8.0</guid>
       <pubDate>Sun, 29 Dec 2024 00:00:00 GMT</pubDate>
-      <description>- feat: RSSHub Agr Reader self-hosted service is now avaliable: rsshub.agrreader.xyz</description>
+      <description><![CDATA[<ul>
+<li>feat: RSSHub Agr Reader self-hosted service is now avaliable: rsshub.agrreader.xyz</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feat: RSSHub Agr Reader self-hosted service is now avaliable: rsshub.agrreader.xyz</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.17 (2024.12.18)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.17</guid>
       <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
-      <description>- fix: Fixed the problem that the unread articles in today&apos;s mode could not be opened</description>
+      <description><![CDATA[<ul>
+<li>fix: Fixed the problem that the unread articles in today's mode could not be opened</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>fix: Fixed the problem that the unread articles in today's mode could not be opened</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.16 (2024.12.9)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.16</guid>
       <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
-      <description>- feature: Added an external browser option for article sources, allowing articles to be opened directly in a custom tab or external browser.
-- opt: Enhanced title deduplication scope, now applies globally.
-- opt: Optimized the text display of subscription settings options in multi-language environments.
-- fix: Fixed the issue where title translation was not working.</description>
+      <description><![CDATA[<ul>
+<li>feature: Added an external browser option for article sources, allowing articles to be opened directly in a custom tab or external browser.</li>
+<li>opt: Enhanced title deduplication scope, now applies globally.</li>
+<li>opt: Optimized the text display of subscription settings options in multi-language environments.</li>
+<li>fix: Fixed the issue where title translation was not working.</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: Added an external browser option for article sources, allowing articles to be opened directly in a custom tab or external browser.</li>
+<li>opt: Enhanced title deduplication scope, now applies globally.</li>
+<li>opt: Optimized the text display of subscription settings options in multi-language environments.</li>
+<li>fix: Fixed the issue where title translation was not working.</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.15 (2024.10.27)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.15</guid>
       <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
-      <description>- feat: Added Japanese language support.
-- fix: Fixed translation options on the subscription adding page.
-- fix: Fixed the issue where title translation was not working.
-- fix: Fixed the issue where WeChat public account images could not be loaded.</description>
+      <description><![CDATA[<ul>
+<li>feat: Added Japanese language support.</li>
+<li>fix: Fixed translation options on the subscription adding page.</li>
+<li>fix: Fixed the issue where title translation was not working.</li>
+<li>fix: Fixed the issue where WeChat public account images could not be loaded.</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feat: Added Japanese language support.</li>
+<li>fix: Fixed translation options on the subscription adding page.</li>
+<li>fix: Fixed the issue where title translation was not working.</li>
+<li>fix: Fixed the issue where WeChat public account images could not be loaded.</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.14 (2024.10.22)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.14</guid>
       <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
-      <description>- feat: Support setting a default initial page (subscription list or article list)
-- feat: Widget supports custom grouping (Pro)
-- feat: Widget supports font size customization
-- feat: Support for Bionic Reading (Pro)
-- opt: Desktop mode now supports 50% split screen ratio
-- fix: Fixed issue where the API did not sync deleted subscriptions
-- fix: Fixed issue where the download icon was not visible in dark mode</description>
+      <description><![CDATA[<ul>
+<li>feat: Support setting a default initial page (subscription list or article list)</li>
+<li>feat: Widget supports custom grouping (Pro)</li>
+<li>feat: Widget supports font size customization</li>
+<li>feat: Support for Bionic Reading (Pro)</li>
+<li>opt: Desktop mode now supports 50% split screen ratio</li>
+<li>fix: Fixed issue where the API did not sync deleted subscriptions</li>
+<li>fix: Fixed issue where the download icon was not visible in dark mode</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feat: Support setting a default initial page (subscription list or article list)</li>
+<li>feat: Widget supports custom grouping (Pro)</li>
+<li>feat: Widget supports font size customization</li>
+<li>feat: Support for Bionic Reading (Pro)</li>
+<li>opt: Desktop mode now supports 50% split screen ratio</li>
+<li>fix: Fixed issue where the API did not sync deleted subscriptions</li>
+<li>fix: Fixed issue where the download icon was not visible in dark mode</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.11 (2024.09.24)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.11</guid>
       <pubDate>Tue, 24 Sep 2024 00:00:00 GMT</pubDate>
-      <description>- opt: Tablet mode adopts a more relaxed strategy, and medium-sized pages are also split-screen.
-- fix: Fixed the issue that the read status is invalid when the article is saved permanently;
-- fix: The filter rule configuration count is not updated</description>
+      <description><![CDATA[<ul>
+<li>opt: Tablet mode adopts a more relaxed strategy, and medium-sized pages are also split-screen.</li>
+<li>fix: Fixed the issue that the read status is invalid when the article is saved permanently;</li>
+<li>fix: The filter rule configuration count is not updated</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>opt: Tablet mode adopts a more relaxed strategy, and medium-sized pages are also split-screen.</li>
+<li>fix: Fixed the issue that the read status is invalid when the article is saved permanently;</li>
+<li>fix: The filter rule configuration count is not updated</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.10 (2024.09.21)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.10</guid>
       <pubDate>Sat, 21 Sep 2024 00:00:00 GMT</pubDate>
-      <description>- feat: Tablet mode supports adaptive switching
-- feat: Multi-language adaptation, supports French and German
-- fix: Fixed some crash issues
-- opt: Optimize keyword filtering interaction style</description>
+      <description><![CDATA[<ul>
+<li>feat: Tablet mode supports adaptive switching</li>
+<li>feat: Multi-language adaptation, supports French and German</li>
+<li>fix: Fixed some crash issues</li>
+<li>opt: Optimize keyword filtering interaction style</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feat: Tablet mode supports adaptive switching</li>
+<li>feat: Multi-language adaptation, supports French and German</li>
+<li>fix: Fixed some crash issues</li>
+<li>opt: Optimize keyword filtering interaction style</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.9 (2024.09.01)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.9</guid>
       <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
-      <description>- feat: 文章列表支持调整标题字号
-- fix: 修复Webdav配置问题
-- fix: 修复低版本Android设置语言失效的问题</description>
+      <description><![CDATA[<ul>
+<li>feat: 文章列表支持调整标题字号</li>
+<li>fix: 修复Webdav配置问题</li>
+<li>fix: 修复低版本Android设置语言失效的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feat: 文章列表支持调整标题字号</li>
+<li>fix: 修复Webdav配置问题</li>
+<li>fix: 修复低版本Android设置语言失效的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.8 (2024.08.24)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.8</guid>
       <pubDate>Sat, 24 Aug 2024 00:00:00 GMT</pubDate>
-      <description>- fix: 文章列表标题空格变成+号问题
-- fix: 分享文章闪退
-- fix: 滚动标记已读选项消失
-- fix: Webdav已配置但是未展示配置信息
-- fix: 翻译设置中不展示目标语言
-- fix: 部分文案展示不正常
-- fix: 回退预测性返回</description>
+      <description><![CDATA[<ul>
+<li>fix: 文章列表标题空格变成+号问题</li>
+<li>fix: 分享文章闪退</li>
+<li>fix: 滚动标记已读选项消失</li>
+<li>fix: Webdav已配置但是未展示配置信息</li>
+<li>fix: 翻译设置中不展示目标语言</li>
+<li>fix: 部分文案展示不正常</li>
+<li>fix: 回退预测性返回</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>fix: 文章列表标题空格变成+号问题</li>
+<li>fix: 分享文章闪退</li>
+<li>fix: 滚动标记已读选项消失</li>
+<li>fix: Webdav已配置但是未展示配置信息</li>
+<li>fix: 翻译设置中不展示目标语言</li>
+<li>fix: 部分文案展示不正常</li>
+<li>fix: 回退预测性返回</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.7 (2024.08.18)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.7</guid>
       <pubDate>Sun, 18 Aug 2024 00:00:00 GMT</pubDate>
-      <description>- feature: 支持Android 14预测性返回特性
-- feature: DeepLX支持自定义接口地址
-- feature: 支持对单个订阅源下拉刷新
-- fix: 修复订阅源无文章时无法下拉刷新的问题
-- fix: 修复无法导入字体问题
-- fix: 移除Google Reader API 2000条数量限制
-- fix: 修复部分导致闪退的问题
-- refactor: 底层逻辑继续迁移中...</description>
+      <description><![CDATA[<ul>
+<li>feature: 支持Android 14预测性返回特性</li>
+<li>feature: DeepLX支持自定义接口地址</li>
+<li>feature: 支持对单个订阅源下拉刷新</li>
+<li>fix: 修复订阅源无文章时无法下拉刷新的问题</li>
+<li>fix: 修复无法导入字体问题</li>
+<li>fix: 移除Google Reader API 2000条数量限制</li>
+<li>fix: 修复部分导致闪退的问题</li>
+<li>refactor: 底层逻辑继续迁移中...</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: 支持Android 14预测性返回特性</li>
+<li>feature: DeepLX支持自定义接口地址</li>
+<li>feature: 支持对单个订阅源下拉刷新</li>
+<li>fix: 修复订阅源无文章时无法下拉刷新的问题</li>
+<li>fix: 修复无法导入字体问题</li>
+<li>fix: 移除Google Reader API 2000条数量限制</li>
+<li>fix: 修复部分导致闪退的问题</li>
+<li>refactor: 底层逻辑继续迁移中...</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.6 (2024.07.22)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.6</guid>
       <pubDate>Mon, 22 Jul 2024 00:00:00 GMT</pubDate>
-      <description>- feature: 新增The Old Reader接入，以及RSS服务接入指南
-- feature: 全部已读按钮位置支持自定义
-- feature: 增加标题去重，使用jaccard相似性算法
-- feature: 小组件增加更新订阅源按钮
-- fix: 修复平板模式下标记当前选中文章为未读时失效的问题
-- fix: 修复Api接入证书校验问题
-- refactor: 部分底层逻辑重构以迁移Desktop端
-
-&lt;img src=/images/desktop_screenshot.png width=88% /&gt;</description>
+      <description><![CDATA[<ul>
+<li>feature: 新增The Old Reader接入，以及RSS服务接入指南</li>
+<li>feature: 全部已读按钮位置支持自定义</li>
+<li>feature: 增加标题去重，使用jaccard相似性算法</li>
+<li>feature: 小组件增加更新订阅源按钮</li>
+<li>fix: 修复平板模式下标记当前选中文章为未读时失效的问题</li>
+<li>fix: 修复Api接入证书校验问题</li>
+<li>refactor: 部分底层逻辑重构以迁移Desktop端</li>
+</ul>
+<img src=/images/desktop_screenshot.png width=88% />]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: 新增The Old Reader接入，以及RSS服务接入指南</li>
+<li>feature: 全部已读按钮位置支持自定义</li>
+<li>feature: 增加标题去重，使用jaccard相似性算法</li>
+<li>feature: 小组件增加更新订阅源按钮</li>
+<li>fix: 修复平板模式下标记当前选中文章为未读时失效的问题</li>
+<li>fix: 修复Api接入证书校验问题</li>
+<li>refactor: 部分底层逻辑重构以迁移Desktop端</li>
+</ul>
+<img src=/images/desktop_screenshot.png width=88% />]]></content:encoded>
     </item>
     <item>
       <title>1.7.4 (2024.06.22)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.4</guid>
       <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
-      <description>- feature: 桌面组件支持列表滚动
-- fix: 修复桌面组件跳转文章阅读页闪退的问题
-- fix: 修复从桌面组件多次打开文章时文章加载失败的问题</description>
+      <description><![CDATA[<ul>
+<li>feature: 桌面组件支持列表滚动</li>
+<li>fix: 修复桌面组件跳转文章阅读页闪退的问题</li>
+<li>fix: 修复从桌面组件多次打开文章时文章加载失败的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: 桌面组件支持列表滚动</li>
+<li>fix: 修复桌面组件跳转文章阅读页闪退的问题</li>
+<li>fix: 修复从桌面组件多次打开文章时文章加载失败的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.3 (2024.06.11)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.3</guid>
       <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
-      <description>- feature: 阅读页增加TTS功能
-- feature: 增加内嵌网页强制深色模式（实验功能）
-  - 设置-&gt;显示中开启
-- feature: 平板模式下首页侧边栏默认展开与订阅源列表同屏
-- opt: 优化文字列表左右滑动效果
-- fix: 修复部分场景图片下载失败的问题
-- fix: 修复部分机型下载按钮消失的兼容性问题
-- fix: 修复FreshRss Api闪退的问题</description>
+      <description><![CDATA[<ul>
+<li>feature: 阅读页增加TTS功能</li>
+<li>feature: 增加内嵌网页强制深色模式（实验功能）
+<ul>
+<li>设置-&gt;显示中开启</li>
+</ul>
+</li>
+<li>feature: 平板模式下首页侧边栏默认展开与订阅源列表同屏</li>
+<li>opt: 优化文字列表左右滑动效果</li>
+<li>fix: 修复部分场景图片下载失败的问题</li>
+<li>fix: 修复部分机型下载按钮消失的兼容性问题</li>
+<li>fix: 修复FreshRss Api闪退的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: 阅读页增加TTS功能</li>
+<li>feature: 增加内嵌网页强制深色模式（实验功能）
+<ul>
+<li>设置-&gt;显示中开启</li>
+</ul>
+</li>
+<li>feature: 平板模式下首页侧边栏默认展开与订阅源列表同屏</li>
+<li>opt: 优化文字列表左右滑动效果</li>
+<li>fix: 修复部分场景图片下载失败的问题</li>
+<li>fix: 修复部分机型下载按钮消失的兼容性问题</li>
+<li>fix: 修复FreshRss Api闪退的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.2 (2024.05.29)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.2</guid>
       <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
-      <description>- fix: 修复Fever Api同步失败的问题
-- fix: 修复RSS服务icon加载失败的问题
-- opt: 临时修复部分订阅源封面图无法加载的问题</description>
+      <description><![CDATA[<ul>
+<li>fix: 修复Fever Api同步失败的问题</li>
+<li>fix: 修复RSS服务icon加载失败的问题</li>
+<li>opt: 临时修复部分订阅源封面图无法加载的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>fix: 修复Fever Api同步失败的问题</li>
+<li>fix: 修复RSS服务icon加载失败的问题</li>
+<li>opt: 临时修复部分订阅源封面图无法加载的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.7.0 (2024.05.23)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.7.0</guid>
       <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
-      <description>- feature: 在订阅源打开翻译设置后阅读页将自动启用翻译
-  - 未打开则可在阅读页手动点击翻译当前文章
-- feature: 新增Deelplx翻译选项
-- feature: 增加订阅源关键词过滤设置</description>
+      <description><![CDATA[<ul>
+<li>feature: 在订阅源打开翻译设置后阅读页将自动启用翻译
+<ul>
+<li>未打开则可在阅读页手动点击翻译当前文章</li>
+</ul>
+</li>
+<li>feature: 新增Deelplx翻译选项</li>
+<li>feature: 增加订阅源关键词过滤设置</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>feature: 在订阅源打开翻译设置后阅读页将自动启用翻译
+<ul>
+<li>未打开则可在阅读页手动点击翻译当前文章</li>
+</ul>
+</li>
+<li>feature: 新增Deelplx翻译选项</li>
+<li>feature: 增加订阅源关键词过滤设置</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.12 (2024.05.13)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.12</guid>
       <pubDate>Mon, 13 May 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- opt: App仅在视频全屏时跟随传感器自动旋转，其余场景跟随系统配置
-- fix: 修复支付宝激活码偶先激活失败的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: App仅在视频全屏时跟随传感器自动旋转，其余场景跟随系统配置</li>
+<li>fix: 修复支付宝激活码偶先激活失败的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: App仅在视频全屏时跟随传感器自动旋转，其余场景跟随系统配置</li>
+<li>fix: 修复支付宝激活码偶先激活失败的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.10 (2024.05.08)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.10</guid>
       <pubDate>Wed, 08 May 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- fix: 修复部分场景下打开订阅源管理闪退的问题
-- fix: 修复(https://www.zhangzs.com/feed)无法展示内容问题
-- fix: 修复新版本Webdav无法配置成功的问题
-- fix: 修复部分场景下清理数据后激活失败的问题
-- opt: App支持跟随传感器自动旋转（适用于视频全屏场景）</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>fix: 修复部分场景下打开订阅源管理闪退的问题</li>
+<li>fix: 修复(<a href="https://www.zhangzs.com/feed" target="_blank" rel="noreferrer">https://www.zhangzs.com/feed</a>)无法展示内容问题</li>
+<li>fix: 修复新版本Webdav无法配置成功的问题</li>
+<li>fix: 修复部分场景下清理数据后激活失败的问题</li>
+<li>opt: App支持跟随传感器自动旋转（适用于视频全屏场景）</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>fix: 修复部分场景下打开订阅源管理闪退的问题</li>
+<li>fix: 修复(<a href="https://www.zhangzs.com/feed" target="_blank" rel="noreferrer">https://www.zhangzs.com/feed</a>)无法展示内容问题</li>
+<li>fix: 修复新版本Webdav无法配置成功的问题</li>
+<li>fix: 修复部分场景下清理数据后激活失败的问题</li>
+<li>opt: App支持跟随传感器自动旋转（适用于视频全屏场景）</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.8 (2024.04.28)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.8</guid>
       <pubDate>Sun, 28 Apr 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feat: 文章列表支持隐藏摘要、订阅源图标
-- feat: 视频支持全屏播放
-- feat: 平板模式增加调整文章列表页屏幕占比
-- opt: 文章列表卡片样式统一化
-- opt: RSS服务可同步最大未读数调整至2000
-- opt: 阅读页字体行距调整精度提高，支持更精细化调整
-- fix: 修复字体设置不生效的问题
-- fix: 修复搜索内容展示不全的问题
-
-**价格调整预告**：Agr Reader将在5月进行价格微调，感谢早期支持Agr Reader的用户！</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feat: 文章列表支持隐藏摘要、订阅源图标</li>
+<li>feat: 视频支持全屏播放</li>
+<li>feat: 平板模式增加调整文章列表页屏幕占比</li>
+<li>opt: 文章列表卡片样式统一化</li>
+<li>opt: RSS服务可同步最大未读数调整至2000</li>
+<li>opt: 阅读页字体行距调整精度提高，支持更精细化调整</li>
+<li>fix: 修复字体设置不生效的问题</li>
+<li>fix: 修复搜索内容展示不全的问题</li>
+</ul>
+<p><strong>价格调整预告</strong>：Agr Reader将在5月进行价格微调，感谢早期支持Agr Reader的用户！</p>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feat: 文章列表支持隐藏摘要、订阅源图标</li>
+<li>feat: 视频支持全屏播放</li>
+<li>feat: 平板模式增加调整文章列表页屏幕占比</li>
+<li>opt: 文章列表卡片样式统一化</li>
+<li>opt: RSS服务可同步最大未读数调整至2000</li>
+<li>opt: 阅读页字体行距调整精度提高，支持更精细化调整</li>
+<li>fix: 修复字体设置不生效的问题</li>
+<li>fix: 修复搜索内容展示不全的问题</li>
+</ul>
+<p><strong>价格调整预告</strong>：Agr Reader将在5月进行价格微调，感谢早期支持Agr Reader的用户！</p>]]></content:encoded>
     </item>
     <item>
       <title>1.6.7 (2024.04.21)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.7</guid>
       <pubDate>Sun, 21 Apr 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feat: 部分UI调整；Material3主题色调调整；搜索功能剥离为单独页面
-- feat: 文章内容增加排版设置，可以调整水平外边距
-- feat: 新增标记以上和以下文章已读功能
-- feat: 新增切换语言选项，并支持Android13及以上的App首选语言设置
-- opt: 启动时订阅源加载速度优化
-- opt: 翻译效果优化，支持更多网页内容翻译
-- opt: 通知图标大小优化
-- opt: i18n
-- fix: 修复部分设备未读文章列表无法正常显示的问题
-- fix: Webdav配置成功但是上传、下载失败的问题
-- fix: Google Reader Api支持新增订阅；并修复无法删除订阅源的问题
-- fix: http://www.tmtpost.com/feed 只显示摘要问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feat: 部分UI调整；Material3主题色调调整；搜索功能剥离为单独页面</li>
+<li>feat: 文章内容增加排版设置，可以调整水平外边距</li>
+<li>feat: 新增标记以上和以下文章已读功能</li>
+<li>feat: 新增切换语言选项，并支持Android13及以上的App首选语言设置</li>
+<li>opt: 启动时订阅源加载速度优化</li>
+<li>opt: 翻译效果优化，支持更多网页内容翻译</li>
+<li>opt: 通知图标大小优化</li>
+<li>opt: i18n</li>
+<li>fix: 修复部分设备未读文章列表无法正常显示的问题</li>
+<li>fix: Webdav配置成功但是上传、下载失败的问题</li>
+<li>fix: Google Reader Api支持新增订阅；并修复无法删除订阅源的问题</li>
+<li>fix: <a href="http://www.tmtpost.com/feed" target="_blank" rel="noreferrer">http://www.tmtpost.com/feed</a> 只显示摘要问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feat: 部分UI调整；Material3主题色调调整；搜索功能剥离为单独页面</li>
+<li>feat: 文章内容增加排版设置，可以调整水平外边距</li>
+<li>feat: 新增标记以上和以下文章已读功能</li>
+<li>feat: 新增切换语言选项，并支持Android13及以上的App首选语言设置</li>
+<li>opt: 启动时订阅源加载速度优化</li>
+<li>opt: 翻译效果优化，支持更多网页内容翻译</li>
+<li>opt: 通知图标大小优化</li>
+<li>opt: i18n</li>
+<li>fix: 修复部分设备未读文章列表无法正常显示的问题</li>
+<li>fix: Webdav配置成功但是上传、下载失败的问题</li>
+<li>fix: Google Reader Api支持新增订阅；并修复无法删除订阅源的问题</li>
+<li>fix: <a href="http://www.tmtpost.com/feed" target="_blank" rel="noreferrer">http://www.tmtpost.com/feed</a> 只显示摘要问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.5 (2024.04.06)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.5</guid>
       <pubDate>Sat, 06 Apr 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 新增显示设置中新增平板模式
-  - 开启后列表页与阅读页将合并在同屏下展示，非大屏设置谨慎开启
-- feature: 支持音量键翻页（在文章列表页与阅读页生效）
-- feature: 阅读页支持渲染Latex
-- feature: 全部标记已读确认弹窗增加可关闭选项
-- feature: 增加仅统计未读数选项
-- opt: 优化平板阅读页的外边距宽度
-- opt: 订阅RSS源时仅更新当前订阅源不再全部更新
-- opt: 订阅源设置页增加部分选项提示说明
-- fix: 修复RSS服务账户未读数未更新的问题
-- fix: 修复部分场景下翻译一直处于loading的情况
-- fix: 修复本地RSS账号下部分订阅源无法展示icon的问题
-- fix: 修复部分闪退问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 新增显示设置中新增平板模式
+<ul>
+<li>开启后列表页与阅读页将合并在同屏下展示，非大屏设置谨慎开启</li>
+</ul>
+</li>
+<li>feature: 支持音量键翻页（在文章列表页与阅读页生效）</li>
+<li>feature: 阅读页支持渲染Latex</li>
+<li>feature: 全部标记已读确认弹窗增加可关闭选项</li>
+<li>feature: 增加仅统计未读数选项</li>
+<li>opt: 优化平板阅读页的外边距宽度</li>
+<li>opt: 订阅RSS源时仅更新当前订阅源不再全部更新</li>
+<li>opt: 订阅源设置页增加部分选项提示说明</li>
+<li>fix: 修复RSS服务账户未读数未更新的问题</li>
+<li>fix: 修复部分场景下翻译一直处于loading的情况</li>
+<li>fix: 修复本地RSS账号下部分订阅源无法展示icon的问题</li>
+<li>fix: 修复部分闪退问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 新增显示设置中新增平板模式
+<ul>
+<li>开启后列表页与阅读页将合并在同屏下展示，非大屏设置谨慎开启</li>
+</ul>
+</li>
+<li>feature: 支持音量键翻页（在文章列表页与阅读页生效）</li>
+<li>feature: 阅读页支持渲染Latex</li>
+<li>feature: 全部标记已读确认弹窗增加可关闭选项</li>
+<li>feature: 增加仅统计未读数选项</li>
+<li>opt: 优化平板阅读页的外边距宽度</li>
+<li>opt: 订阅RSS源时仅更新当前订阅源不再全部更新</li>
+<li>opt: 订阅源设置页增加部分选项提示说明</li>
+<li>fix: 修复RSS服务账户未读数未更新的问题</li>
+<li>fix: 修复部分场景下翻译一直处于loading的情况</li>
+<li>fix: 修复本地RSS账号下部分订阅源无法展示icon的问题</li>
+<li>fix: 修复部分闪退问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.4 (2024.03.23)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.4</guid>
       <pubDate>Sat, 23 Mar 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 优化通知功能，目前可以正常推送通知了
-  - 注意后台同步需要电池策略为非受限策略
-- feature: 今日未读文章列表支持倒序
-- feature: 阅读页点击链接跳转外部浏览器时可关闭二次确认提醒
-- feature: 订阅源未获取到icon时默认填充
-- feature: 增加查看订单详情跳转按钮
-- fix: 修复WebDav不显示备份文件列表的问题
-- fix: 修复部分订阅源无法获取文章的问题
-  - 如：http://feeds.feedburner.com/chinadigitaltimes/IyPt
-- fix: 修复文章列表倒序后滚动标记已读功能异常的问题
-- fix: 修复横滑切换文章标记已读有时失效的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 优化通知功能，目前可以正常推送通知了
+<ul>
+<li>注意后台同步需要电池策略为非受限策略</li>
+</ul>
+</li>
+<li>feature: 今日未读文章列表支持倒序</li>
+<li>feature: 阅读页点击链接跳转外部浏览器时可关闭二次确认提醒</li>
+<li>feature: 订阅源未获取到icon时默认填充</li>
+<li>feature: 增加查看订单详情跳转按钮</li>
+<li>fix: 修复WebDav不显示备份文件列表的问题</li>
+<li>fix: 修复部分订阅源无法获取文章的问题
+<ul>
+<li>如：<a href="http://feeds.feedburner.com/chinadigitaltimes/IyPt" target="_blank" rel="noreferrer">http://feeds.feedburner.com/chinadigitaltimes/IyPt</a></li>
+</ul>
+</li>
+<li>fix: 修复文章列表倒序后滚动标记已读功能异常的问题</li>
+<li>fix: 修复横滑切换文章标记已读有时失效的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 优化通知功能，目前可以正常推送通知了
+<ul>
+<li>注意后台同步需要电池策略为非受限策略</li>
+</ul>
+</li>
+<li>feature: 今日未读文章列表支持倒序</li>
+<li>feature: 阅读页点击链接跳转外部浏览器时可关闭二次确认提醒</li>
+<li>feature: 订阅源未获取到icon时默认填充</li>
+<li>feature: 增加查看订单详情跳转按钮</li>
+<li>fix: 修复WebDav不显示备份文件列表的问题</li>
+<li>fix: 修复部分订阅源无法获取文章的问题
+<ul>
+<li>如：<a href="http://feeds.feedburner.com/chinadigitaltimes/IyPt" target="_blank" rel="noreferrer">http://feeds.feedburner.com/chinadigitaltimes/IyPt</a></li>
+</ul>
+</li>
+<li>fix: 修复文章列表倒序后滚动标记已读功能异常的问题</li>
+<li>fix: 修复横滑切换文章标记已读有时失效的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.3 (2024.03.11)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.3</guid>
       <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 侧边栏增加“订阅源管理”
-  - 现在可以自由多选订阅源的来删除或者是调整分组了！
-  - 支持分组的自定义排序，可以调整分组的位置
-  - 同时订阅源详情不再展示分组相关，统一移至订阅源管理
-- opt: 侧边栏支持滚动以更好兼容平板
-- fix: 修复GReader Api的已读问题并重新兼容miniflux
-- fix: 修复文本编辑框的光标错乱问题
-- fix: 修复WebDav恢复数据时的闪退问题
-- fix: 修复部分订阅源订阅失败的问题，如部分微信公众号</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 侧边栏增加“订阅源管理”
+<ul>
+<li>现在可以自由多选订阅源的来删除或者是调整分组了！</li>
+<li>支持分组的自定义排序，可以调整分组的位置</li>
+<li>同时订阅源详情不再展示分组相关，统一移至订阅源管理</li>
+</ul>
+</li>
+<li>opt: 侧边栏支持滚动以更好兼容平板</li>
+<li>fix: 修复GReader Api的已读问题并重新兼容miniflux</li>
+<li>fix: 修复文本编辑框的光标错乱问题</li>
+<li>fix: 修复WebDav恢复数据时的闪退问题</li>
+<li>fix: 修复部分订阅源订阅失败的问题，如部分微信公众号</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 侧边栏增加“订阅源管理”
+<ul>
+<li>现在可以自由多选订阅源的来删除或者是调整分组了！</li>
+<li>支持分组的自定义排序，可以调整分组的位置</li>
+<li>同时订阅源详情不再展示分组相关，统一移至订阅源管理</li>
+</ul>
+</li>
+<li>opt: 侧边栏支持滚动以更好兼容平板</li>
+<li>fix: 修复GReader Api的已读问题并重新兼容miniflux</li>
+<li>fix: 修复文本编辑框的光标错乱问题</li>
+<li>fix: 修复WebDav恢复数据时的闪退问题</li>
+<li>fix: 修复部分订阅源订阅失败的问题，如部分微信公众号</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.1 (2024.02.28)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.1</guid>
       <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- opt: 翻译功能提示文案优化
-- fix: 修复标记已读失效的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: 翻译功能提示文案优化</li>
+<li>fix: 修复标记已读失效的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: 翻译功能提示文案优化</li>
+<li>fix: 修复标记已读失效的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.6.0 (2024.02.24)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.6.0</guid>
       <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 现在可以对指定的订阅源设置中打开翻译功能以支持文章列表的标题翻译（文章列表标题翻译功能仅限Pro版）
-- feature: 支持文章内嵌网页翻译（Beta）
-- feature: 增加文章列表以时间倒序排列
-- feature: 新增阅读页面横向滑动切换上一篇、下一篇功能，原底部按钮切换上、下文章已移除
-- feature：文章列表增加上次当前阅读文章高亮提示，并跟随阅读页面横滑滚动
-- opt: 阅读页图片预览体验优化，优化手势操作，增加点击图片退出预览
-- opt: App性能优化等其他不显性优化
-- fix: 修复Fever Api没有默认分组时无法同步的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 现在可以对指定的订阅源设置中打开翻译功能以支持文章列表的标题翻译（文章列表标题翻译功能仅限Pro版）</li>
+<li>feature: 支持文章内嵌网页翻译（Beta）</li>
+<li>feature: 增加文章列表以时间倒序排列</li>
+<li>feature: 新增阅读页面横向滑动切换上一篇、下一篇功能，原底部按钮切换上、下文章已移除</li>
+<li>feature：文章列表增加上次当前阅读文章高亮提示，并跟随阅读页面横滑滚动</li>
+<li>opt: 阅读页图片预览体验优化，优化手势操作，增加点击图片退出预览</li>
+<li>opt: App性能优化等其他不显性优化</li>
+<li>fix: 修复Fever Api没有默认分组时无法同步的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 现在可以对指定的订阅源设置中打开翻译功能以支持文章列表的标题翻译（文章列表标题翻译功能仅限Pro版）</li>
+<li>feature: 支持文章内嵌网页翻译（Beta）</li>
+<li>feature: 增加文章列表以时间倒序排列</li>
+<li>feature: 新增阅读页面横向滑动切换上一篇、下一篇功能，原底部按钮切换上、下文章已移除</li>
+<li>feature：文章列表增加上次当前阅读文章高亮提示，并跟随阅读页面横滑滚动</li>
+<li>opt: 阅读页图片预览体验优化，优化手势操作，增加点击图片退出预览</li>
+<li>opt: App性能优化等其他不显性优化</li>
+<li>fix: 修复Fever Api没有默认分组时无法同步的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.5.4 (2024.02.06)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.5.4</guid>
       <pubDate>Tue, 06 Feb 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 增加订阅源一次同步的文章数量限制，避免个别订阅源单次同步大量文章导致时间过长
-  - 设置 -&gt; 通用 -&gt; 同步配置项
-  - 例如: https://www.buzzing.cc/feed.xml
-- opt: 优化订阅源图标的获取
-- opt: 优化文章阅读页的性能
-- opt: 其他不显性的优化
-- fix: 修复订阅源未读数刷新不及时的问题
-- fix: 增加Fever Api的兼容性，修复部分无法更新的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 增加订阅源一次同步的文章数量限制，避免个别订阅源单次同步大量文章导致时间过长
+<ul>
+<li>设置 -&gt; 通用 -&gt; 同步配置项</li>
+<li>例如: <a href="https://www.buzzing.cc/feed.xml" target="_blank" rel="noreferrer">https://www.buzzing.cc/feed.xml</a></li>
+</ul>
+</li>
+<li>opt: 优化订阅源图标的获取</li>
+<li>opt: 优化文章阅读页的性能</li>
+<li>opt: 其他不显性的优化</li>
+<li>fix: 修复订阅源未读数刷新不及时的问题</li>
+<li>fix: 增加Fever Api的兼容性，修复部分无法更新的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 增加订阅源一次同步的文章数量限制，避免个别订阅源单次同步大量文章导致时间过长
+<ul>
+<li>设置 -&gt; 通用 -&gt; 同步配置项</li>
+<li>例如: <a href="https://www.buzzing.cc/feed.xml" target="_blank" rel="noreferrer">https://www.buzzing.cc/feed.xml</a></li>
+</ul>
+</li>
+<li>opt: 优化订阅源图标的获取</li>
+<li>opt: 优化文章阅读页的性能</li>
+<li>opt: 其他不显性的优化</li>
+<li>fix: 修复订阅源未读数刷新不及时的问题</li>
+<li>fix: 增加Fever Api的兼容性，修复部分无法更新的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.5.3 (2024.01.03)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.5.3</guid>
       <pubDate>Wed, 03 Jan 2024 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化:
-- feature: 增加刷新单个订阅源和分组内订阅源的逻辑（仅限本地账号，RSS托管服务都为全局刷新）
-  - 单个订阅源的文章列表下拉刷新仅更新当前订阅源
-  - 分组文章列表下拉刷新仅更新分组内订阅源
-- feature: 文章列表增加仅标题样式
-- feature: 文章列表左右滑动开放自定义（目前可选已/未读、收藏/未收藏和无）
-- opt: 优化了刷新订阅源的性能，减少内存使用
-- opt: 微调文章列表左右滑判定的阈值，减少误触</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 增加刷新单个订阅源和分组内订阅源的逻辑（仅限本地账号，RSS托管服务都为全局刷新）
+<ul>
+<li>单个订阅源的文章列表下拉刷新仅更新当前订阅源</li>
+<li>分组文章列表下拉刷新仅更新分组内订阅源</li>
+</ul>
+</li>
+<li>feature: 文章列表增加仅标题样式</li>
+<li>feature: 文章列表左右滑动开放自定义（目前可选已/未读、收藏/未收藏和无）</li>
+<li>opt: 优化了刷新订阅源的性能，减少内存使用</li>
+<li>opt: 微调文章列表左右滑判定的阈值，减少误触</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 增加刷新单个订阅源和分组内订阅源的逻辑（仅限本地账号，RSS托管服务都为全局刷新）
+<ul>
+<li>单个订阅源的文章列表下拉刷新仅更新当前订阅源</li>
+<li>分组文章列表下拉刷新仅更新分组内订阅源</li>
+</ul>
+</li>
+<li>feature: 文章列表增加仅标题样式</li>
+<li>feature: 文章列表左右滑动开放自定义（目前可选已/未读、收藏/未收藏和无）</li>
+<li>opt: 优化了刷新订阅源的性能，减少内存使用</li>
+<li>opt: 微调文章列表左右滑判定的阈值，减少误触</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.5.2 (2023.12.05)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.5.2</guid>
       <pubDate>Tue, 05 Dec 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化:
-- feature: 沉浸式翻译功能支持设置微软翻译接口
-  - 需要Agr Reader Pro
-- fix: 修复跳转官网部分机型的闪退问题
-- fix: 修复修改订阅源链接的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 沉浸式翻译功能支持设置微软翻译接口
+<ul>
+<li>需要Agr Reader Pro</li>
+</ul>
+</li>
+<li>fix: 修复跳转官网部分机型的闪退问题</li>
+<li>fix: 修复修改订阅源链接的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 沉浸式翻译功能支持设置微软翻译接口
+<ul>
+<li>需要Agr Reader Pro</li>
+</ul>
+</li>
+<li>fix: 修复跳转官网部分机型的闪退问题</li>
+<li>fix: 修复修改订阅源链接的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.5.0 (2023.11.20)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.5.0</guid>
       <pubDate>Mon, 20 Nov 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化:
-- feature: 沉浸式翻译功能Beta已推出!
-  - 目前展示仅支持谷歌翻译（需要代理），仅支持其他语言翻译到中文
-- opt: 增加RSS服务不可用操作的toast提示
-- opt: 退出阅读页时重置网页
-- fix: 修复Fever分组的问题
-- fix: 修复Fever Api的闪退问题
-- fix: 修复查看图片后返回异常跳转的问题
-- fix: 修复部分闪退的问题
-- fix: 修复部分RSS订阅源文章抓取不全的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 沉浸式翻译功能Beta已推出!
+<ul>
+<li>目前展示仅支持谷歌翻译（需要代理），仅支持其他语言翻译到中文</li>
+</ul>
+</li>
+<li>opt: 增加RSS服务不可用操作的toast提示</li>
+<li>opt: 退出阅读页时重置网页</li>
+<li>fix: 修复Fever分组的问题</li>
+<li>fix: 修复Fever Api的闪退问题</li>
+<li>fix: 修复查看图片后返回异常跳转的问题</li>
+<li>fix: 修复部分闪退的问题</li>
+<li>fix: 修复部分RSS订阅源文章抓取不全的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 沉浸式翻译功能Beta已推出!
+<ul>
+<li>目前展示仅支持谷歌翻译（需要代理），仅支持其他语言翻译到中文</li>
+</ul>
+</li>
+<li>opt: 增加RSS服务不可用操作的toast提示</li>
+<li>opt: 退出阅读页时重置网页</li>
+<li>fix: 修复Fever分组的问题</li>
+<li>fix: 修复Fever Api的闪退问题</li>
+<li>fix: 修复查看图片后返回异常跳转的问题</li>
+<li>fix: 修复部分闪退的问题</li>
+<li>fix: 修复部分RSS订阅源文章抓取不全的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.4.3 (2023.11.06)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.4.3</guid>
       <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化:
-- feature: 扩展复制长按菜单选项
-  - 现在可以在文章内容页复制文字使用词典类应用了
-- opt: 搜索时不再搜索文章减少订阅等待时间
-- opt: 优化自动隐藏菜单栏效果
-- fix: 修复部分闪退问题
-- fix: 修复今天文字错误显示时间的问题
-- fix: 修复订阅详情页当订阅源内容过长展示不下的问题
-- fix: 修复文章内容页当内容过长偶尔无法滑动的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 扩展复制长按菜单选项
+<ul>
+<li>现在可以在文章内容页复制文字使用词典类应用了</li>
+</ul>
+</li>
+<li>opt: 搜索时不再搜索文章减少订阅等待时间</li>
+<li>opt: 优化自动隐藏菜单栏效果</li>
+<li>fix: 修复部分闪退问题</li>
+<li>fix: 修复今天文字错误显示时间的问题</li>
+<li>fix: 修复订阅详情页当订阅源内容过长展示不下的问题</li>
+<li>fix: 修复文章内容页当内容过长偶尔无法滑动的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 扩展复制长按菜单选项
+<ul>
+<li>现在可以在文章内容页复制文字使用词典类应用了</li>
+</ul>
+</li>
+<li>opt: 搜索时不再搜索文章减少订阅等待时间</li>
+<li>opt: 优化自动隐藏菜单栏效果</li>
+<li>fix: 修复部分闪退问题</li>
+<li>fix: 修复今天文字错误显示时间的问题</li>
+<li>fix: 修复订阅详情页当订阅源内容过长展示不下的问题</li>
+<li>fix: 修复文章内容页当内容过长偶尔无法滑动的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.4.2 (2023.11.01)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.4.2</guid>
       <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化:
-- feature: 支持切换订阅源的文章内容来源
-  - 现在可以选择文章内容的默认展示方式
-  - 全文解析：会对网页内容进行解析
-  - 内容摘要：展示文章的RSS内容简介
-  - 内嵌网页：以网页形式展示
-- feature: 订阅源增加是否拦截资源加载选项
-  - 当文章内容出现图片无法加载的情况下可尝试打开此选项
-- opt: 今天内的文章时间显示具体的小时
-- opt: 缩减资源，减少apk大小
-- fix: 修复FreshRSS及Greader Api的文章拉取不全的问题
-- fix: 修复部分闪退问题
-- fix: 修复部分视频宽度溢出的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 支持切换订阅源的文章内容来源
+<ul>
+<li>现在可以选择文章内容的默认展示方式</li>
+<li>全文解析：会对网页内容进行解析</li>
+<li>内容摘要：展示文章的RSS内容简介</li>
+<li>内嵌网页：以网页形式展示</li>
+</ul>
+</li>
+<li>feature: 订阅源增加是否拦截资源加载选项
+<ul>
+<li>当文章内容出现图片无法加载的情况下可尝试打开此选项</li>
+</ul>
+</li>
+<li>opt: 今天内的文章时间显示具体的小时</li>
+<li>opt: 缩减资源，减少apk大小</li>
+<li>fix: 修复FreshRSS及Greader Api的文章拉取不全的问题</li>
+<li>fix: 修复部分闪退问题</li>
+<li>fix: 修复部分视频宽度溢出的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 支持切换订阅源的文章内容来源
+<ul>
+<li>现在可以选择文章内容的默认展示方式</li>
+<li>全文解析：会对网页内容进行解析</li>
+<li>内容摘要：展示文章的RSS内容简介</li>
+<li>内嵌网页：以网页形式展示</li>
+</ul>
+</li>
+<li>feature: 订阅源增加是否拦截资源加载选项
+<ul>
+<li>当文章内容出现图片无法加载的情况下可尝试打开此选项</li>
+</ul>
+</li>
+<li>opt: 今天内的文章时间显示具体的小时</li>
+<li>opt: 缩减资源，减少apk大小</li>
+<li>fix: 修复FreshRSS及Greader Api的文章拉取不全的问题</li>
+<li>fix: 修复部分闪退问题</li>
+<li>fix: 修复部分视频宽度溢出的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.4.1 (2023.10.26)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.4.1</guid>
       <pubDate>Thu, 26 Oct 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化:
-- feature: 订阅源列表增加默认过滤状态选项
-  - 现在在交互设置中可设置订阅源列表默认过滤项 
-- opt: 优化左右横化体验，减少误触
-- fix: 修复文章列表页调整阅读页后返回重置到未读Tab的问题
-- fix: 修复FreshRSS全部已读失效的问题
-- fix: 修复Fever拉取的文章内容展示不全、副标题展示内容不正常的问题
-- fix: 修复各类闪退问题
-- fix: 回退封面图获取逻辑</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 订阅源列表增加默认过滤状态选项
+<ul>
+<li>现在在交互设置中可设置订阅源列表默认过滤项</li>
+</ul>
+</li>
+<li>opt: 优化左右横化体验，减少误触</li>
+<li>fix: 修复文章列表页调整阅读页后返回重置到未读Tab的问题</li>
+<li>fix: 修复FreshRSS全部已读失效的问题</li>
+<li>fix: 修复Fever拉取的文章内容展示不全、副标题展示内容不正常的问题</li>
+<li>fix: 修复各类闪退问题</li>
+<li>fix: 回退封面图获取逻辑</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 订阅源列表增加默认过滤状态选项
+<ul>
+<li>现在在交互设置中可设置订阅源列表默认过滤项</li>
+</ul>
+</li>
+<li>opt: 优化左右横化体验，减少误触</li>
+<li>fix: 修复文章列表页调整阅读页后返回重置到未读Tab的问题</li>
+<li>fix: 修复FreshRSS全部已读失效的问题</li>
+<li>fix: 修复Fever拉取的文章内容展示不全、副标题展示内容不正常的问题</li>
+<li>fix: 修复各类闪退问题</li>
+<li>fix: 回退封面图获取逻辑</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.4.0 (2023.10.22)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.4.0</guid>
       <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 目前已经支持Google Reader Api和Fever Api接入了！
-  - 除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入
-- feature: 增加订阅源重命名功能更
-- opt: 文章列表左右滑动时增加振动反馈
-- opt: 移除文章列表的下拉刷新移至订阅源列表
-- fix: 修复滚动标记已读时偶尔全部标记已读的问题
-- fix: 修复FreshRSS已读失效的问题
-
-**价格调整预告**：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 目前已经支持Google Reader Api和Fever Api接入了！
+<ul>
+<li>除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入</li>
+</ul>
+</li>
+<li>feature: 增加订阅源重命名功能更</li>
+<li>opt: 文章列表左右滑动时增加振动反馈</li>
+<li>opt: 移除文章列表的下拉刷新移至订阅源列表</li>
+<li>fix: 修复滚动标记已读时偶尔全部标记已读的问题</li>
+<li>fix: 修复FreshRSS已读失效的问题</li>
+</ul>
+<p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 目前已经支持Google Reader Api和Fever Api接入了！
+<ul>
+<li>除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入</li>
+</ul>
+</li>
+<li>feature: 增加订阅源重命名功能更</li>
+<li>opt: 文章列表左右滑动时增加振动反馈</li>
+<li>opt: 移除文章列表的下拉刷新移至订阅源列表</li>
+<li>fix: 修复滚动标记已读时偶尔全部标记已读的问题</li>
+<li>fix: 修复FreshRSS已读失效的问题</li>
+</ul>
+<p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></content:encoded>
     </item>
     <item>
       <title>1.3.3 (2023.10.17)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.3.3</guid>
       <pubDate>Tue, 17 Oct 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- opt: 优化文章内容样式（实验性质）
-- fix: 修复订阅源详情页面功能失效的问题
-- fix: 震动开关未设置时默认关闭的问题
-- fix: FreshRSS缓存导致之前配置失败后无法成功的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: 优化文章内容样式（实验性质）</li>
+<li>fix: 修复订阅源详情页面功能失效的问题</li>
+<li>fix: 震动开关未设置时默认关闭的问题</li>
+<li>fix: FreshRSS缓存导致之前配置失败后无法成功的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: 优化文章内容样式（实验性质）</li>
+<li>fix: 修复订阅源详情页面功能失效的问题</li>
+<li>fix: 震动开关未设置时默认关闭的问题</li>
+<li>fix: FreshRSS缓存导致之前配置失败后无法成功的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.3.2 (2023.10.14)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.3.2</guid>
       <pubDate>Sat, 14 Oct 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- opt: 优化启动时订阅源加载速度，预计相比之前快50%
-- opt: apk大小优化，去除无用依赖
-- opt: 优化内存占用
-- opt: 优化封面图获取规则
-- fix: 修复文章内容页面自定义字体不生效的问题
-- fix: 修复文章列表偶现闪退的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: 优化启动时订阅源加载速度，预计相比之前快50%</li>
+<li>opt: apk大小优化，去除无用依赖</li>
+<li>opt: 优化内存占用</li>
+<li>opt: 优化封面图获取规则</li>
+<li>fix: 修复文章内容页面自定义字体不生效的问题</li>
+<li>fix: 修复文章列表偶现闪退的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>opt: 优化启动时订阅源加载速度，预计相比之前快50%</li>
+<li>opt: apk大小优化，去除无用依赖</li>
+<li>opt: 优化内存占用</li>
+<li>opt: 优化封面图获取规则</li>
+<li>fix: 修复文章内容页面自定义字体不生效的问题</li>
+<li>fix: 修复文章列表偶现闪退的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.3.1 (2023.10.7)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.3.1</guid>
       <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-      <description>- fix: 修复标记所有文章已读的闪退问题</description>
+      <description><![CDATA[<ul>
+<li>fix: 修复标记所有文章已读的闪退问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>fix: 修复标记所有文章已读的闪退问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.3.0 (2023.10.7)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.3.0</guid>
       <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- refactor: 🎉文章列表数据加载逻辑部分重构
-- feature: 增加标记选中文章所属订阅源的全部文章为已读功能
-- feature: 文章列表增加右滑收藏左滑已读功能
-- feature: 新增随滚动标记已读，默认关闭可选开启(交互设置中)
-- feature: 设置中增加交互设置，点击反馈效果开关选项移至交互设置
-- feature: 长按菜单改为弹出底部弹窗
-- opt: 标记当前所有已读更改为FloatingButton
-- opt: 有新版本时将在设置按钮处展示红点提醒
-- fix: 修复“喷嚏”RSS文章内容乱码的问题
-- fix: 修复“IT之家”图片加载失败的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>refactor: 🎉文章列表数据加载逻辑部分重构</li>
+<li>feature: 增加标记选中文章所属订阅源的全部文章为已读功能</li>
+<li>feature: 文章列表增加右滑收藏左滑已读功能</li>
+<li>feature: 新增随滚动标记已读，默认关闭可选开启(交互设置中)</li>
+<li>feature: 设置中增加交互设置，点击反馈效果开关选项移至交互设置</li>
+<li>feature: 长按菜单改为弹出底部弹窗</li>
+<li>opt: 标记当前所有已读更改为FloatingButton</li>
+<li>opt: 有新版本时将在设置按钮处展示红点提醒</li>
+<li>fix: 修复“喷嚏”RSS文章内容乱码的问题</li>
+<li>fix: 修复“IT之家”图片加载失败的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>refactor: 🎉文章列表数据加载逻辑部分重构</li>
+<li>feature: 增加标记选中文章所属订阅源的全部文章为已读功能</li>
+<li>feature: 文章列表增加右滑收藏左滑已读功能</li>
+<li>feature: 新增随滚动标记已读，默认关闭可选开启(交互设置中)</li>
+<li>feature: 设置中增加交互设置，点击反馈效果开关选项移至交互设置</li>
+<li>feature: 长按菜单改为弹出底部弹窗</li>
+<li>opt: 标记当前所有已读更改为FloatingButton</li>
+<li>opt: 有新版本时将在设置按钮处展示红点提醒</li>
+<li>fix: 修复“喷嚏”RSS文章内容乱码的问题</li>
+<li>fix: 修复“IT之家”图片加载失败的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.2.0 (2023.10.2)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.2.0</guid>
       <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 🎉现在支持FreshRSS（提供Greader Api）的自托管服务了！
-  - 从设置-&gt;通用-&gt;账户管理里添加FreshRSS服务
-  - 目前仅支持以greader api形式接入，且FreshRSS分组暂不支持（未提供完备的Api）
-  - Pro版支持多个RSS账户切换（如本地和FreshRSS账户切换），非Pro版只支持显示一个当前账户
-- opt: 降低超时等待时间，避免一个订阅源因网络问题卡住后续同步进度
-- fix: 修复阅读页面字体样式未持久化的问题
-- fix: 修复多次点击返回会导致页面白屏的问题
-- fix: 修复同步过程中发生异常导致同步状态未结束的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 🎉现在支持FreshRSS（提供Greader Api）的自托管服务了！
+<ul>
+<li>从设置-&gt;通用-&gt;账户管理里添加FreshRSS服务</li>
+<li>目前仅支持以greader api形式接入，且FreshRSS分组暂不支持（未提供完备的Api）</li>
+<li>Pro版支持多个RSS账户切换（如本地和FreshRSS账户切换），非Pro版只支持显示一个当前账户</li>
+</ul>
+</li>
+<li>opt: 降低超时等待时间，避免一个订阅源因网络问题卡住后续同步进度</li>
+<li>fix: 修复阅读页面字体样式未持久化的问题</li>
+<li>fix: 修复多次点击返回会导致页面白屏的问题</li>
+<li>fix: 修复同步过程中发生异常导致同步状态未结束的问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 🎉现在支持FreshRSS（提供Greader Api）的自托管服务了！
+<ul>
+<li>从设置-&gt;通用-&gt;账户管理里添加FreshRSS服务</li>
+<li>目前仅支持以greader api形式接入，且FreshRSS分组暂不支持（未提供完备的Api）</li>
+<li>Pro版支持多个RSS账户切换（如本地和FreshRSS账户切换），非Pro版只支持显示一个当前账户</li>
+</ul>
+</li>
+<li>opt: 降低超时等待时间，避免一个订阅源因网络问题卡住后续同步进度</li>
+<li>fix: 修复阅读页面字体样式未持久化的问题</li>
+<li>fix: 修复多次点击返回会导致页面白屏的问题</li>
+<li>fix: 修复同步过程中发生异常导致同步状态未结束的问题</li>
+</ul>]]></content:encoded>
     </item>
     <item>
       <title>1.1.1 (2023.09.25)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.1.1</guid>
       <pubDate>Mon, 25 Sep 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 点击振动反馈增加开关选项
-- opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏
-- opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率
-- opt: 优化网络缓存，大幅度减少App缓存大小占用
-- opt: 优化图片内存占用，修复图片较多时概率闪退的问题
-- fix: 修复部分页面宽度溢出的问题
-
-😍下一步计划预告：支持FreshRSS</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 点击振动反馈增加开关选项</li>
+<li>opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏</li>
+<li>opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率</li>
+<li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
+<li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
+<li>fix: 修复部分页面宽度溢出的问题</li>
+</ul>
+<p>😍下一步计划预告：支持FreshRSS</p>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 点击振动反馈增加开关选项</li>
+<li>opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏</li>
+<li>opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率</li>
+<li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
+<li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
+<li>fix: 修复部分页面宽度溢出的问题</li>
+</ul>
+<p>😍下一步计划预告：支持FreshRSS</p>]]></content:encoded>
     </item>
     <item>
       <title>1.1.0 (2023.09.23)</title>
       <link>https://www.agrreader.xyz/changelog/index</link>
       <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.1.0</guid>
       <pubDate>Sat, 23 Sep 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 🎉现在支持WebDav备份订阅源和收藏文章了！
-  - 在设置-&gt;备份&amp;恢复入口可进入
-- feature: 🎉文章列表的样式新增的卡片、文本两种样式
-  - 卡片是侧重图片，文字则是无图仅标题和副标题
-- opt: 分组增加App打开时默认展开、收起的选项
-- opt: ⚡缩减了Apk大小并优化了文章阅读页面解析渲染速度
-- opt: 跳转外部链接的弹窗改为底部Snackbar以减少干扰
-- fix: 修复部分文章点击图片闪退的问题
-- fix: 修复检查更新时的异常导致闪退
-- fix: 修复部分RSS订阅后无法打开文章列表或打开后闪退的问题
-
-😍下一步计划预告：支持FreshRSS</description>
-    </item>
-    <item>
-      <title>1.0.2 (2023.09.17)</title>
-      <link>https://www.agrreader.xyz/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.0.2</guid>
-      <pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate>
-      <description>🥰当前版本变化: 
-- feature: 增加版本更新检测：
-  - 现在当检测到有更新后会在设置页进行提醒
-- feature: 增加崩溃日志采集，并支持分享日志
-  - Agr Reader发送崩溃后，会记录生成log文件，可以在设置-&gt;导航&amp;反馈-&gt;发送日志将log文件以邮件等方式发送给开发者
-- feature: 阅读页面增加固定操作栏选项
-  - 现在可以自由选择文章阅读页的操作栏是否跟随滚动
-- feature: 支持导入OPML文件时对分组进行按名字去重
-- opt: 优化文章列表副标题内容的显示内容
-- fix: 修复部分机型的打开闪退问题
-
-😍下一步计划预告：支持Webdav同步</description>
-    </item>
-    <item>
-      <title>1.0.1</title>
-      <link>https://www.agrreader.xyz/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/changelog/index#1.0.1</guid>
-      <description>- fix: 可能导致激活失败的问题</description>
+      <description><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 🎉现在支持WebDav备份订阅源和收藏文章了！
+<ul>
+<li>在设置-&gt;备份&amp;恢复入口可进入</li>
+</ul>
+</li>
+<li>feature: 🎉文章列表的样式新增的卡片、文本两种样式
+<ul>
+<li>卡片是侧重图片，文字则是无图仅标题和副标题</li>
+</ul>
+</li>
+<li>opt: 分组增加App打开时默认展开、收起的选项</li>
+<li>opt: ⚡缩减了Apk大小并优化了文章阅读页面解析渲染速度</li>
+<li>opt: 跳转外部链接的弹窗改为底部Snackbar以减少干扰</li>
+<li>fix: 修复部分文章点击图片闪退的问题</li>
+<li>fix: 修复检查更新时的异常导致闪退</li>
+<li>fix: 修复部分RSS订阅后无法打开文章列表或打开后闪退的问题</li>
+</ul>
+<p>😍下一步计划预告：支持FreshRSS</p>]]></description>
+      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
+<ul>
+<li>feature: 🎉现在支持WebDav备份订阅源和收藏文章了！
+<ul>
+<li>在设置-&gt;备份&amp;恢复入口可进入</li>
+</ul>
+</li>
+<li>feature: 🎉文章列表的样式新增的卡片、文本两种样式
+<ul>
+<li>卡片是侧重图片，文字则是无图仅标题和副标题</li>
+</ul>
+</li>
+<li>opt: 分组增加App打开时默认展开、收起的选项</li>
+<li>opt: ⚡缩减了Apk大小并优化了文章阅读页面解析渲染速度</li>
+<li>opt: 跳转外部链接的弹窗改为底部Snackbar以减少干扰</li>
+<li>fix: 修复部分文章点击图片闪退的问题</li>
+<li>fix: 修复检查更新时的异常导致闪退</li>
+<li>fix: 修复部分RSS订阅后无法打开文章列表或打开后闪退的问题</li>
+</ul>
+<p>😍下一步计划预告：支持FreshRSS</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
