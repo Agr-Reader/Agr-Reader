@@ -1,4 +1,18 @@
 
+## 1.13.0(2026.02.24)
+- New Features:
+  - Added support for more account providers, including Feedly email login, Feedbin username/password login, and BazQux.
+  - Added support for Alibaba Qwen and OpenRouter as AI provider options.
+  - Added a setting to adjust article list elevation for a more personalized reading look.
+- Improvements:
+  - Improved initial article rendering speed for a faster reading start.
+  - Improved content-source switching so immersive translation continues more reliably.
+  - Improved translation output by excluding AI summary text from translation.
+- Bug Fixes:
+  - Fixed Feedly subscription flow reliability issues.
+  - Fixed Feedbin subtitle parsing errors.
+  - Fixed incorrect default language behavior for AI summaries.
+
 ## 1.12.1(2026.02.01)
 - Desktop Version Official Launch: Now available on Windows and Linux. macOS support is coming soon.
 - Language Settings: Added new language options. You can now manually switch the App Interface language, AI-generated content language, and Translation language.

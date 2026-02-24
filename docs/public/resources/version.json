@@ -1,7 +1,7 @@
 {
-    "versionName": "1.12.1",
-    "versionCode": 101012001,
-    "changelog": "- 桌面版正式发布，现已支持Windows,Linux平台，MacOS后续支持。\n- 语言设置：新增语言设置，可自行切换应用语言、AI生成内容语言、翻译语言。\n- 阅读页：阅读页内容来源切换按钮功能扩展，点击可切换内容来源为‘内容摘要’或‘全文解析’，长按切换为‘内嵌网页’。\n- 优化：部分订阅源全文解析问题\n- 修复：平板模式已读文章状态显示问题",
-    "fileKey": "Agr_Reader_1.12.1.apk",
-    "url": "https://resource.agrreader.com/f/rzIl/Agr_Reader_1.12.1.apk"
+    "versionName": "1.13.0",
+    "versionCode": 101013000,
+    "changelog": "- 新特性\n  - 支持BazQux，Feedbin和Feedly账号集成\n  - AI提供商新增Alibaba(Qwen)和OpenRouter\n  - 新增文章列表背景色海拔高度调整设置，打造更个性化的阅读体验。\n- 体验优化\n  - 大幅提升文章打开时的初始渲染速度。\n  - 优化内容源切换，确保沉浸式翻译更加稳定可靠。\n  - 优化沉浸式翻译识别逻辑，排除 AI 摘要文本。\n- 问题修复：\n  - 修复 Feedly 订阅流程稳定性问题。\n  - 修复 Feedbin 副标题解析错误。\n  - 修复 AI 摘要默认语言设置错误的问题，跟随APP语言自适应输出内容。",
+    "fileKey": "Agr_Reader_1.13.0.apk",
+    "url": "https://resource.agrreader.com/f/GVfq/Agr_Reader_1.13.0.apk"
 }
