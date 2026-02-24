@@ -6,6 +6,8 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Agr Reader Changelog (EN)', href: '/rss/changelog.xml' }],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Agr Reader Changelog (ZH)', href: '/rss/changelog-zh.xml' }],
   ],
   locales: {
     root: {
