@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Agr Reader Changelog (Chinese)</title>
-    <link>https://www.agrreader.xyz/zh/changelog/index</link>
+    <link>https://www.agrreader.com/zh/changelog/index</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 24 Feb 2026 00:00:00 GMT</lastBuildDate>
-    <atom:link href="https://www.agrreader.xyz/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.13.0 (2026.02.24)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.13.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.13.0</guid>
       <pubDate>Tue, 24 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>新特性
@@ -61,8 +61,8 @@
     </item>
     <item>
       <title>1.12.1 (2026.02.01)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.12.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.12.1</guid>
       <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>桌面版正式发布，现已支持Windows,Linux平台，MacOS后续支持。</li>
@@ -81,8 +81,8 @@
     </item>
     <item>
       <title>1.11.2 (2025.12.15)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.11.2</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.11.2</guid>
       <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 适配Android 16</li>
@@ -95,8 +95,8 @@
     </item>
     <item>
       <title>1.11.1 (2025.12.05)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.11.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.11.1</guid>
       <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: AI功能优化，开放支持自定义Url；支持自定义Prompt</li>
@@ -113,8 +113,8 @@
     </item>
     <item>
       <title>1.10.0 (2025.11.15)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.10.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.10.0</guid>
       <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 新增账号系统，用户可以注册/登录账号以绑定Pro会员，多设备间只需要登录同一账号即可同步Pro会员，更多同步功能将在后续支持！</li>
@@ -125,8 +125,8 @@
     </item>
     <item>
       <title>1.9.3 (2025.09.07)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.9.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.9.3</guid>
       <pubDate>Sun, 07 Sep 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>fix: 修复FreshRSS无法同步问题</li>
@@ -137,8 +137,8 @@
     </item>
     <item>
       <title>1.9.2 (2025.08.31)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.9.2</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.9.2</guid>
       <pubDate>Sun, 31 Aug 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 新增定时清理未读文章功能</li>
@@ -153,8 +153,8 @@
     </item>
     <item>
       <title>1.9.1 (2025.08.05)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.9.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.9.1</guid>
       <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 阅读页增加切换内容来源提示，当页面无内容显示时可尝试切换</li>
@@ -173,8 +173,8 @@
     </item>
     <item>
       <title>1.9.0 (2025.06.29)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.9.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.9.0</guid>
       <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 新增AI总结摘要功能，在交互-&gt;AI设置中设置API模型，支持OpenAI/Google/Anthropic API</li>
@@ -189,8 +189,8 @@
     </item>
     <item>
       <title>1.8.3 (2025.04.19)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.8.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.8.3</guid>
       <pubDate>Sat, 19 Apr 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 新增导出所有收藏文章功能</li>
@@ -207,8 +207,8 @@
     </item>
     <item>
       <title>1.8.1 (2025.02.11)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.8.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.8.1</guid>
       <pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 应用主题切换支持自定义输入色值</li>
@@ -227,8 +227,8 @@
     </item>
     <item>
       <title>1.8.0 (2024.12.29)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.8.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.8.0</guid>
       <pubDate>Sun, 29 Dec 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feat: RSSHub Agr Reader自部署服务已上线：rsshub.agrreader.xyz</li>
@@ -241,8 +241,8 @@
     </item>
     <item>
       <title>1.7.17 (2024.12.18)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.17</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.17</guid>
       <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>fix: 修复平板模式下今日未读无法打开文章的问题</li>
@@ -255,8 +255,8 @@
     </item>
     <item>
       <title>1.7.16 (2024.12.9)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.16</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.16</guid>
       <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 文章来源增加外部浏览器选项，支持以自定义标签页或外部浏览器直接打开文章</li>
@@ -273,8 +273,8 @@
     </item>
     <item>
       <title>1.7.15 (2024.10.27)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.15</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.15</guid>
       <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feat: 添加日语</li>
@@ -291,8 +291,8 @@
     </item>
     <item>
       <title>1.7.14 (2024.10.22)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.14</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.14</guid>
       <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feat: 支持设置默认初始页面(订阅源列表或文章列表)</li>
@@ -315,8 +315,8 @@
     </item>
     <item>
       <title>1.7.11 (2024.09.24)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.11</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.11</guid>
       <pubDate>Tue, 24 Sep 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>opt: 平板模式采用更加宽松的策略，中型尺寸也进行分屏处理。</li>
@@ -331,8 +331,8 @@
     </item>
     <item>
       <title>1.7.10 (2024.09.21)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.10</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.10</guid>
       <pubDate>Sat, 21 Sep 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feat: 平板模式支持自适应切换</li>
@@ -349,8 +349,8 @@
     </item>
     <item>
       <title>1.7.9 (2024.09.01)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.9</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.9</guid>
       <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feat: 文章列表支持调整标题字号</li>
@@ -365,8 +365,8 @@
     </item>
     <item>
       <title>1.7.8 (2024.08.24)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.8</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.8</guid>
       <pubDate>Sat, 24 Aug 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>fix: 文章列表标题空格变成+号问题</li>
@@ -389,8 +389,8 @@
     </item>
     <item>
       <title>1.7.7 (2024.08.18)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.7</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.7</guid>
       <pubDate>Sun, 18 Aug 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 支持Android 14预测性返回特性</li>
@@ -415,8 +415,8 @@
     </item>
     <item>
       <title>1.7.6 (2024.07.22)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.6</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.6</guid>
       <pubDate>Mon, 22 Jul 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 新增The Old Reader接入，以及RSS服务接入指南</li>
@@ -441,8 +441,8 @@
     </item>
     <item>
       <title>1.7.4 (2024.06.22)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.4</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.4</guid>
       <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 桌面组件支持列表滚动</li>
@@ -457,8 +457,8 @@
     </item>
     <item>
       <title>1.7.3 (2024.06.11)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.3</guid>
       <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 阅读页增加TTS功能</li>
@@ -489,8 +489,8 @@
     </item>
     <item>
       <title>1.7.2 (2024.05.29)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.2</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.2</guid>
       <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>fix: 修复Fever Api同步失败的问题</li>
@@ -505,8 +505,8 @@
     </item>
     <item>
       <title>1.7.0 (2024.05.23)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.7.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.7.0</guid>
       <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>feature: 在订阅源打开翻译设置后阅读页将自动启用翻译
@@ -529,8 +529,8 @@
     </item>
     <item>
       <title>1.6.12 (2024.05.13)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.12</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.12</guid>
       <pubDate>Mon, 13 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -545,8 +545,8 @@
     </item>
     <item>
       <title>1.6.10 (2024.05.08)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.10</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.10</guid>
       <pubDate>Wed, 08 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -567,8 +567,8 @@
     </item>
     <item>
       <title>1.6.8 (2024.04.28)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.8</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.8</guid>
       <pubDate>Sun, 28 Apr 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -597,8 +597,8 @@
     </item>
     <item>
       <title>1.6.7 (2024.04.21)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.7</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.7</guid>
       <pubDate>Sun, 21 Apr 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -633,8 +633,8 @@
     </item>
     <item>
       <title>1.6.5 (2024.04.06)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.5</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.5</guid>
       <pubDate>Sat, 06 Apr 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -677,8 +677,8 @@
     </item>
     <item>
       <title>1.6.4 (2024.03.23)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.4</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.4</guid>
       <pubDate>Sat, 23 Mar 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -723,8 +723,8 @@
     </item>
     <item>
       <title>1.6.3 (2024.03.11)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.3</guid>
       <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -759,8 +759,8 @@
     </item>
     <item>
       <title>1.6.1 (2024.02.28)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.1</guid>
       <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -775,8 +775,8 @@
     </item>
     <item>
       <title>1.6.0 (2024.02.24)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.6.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.6.0</guid>
       <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -803,8 +803,8 @@
     </item>
     <item>
       <title>1.5.4 (2024.02.06)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.5.4</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.5.4</guid>
       <pubDate>Tue, 06 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -837,8 +837,8 @@
     </item>
     <item>
       <title>1.5.3 (2024.01.03)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.5.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.5.3</guid>
       <pubDate>Wed, 03 Jan 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -869,8 +869,8 @@
     </item>
     <item>
       <title>1.5.2 (2023.12.05)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.5.2</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.5.2</guid>
       <pubDate>Tue, 05 Dec 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -895,8 +895,8 @@
     </item>
     <item>
       <title>1.5.0 (2023.11.20)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.5.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.5.0</guid>
       <pubDate>Mon, 20 Nov 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -931,8 +931,8 @@
     </item>
     <item>
       <title>1.4.3 (2023.11.06)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.4.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.4.3</guid>
       <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -965,8 +965,8 @@
     </item>
     <item>
       <title>1.4.2 (2023.11.01)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.4.2</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.4.2</guid>
       <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1013,8 +1013,8 @@
     </item>
     <item>
       <title>1.4.1 (2023.10.26)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.4.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.4.1</guid>
       <pubDate>Thu, 26 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1047,8 +1047,8 @@
     </item>
     <item>
       <title>1.4.0 (2023.10.22)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.4.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.4.0</guid>
       <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1081,8 +1081,8 @@
     </item>
     <item>
       <title>1.3.3 (2023.10.17)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.3.3</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.3.3</guid>
       <pubDate>Tue, 17 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1101,8 +1101,8 @@
     </item>
     <item>
       <title>1.3.2 (2023.10.14)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.3.2</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.3.2</guid>
       <pubDate>Sat, 14 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1125,8 +1125,8 @@
     </item>
     <item>
       <title>1.3.1 (2023.10.7)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.3.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.3.1</guid>
       <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<ul>
 <li>fix: 修复标记所有文章已读的闪退问题</li>
@@ -1137,8 +1137,8 @@
     </item>
     <item>
       <title>1.3.0 (2023.10.7)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.3.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.3.0</guid>
       <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1169,8 +1169,8 @@
     </item>
     <item>
       <title>1.2.0 (2023.10.2)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.2.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.2.0</guid>
       <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1203,8 +1203,8 @@
     </item>
     <item>
       <title>1.1.1 (2023.09.25)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.1.1</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.1.1</guid>
       <pubDate>Mon, 25 Sep 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>
@@ -1229,8 +1229,8 @@
     </item>
     <item>
       <title>1.1.0 (2023.09.23)</title>
-      <link>https://www.agrreader.xyz/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.xyz/zh/changelog/index#1.1.0</guid>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.1.0</guid>
       <pubDate>Sat, 23 Sep 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[<p>🥰当前版本变化:</p>
 <ul>

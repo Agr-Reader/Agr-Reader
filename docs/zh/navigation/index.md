@@ -45,10 +45,11 @@ Agr Reader内有部署自建的RSSHub，目前仅限于App内部订阅使用。�
 ### RSS订阅源推荐:  
 - [RSSHub](https://rsshub.app/)
 - [RSS Source](https://rss-source.com/)
-  - <a href="https://www.agrreader.xyz/resources/AgrReader-rss-source.opml" download="AgrReader-rss-source.opml">RSS Source全部RSS源OPML文件下载</a>
 - [ALL-about-RSS](https://github.com/AboutRSS/ALL-about-RSS)
 - [https://morerss.com/zh.php](https://morerss.com/zh.php)
 - [https://plink.anyfeeder.com/](https://plink.anyfeeder.com/)
+- [https://quanwenrss.com/](https://quanwenrss.com/)
+- [https://www.buzzing.cc/](https://www.buzzing.cc/)
 - [Feed Show](https://feed.hocgin.com/feed/search)
 - [BestBlogs.dev](https://www.bestblogs.dev/sources)
 - [KOTOMI RSS](https://moe4sale.in/): 一个Anime/ 动漫RSS 索引站

@@ -45,7 +45,7 @@ For specific usage instructions, refer to the [RSSHub documentation](https://doc
 - [RSS Source](https://rss-source.com/)
   - <a href="https://www.agrreader.xyz/resources/AgrReader-rss-source.opml" download="AgrReader-rss-source.opml">Download all RSS sources as an OPML file</a>
 - [ALL-about-RSS](https://github.com/AboutRSS/ALL-about-RSS)
-- [https://morerss.com/zh.php](https://morerss.com/zh.php)
+- [https://morerss.com/zh.php](https://morerss.com)
 - [https://plink.anyfeeder.com/](https://plink.anyfeeder.com/)
 - [Feed Show](https://feed.hocgin.com/feed/search)
 - [BestBlogs.dev](https://www.bestblogs.dev/sources)
