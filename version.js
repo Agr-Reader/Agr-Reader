@@ -1,18 +1,15 @@
-const changelog = `- 新特性
-  - 支持BazQux，Feedbin和Feedly账号集成
-  - AI提供商新增Alibaba(Qwen)和OpenRouter
-  - 新增文章列表背景色海拔高度调整设置，打造更个性化的阅读体验。
-- 体验优化
-  - 大幅提升文章打开时的初始渲染速度。
-  - 优化内容源切换，确保沉浸式翻译更加稳定可靠。
-  - 优化沉浸式翻译识别逻辑，排除 AI 摘要文本。
+const changelog = `- 新增功能：
+  - 新增 Agr Reader 更新日志作为默认订阅 (https://www.agrreader.com/rss/changelog.xml)
+- 改进：
+  - 优化了“关于”页面的呈现方式，使应用和版本信息在移动设备上更易于阅读。
+  - 优化了内容源控件周围的设置交互，带来更流畅的触控体验。
 - 问题修复：
-  - 修复 Feedly 订阅流程稳定性问题。
-  - 修复 Feedbin 副标题解析错误。
-  - 修复 AI 摘要默认语言设置错误的问题，跟随APP语言自适应输出内容。`;
+  - 修复了内容源切换选项中的工具提示显示问题。
+  - 修复了部分订阅源解析失败的问题。
+  - 修复了部分 AI 模型设置无法成功保存配置的问题。`;
 
-const versionName = "1.13.0";
-const versionCode = 101013000;
+const versionName = "1.13.1";
+const versionCode = 101013002;
 
 console.log(
   JSON.stringify({
@@ -20,6 +17,6 @@ console.log(
     versionCode: versionCode,
     changelog: changelog,
     fileKey: `Agr_Reader_${versionName}.apk`,
-    url: `https://resource.agrreader.com/f/GVfq/Agr_Reader_1.13.0.apk`,
+    url: `https://resource.agrreader.com/f/Y1Sa/Agr_Reader_${versionName}.apk`,
   })
 );

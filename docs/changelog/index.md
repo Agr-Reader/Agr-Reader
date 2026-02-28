@@ -1,4 +1,17 @@
 
+RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
+
+## 1.13.1(2026.02.29)
+- New Features:
+  - Added Agr Reader Changelog as a default subscription (https://www.agrreader.com/rss/changelog.xml)
+- Improvements:
+  - Improved the About page presentation to make app and version information easier to read on mobile.
+  - Refined settings interaction around content source controls for a smoother touch experience.
+- Bug Fixes:
+  - Fixed a tooltip display issue in content source switching options.
+  - Fixed cases where some feeds could fail to parse correctly.
+  - Fixed an issue where selected AI model settings were not saved reliably.
+
 ## 1.13.0(2026.02.24)
 - New Features:
   - Added support for more account providers, including Feedly email login, Feedbin username/password login, and BazQux.

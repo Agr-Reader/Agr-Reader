@@ -5,8 +5,54 @@
     <link>https://www.agrreader.com/zh/changelog/index</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Feb 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.13.1 (2026.02.29)</title>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.13.1</guid>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新增功能：
+<ul>
+<li>新增 Agr Reader 更新日志作为默认订阅 (<a href="https://www.agrreader.com/rss/changelog.xml" target="_blank" rel="noreferrer">https://www.agrreader.com/rss/changelog.xml</a>)</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>优化了“关于”页面的呈现方式，使应用和版本信息在移动设备上更易于阅读。</li>
+<li>优化了内容源控件周围的设置交互，带来更流畅的触控体验。</li>
+</ul>
+</li>
+<li>问题修复：
+<ul>
+<li>修复了内容源切换选项中的工具提示显示问题。</li>
+<li>修复了部分订阅源解析失败的问题。</li>
+<li>修复了部分 AI 模型设置无法成功保存配置的问题。</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新增功能：
+<ul>
+<li>新增 Agr Reader 更新日志作为默认订阅 (<a href="https://www.agrreader.com/rss/changelog.xml" target="_blank" rel="noreferrer">https://www.agrreader.com/rss/changelog.xml</a>)</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>优化了“关于”页面的呈现方式，使应用和版本信息在移动设备上更易于阅读。</li>
+<li>优化了内容源控件周围的设置交互，带来更流畅的触控体验。</li>
+</ul>
+</li>
+<li>问题修复：
+<ul>
+<li>修复了内容源切换选项中的工具提示显示问题。</li>
+<li>修复了部分订阅源解析失败的问题。</li>
+<li>修复了部分 AI 模型设置无法成功保存配置的问题。</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.13.0 (2026.02.24)</title>
       <link>https://www.agrreader.com/zh/changelog/index</link>
@@ -1224,52 +1270,6 @@
 <li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
 <li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
 <li>fix: 修复部分页面宽度溢出的问题</li>
-</ul>
-<p>😍下一步计划预告：支持FreshRSS</p>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.1.0 (2023.09.23)</title>
-      <link>https://www.agrreader.com/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.1.0</guid>
-      <pubDate>Sat, 23 Sep 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 🎉现在支持WebDav备份订阅源和收藏文章了！
-<ul>
-<li>在设置-&gt;备份&amp;恢复入口可进入</li>
-</ul>
-</li>
-<li>feature: 🎉文章列表的样式新增的卡片、文本两种样式
-<ul>
-<li>卡片是侧重图片，文字则是无图仅标题和副标题</li>
-</ul>
-</li>
-<li>opt: 分组增加App打开时默认展开、收起的选项</li>
-<li>opt: ⚡缩减了Apk大小并优化了文章阅读页面解析渲染速度</li>
-<li>opt: 跳转外部链接的弹窗改为底部Snackbar以减少干扰</li>
-<li>fix: 修复部分文章点击图片闪退的问题</li>
-<li>fix: 修复检查更新时的异常导致闪退</li>
-<li>fix: 修复部分RSS订阅后无法打开文章列表或打开后闪退的问题</li>
-</ul>
-<p>😍下一步计划预告：支持FreshRSS</p>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 🎉现在支持WebDav备份订阅源和收藏文章了！
-<ul>
-<li>在设置-&gt;备份&amp;恢复入口可进入</li>
-</ul>
-</li>
-<li>feature: 🎉文章列表的样式新增的卡片、文本两种样式
-<ul>
-<li>卡片是侧重图片，文字则是无图仅标题和副标题</li>
-</ul>
-</li>
-<li>opt: 分组增加App打开时默认展开、收起的选项</li>
-<li>opt: ⚡缩减了Apk大小并优化了文章阅读页面解析渲染速度</li>
-<li>opt: 跳转外部链接的弹窗改为底部Snackbar以减少干扰</li>
-<li>fix: 修复部分文章点击图片闪退的问题</li>
-<li>fix: 修复检查更新时的异常导致闪退</li>
-<li>fix: 修复部分RSS订阅后无法打开文章列表或打开后闪退的问题</li>
 </ul>
 <p>😍下一步计划预告：支持FreshRSS</p>]]></content:encoded>
     </item>
