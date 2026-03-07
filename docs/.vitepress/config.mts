@@ -21,6 +21,7 @@ export default defineConfig({
         logo: '/logo.png',
         nav: [
           { text: 'Home', link: '/' },
+          { text: 'Articles', link: '/articles/index' },
           { text: 'Navigation', link: '/navigation/index' },
           { text: 'Changelog', link: '/changelog/index' },
           { text: 'Privacy', link: '/privacy' }
@@ -36,6 +37,15 @@ export default defineConfig({
                 { text: 'RSS Feed Settings', link: '/navigation/feed-info' },
                 { text: 'Backup Settings', link: '/navigation/webdav' },
                 // { text: '微信公众号RSS', link: '/navigation/wechat' },
+              ]
+            }
+          ],
+          '/articles/': [
+            {
+              text: 'Articles',
+              items: [
+                { text: 'Why Choose Agr Reader', link: '/articles/why-agr-reader' },
+                { text: 'Supercharge Your RSS Reading: Agr Reader AI Prompt Pack', link: '/articles/ai-prompt' }
               ]
             }
           ]
@@ -76,6 +86,7 @@ export default defineConfig({
         logo: '/logo.png',
         nav: [
           { text: '主页', link: '/zh/' },
+          { text: '文章', link: '/zh/articles/index' },
           { text: '导航', link: '/zh/navigation/index' },
           { text: '更新日志', link: '/zh/changelog/index' },
           { text: '隐私政策', link: '/zh/privacy' }
@@ -91,6 +102,16 @@ export default defineConfig({
                 { text: '订阅源设置', link: '/zh/navigation/feed-info' },
                 { text: '备份设置', link: '/zh/navigation/webdav' },
                 { text: '微信公众号RSS', link: '/zh/navigation/wechat' },
+                { text: '为什么选择Agr Reader', link: '/zh/navigation/why-agr-reader' },
+              ]
+            }
+          ],
+          '/zh/articles/': [
+            {
+              text: '文章',
+              items: [
+                { text: '为什么选择Agr Reader', link: '/zh/articles/why-agr-reader' },
+                { text: '让你的 RSS 阅读效率起飞：Agr Reader AI Prompt 套装', link: '/zh/articles/ai-prompt' }
               ]
             }
           ]
