@@ -1,6 +1,11 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.14.0(2026.03.09)
+- New Features: Added AI translation, customizable AI prompts, custom model paths, and OPML import from Import & Export settings.
+- Improvements: Added quick actions to mark articles read, jump to the next subscription, and bulk-mark recent items from the last 1 or 7 days.
+- Bug Fixes: Fixed some feeds failing to parse, issues saving certain AI model settings, tooltip glitches, dark theme rendering, content width overflow, and title truncation in the reader.
+
 ## 1.13.1(2026.02.29)
 - New Features:
   - Added Agr Reader Changelog as a default subscription (https://www.agrreader.com/rss/changelog.xml)

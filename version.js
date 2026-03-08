@@ -1,15 +1,9 @@
-const changelog = `- 新增功能：
-  - 新增 Agr Reader 更新日志作为默认订阅 (https://www.agrreader.com/rss/changelog.xml)
-- 改进：
-  - 优化了“关于”页面的呈现方式，使应用和版本信息在移动设备上更易于阅读。
-  - 优化了内容源控件周围的设置交互，带来更流畅的触控体验。
-- 问题修复：
-  - 修复了内容源切换选项中的工具提示显示问题。
-  - 修复了部分订阅源解析失败的问题。
-  - 修复了部分 AI 模型设置无法成功保存配置的问题。`;
+const changelog = `- 新功能：新增 AI 翻译、自定义 AI 提示词（Prompts）、自定义模型路径，并在“导入与导出”设置中增加了 OPML 导入功能。
+- 功能改进：添加了快捷操作，支持快速标记文章为已读、跳转至下一个订阅源，以及批量标记过去 1 天或 7 天内的近期项目。
+- 问题修复：修复了部分订阅源解析失败、特定 AI 模型设置无法保存、工具提示（Tooltip）闪烁、深色模式渲染异常、内容宽度溢出以及阅读器中标题截断的问题。`;
 
-const versionName = "1.13.1";
-const versionCode = 101013002;
+const versionName = "1.14.0";
+const versionCode = 101014000;
 
 console.log(
   JSON.stringify({
@@ -17,6 +11,6 @@ console.log(
     versionCode: versionCode,
     changelog: changelog,
     fileKey: `Agr_Reader_${versionName}.apk`,
-    url: `https://resource.agrreader.com/f/Y1Sa/Agr_Reader_${versionName}.apk`,
+    url: `https://resource.agrreader.com/f/0vsj/Agr_Reader_${versionName}.apk`,
   })
 );
