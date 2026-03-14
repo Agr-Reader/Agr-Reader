@@ -3,8 +3,8 @@
 layout: home
 hero:
   name: "Agr Reader"
-  text: Material3. Concise. Graceful. RSS Reader
-  tagline: A minimalist and elegant Material3 You style RSS reader
+  text: Lightweight. Full-Featured. AI-Powered
+  tagline: Elegant, powerful RSS Reader for a seamless, personalized experience.
   image:
     src: /logo.png
     alt: Agr Reader
@@ -35,29 +35,29 @@ hero:
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
 features:
   - icon: 🎨
-    title: Elegant Material3 Design with Customizable Themes
+    title: Material You design with dynamic theming
     details: Fully compliant with Material3 guidelines, providing a visually consistent experience with customizable theme colors.
   - icon: 👍
-    title: Powerful Full-text Parsing
-    details: Most pages support full-text parsing and offline reading by default, offering a clean and distraction-free reading experience.
-  - icon: 📱
-    title: Convenient Home Screen Widgets
-    details: Instantly access the latest articles from your feeds directly from the home screen, ensuring you never miss an update.
-  - icon: 🛠️
-    title: Rich Customization Options
-    details: Configure reading page text styles, mark all as read, scroll marking options, and more for a tailored reading experience.
+    title: Read anywhere (Full text + Offline)
+    details: Full-text extraction and offline reading help you finish articles without jumping between pages — great for commuting, flights, and low-signal areas.
   - icon: 👏
-    title: Supports Various RSS Services
-    details: Compatible with popular self-hosted services such as FreshRSS, Tiny Tiny RSS, Miniflux, The Old Reader, and more, including Google Reader API and Fever API.
+    title: RSS sync that fits your workflow
+    details: Keep subscriptions (and reading progress, depending on service support) in sync via Feedly, Feedbin, The Old Reader, Bazqux, and self-hosted services like FreshRSS, Miniflux, and Tiny Tiny RSS — plus Google Reader / Fever APIs.
+  - icon: 🤖
+    title: Faster understanding with AI assistant
+    details: Run custom prompts to generate summaries, translations, key takeaways, and share-ready recaps.
+  - icon: 🛠️
+    title: Deep customization for speed and comfort
+    details: Fine-tune typography and layout, set up gestures, and streamline actions like “mark as read on scroll” and “mark all as read”.
   - icon: 🔠
-    title: Immersive Translation Features
-    details: Enjoy automatic translation of titles in lists and immersive translation of article content, making it easy to read foreign-language RSS articles without language barriers.
-  - icon: 🖥️
-    title: Widescreen Mode
-    details: Take full advantage of your tablet or large-screen device with a side-by-side display of article lists and reading views, allowing you to browse, read, and switch between stories seamlessly.\
+    title: Comfortable multilingual reading
+    details: Translated titles plus a bilingual article view for smoother language learning and cross-language browsing.
+  - icon: 📱
+    title: Modern across devices
+    details: Tablet / large-screen split view, plus home screen widgets for quick catch-up.
   - icon: ☁️
-    title: WebDAV Backup
-    details: Support WebDAV Backup&Restore to prevent data loss due to unexpected situations.
+    title: Safer migration with WebDAV backup
+    details: Backup & restore via WebDAV to move devices confidently and reduce accidental data loss.
 ---
 
 ## Screenshots
@@ -98,20 +98,33 @@ The detailed content can be viewed.👉[Agr Reader's RSSHub](/navigation/#agr-re
   </button>
 </div>
 
-## Questions
-::: details What is RSS?
-RSS, short for Really Simple Syndication, is a format used for subscribing to and distributing website content. Through RSS, websites can provide structured information such as article titles, summaries, and full texts. Users can subscribe to a website’s RSS link and view updates from multiple sites in one RSS reader.
+## Overview
+Agr Reader is a clean, fast Material You RSS reader (feed reader & news aggregator) for Android — with smooth RSS sync through the RSS services you already use.
 
-In short, RSS allows users to see the latest content from multiple sources in one place without visiting each site individually. This approach provides higher efficiency and greater autonomy in content consumption, avoiding the randomness and overload of algorithm-driven recommendations.
-:::
+Bring all your favorite blogs, news sites, and websites into one place. Read in chronological order, then use powerful tools (AI assistant, immersive translation, full-text extraction, and deep customization) to process more information efficiently — all with a polished, lightweight reading experience.
+> [Supercharge Your RSS Reading: Agr Reader AI Prompt Pack](/articles/ai-prompt)
+### Read anywhere (Full text + Offline)
+Finish articles without jumping between pages. Full-text extraction and offline reading are perfect for commuting, flights, and low-signal areas.
 
-::: details Why Choose RSS?
-In the age of information overload, social media and content aggregation tools use algorithms to recommend a large amount of content that may interest us but can also lead to information overload and narrow the types of information we encounter.
+### RSS sync that fits your workflow
+Agr Reader works with popular RSS platforms so you can keep your subscriptions (and your reading progress, depending on service support) in sync across devices:
 
-RSS (Really Simple Syndication) offers a solution. It allows us to independently choose and subscribe to information sources without algorithm interference, displaying content in chronological order. This way, we can effectively control the information we receive, avoiding information overload.
+- **Platforms:** Feedly, Feedbin, The Old Reader, Bazqux
+- **Self-hosted:** FreshRSS, Miniflux, Tiny Tiny RSS
+- **Compatible APIs:** Google Reader API / Fever API
 
-Although RSS has a higher learning curve, its reliability—like a diligent student who completes tasks on time—allows us to efficiently obtain the information we need, making it an ideal tool for managing modern information excess.
-:::
-::: details How Do I Find RSS Feeds?
-Visit: https://www.agrreader.xyz/navigation/
-:::
+### [Why you’ll love Agr Reader](/articles/why-agr-reader)
+- **Faster understanding with AI:** run custom prompts to generate summaries, translations, key takeaways, and share-ready recaps.
+- **Make reading truly yours:** fine-tune typography and layout, set up gestures, and streamline read/unread actions like “mark as read on scroll” and “mark all as read”.
+- **Material You RSS design:** modern UI with dynamic theming that matches your wallpaper and system colors.
+- **Comfortable multilingual reading:** translated titles plus bilingual article view for smoother language learning and cross-language browsing.
+- **Modern across devices:** tablet / large-screen split view, plus home screen widgets for quick catch-up.
+- **Safer migration:** WebDAV backup & restore to help you move devices confidently and reduce accidental data loss.
+
+### Who is it for?
+- RSS users following blogs, tech sites, and news feeds
+- Readers who want offline reading and full-text viewing
+- Users consuming foreign-language content
+- People who value design, speed, and customization
+
+If you’re looking for an Android RSS reader that balances a clean Material You UI, powerful customization, and reliable RSS sync, try Agr Reader.

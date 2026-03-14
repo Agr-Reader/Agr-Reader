@@ -3,8 +3,8 @@
 layout: home
 hero:
   name: "Agr Reader"
-  text: Material3. Concise. Graceful. RSS Reader
-  tagline: 简洁、优美、Material You风格的RSS阅读器
+  text: 轻量、功能齐全、AI 驱动
+  tagline: 优雅而强大的 RSS 阅读器，给你带来无缝且个性化的阅读体验。
   image:
     src: /logo.png
     alt: Agr Reader
@@ -33,29 +33,29 @@ hero:
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
 features:
   - icon: 🎨
-    title: 简洁而又优美 Material3 风格，各种主题色随心选择
-    details: 完全遵循material3规范，带来视觉上一一致体验。
+    title: Material You 动态配色的现代设计
+    details: 跟随壁纸与系统颜色的动态主题，界面简洁、精致且轻量。
   - icon: 👍
-    title: 强力且有效的全文解析
-    details: 大部分页面都是可以全文解析的，并且默认支持离线阅读，给你带来纯净的阅读体验
-  - icon: 📱
-    title: 桌面小组件，一触即达
-    details: 方便你第一时间获取新的推送文章，不落下每一篇推文
-  - icon: ✏
-    title: 丰富的自定义样式以及各项配置
-    details: 阅读页文字样式配置，全部标记已读、滚动标记配置等等
+    title: 随时随地阅读（全文 + 离线）
+    details: 全文提取与离线阅读，让你无需来回跳转页面也能读完文章；通勤、飞行或弱网环境都很好用。
   - icon: 👏
-    title: 支持接入各种RSS服务
-    details: 如FreshRSS, Tiny Tiny RSS, Miniflux, The Old Reader等主流自托管服务均可支持，包括以及Google Reader API和Fever API。inoreader、feedly正在逐步支持中...
+    title: 与工作流契合的 RSS 同步
+    details: 通过 Feedly、Feedbin、The Old Reader、Bazqux 以及 FreshRSS、Miniflux、Tiny Tiny RSS 等自建服务同步订阅（以及阅读进度，取决于服务支持），并兼容 Google Reader / Fever API。
+  - icon: 🤖
+    title: AI 助手，帮你更快理解
+    details: 支持自定义 Prompt，生成摘要、翻译、要点提炼与可分享的回顾文案。
+  - icon: 🛠️
+    title: 深度自定义，阅读更高效
+    details: 细调字号/字重、行距与布局，配置手势，并简化“滚动标记已读”“全部标记已读”等已读/未读操作流程。
   - icon: 🔠
-    title: 支持沉浸式翻译效果
-    details: 支持文章在列表中的标题翻译，支持文章内容的沉浸式翻译，轻松阅读外文RSS文章，不再有语言障碍
-  - icon: 🖥️
-    title: 宽屏模式
-    details: 充分利用您的平板电脑或大屏幕设备，并排显示文章列表和阅读视图，让您无缝浏览。
+    title: 舒适的多语言阅读体验
+    details: 支持列表标题翻译与文章双语对照阅读，适合语言学习与跨语言浏览。
+  - icon: 📱
+    title: 跨设备也顺手
+    details: 平板/大屏分栏视图 + 桌面小组件，快速补读更方便。
   - icon: ☁️
-    title: WebDAV备份
-    details: 支持WebDAV备份和恢复，防止因意外情况而丢失您的RSS订阅源数据。
+    title: WebDAV 备份与恢复，更安心换机
+    details: 通过 WebDAV 备份与恢复，迁移更省心，降低意外丢失风险。
 ---
 
 ## 截图
@@ -96,20 +96,33 @@ features:
   </button>
 </div>
 
-## 常见问题
-::: details 什么是RSS ？
-RSS，全称为 Really Simple Syndication（简易信息聚合），是一种用于订阅和分发网站内容的格式。通过RSS，网站可以以结构化的方式提供文章的标题、摘要、全文等信息，用户只需订阅网站的RSS链接，就能在一个RSS阅读器中集中查看多个网站的更新内容。
+## 简介
+Agr Reader 是一款简洁、快速的 Material You 风格 Android RSS 阅读器（信息聚合器），支持通过你常用的 RSS 服务顺滑同步。
 
-简而言之，RSS让用户可以在一个地方看到多个信息源的最新内容，不必逐一访问每个网站。这种方式为用户提供了更高的内容获取效率和更强的自主性，避免了依赖算法推荐的随机性和信息过载问题。
-:::
+把你喜欢的博客、新闻站点和各类网站集中到一起，按时间顺序阅读，并通过强大的工具（AI 助手、沉浸式翻译、全文提取、深度自定义）更高效地处理信息，同时保持轻量、精致的阅读体验。
+> [让你的 RSS 阅读效率起飞：Agr Reader AI 提示词套装](/zh/articles/ai-prompt)
+### 随时随地阅读（全文 + 离线）
+无需在网页间来回跳转，全文提取与离线阅读让你在通勤、飞行或弱网环境下也能安心读完。
 
-::: details 为什么选择 RSS？
-在信息爆炸的时代，社交媒体和聚合阅读工具通过算法推荐大量内容，这些内容可能让我们感兴趣，但也会导致信息过载，使我们接触的资讯类型变得狭窄。
+### 与工作流契合的 RSS 同步
+Agr Reader 可接入多种 RSS 平台，让你的订阅（以及阅读进度，取决于服务支持）在设备间保持同步：
 
-RSS（Really Simple Syndication）提供了解决方案。它让我们自主选择和订阅信息源，不受算法干扰，并按时间顺序显示内容。这样，我们能够有效地掌控接收的信息，避免信息过载。
+- **主流平台：** Feedly、Feedbin、The Old Reader、Bazqux
+- **自建服务：** FreshRSS、Miniflux、Tiny Tiny RSS
+- **兼容 API：** Google Reader API / Fever API
 
-尽管RSS使用门槛较高，但它的“听话”特性，正如一个按时完成任务的学生，让我们可以高效地获取所需信息，是应对现代资讯过量的理想工具。
-:::
-::: details 我要怎么寻找 RSS 订阅源？
-可见：https://www.agrreader.xyz/navigation/
-:::
+### [为什么你会喜欢 Agr Reader](/zh/articles/why-agr-reader)
+- **AI 更快理解：** 通过自定义 Prompt 生成摘要、翻译、要点提炼与可分享的回顾文案。
+- **阅读完全按你来：** 微调字号/字重、行距与布局，配置手势，并简化“滚动标记已读”“全部标记已读”等已读/未读工作流。
+- **Material You 设计：** 动态主题配色，跟随壁纸与系统颜色。
+- **多语言阅读更顺滑：** 列表标题翻译 + 文章双语对照，适合语言学习与跨语言浏览。
+- **跨设备更现代：** 平板/大屏分栏视图 + 桌面小组件，快速补读不费力。
+- **更安心的迁移：** WebDAV 备份与恢复，换机更省心，降低意外丢失风险。
+
+### 适合哪些人？
+- 关注博客、科技站点与新闻资讯的 RSS 用户
+- 需要离线阅读与全文模式的读者
+- 经常阅读外语内容的用户
+- 重视设计、速度与可定制性的用户
+
+如果你在找一款兼顾 Material You 界面、强大自定义与可靠同步的 Android RSS 阅读器，试试 Agr Reader。

@@ -5,8 +5,24 @@
     <link>https://www.agrreader.com/zh/changelog/index</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.14.0 (2026.03.09)</title>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.14.0</guid>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新功能：新增 AI 翻译、自定义 AI 提示词（Prompts）、自定义模型路径，并在“导入与导出”设置中增加了 OPML 导入功能。</li>
+<li>功能改进：添加了快捷操作，支持快速标记文章为已读、跳转至下一个订阅源，以及批量标记过去 1 天或 7 天内的近期项目。</li>
+<li>问题修复：修复了部分订阅源解析失败、特定 AI 模型设置无法保存、工具提示（Tooltip）闪烁、深色模式渲染异常、内容宽度溢出以及阅读器中标题截断的问题。</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新功能：新增 AI 翻译、自定义 AI 提示词（Prompts）、自定义模型路径，并在“导入与导出”设置中增加了 OPML 导入功能。</li>
+<li>功能改进：添加了快捷操作，支持快速标记文章为已读、跳转至下一个订阅源，以及批量标记过去 1 天或 7 天内的近期项目。</li>
+<li>问题修复：修复了部分订阅源解析失败、特定 AI 模型设置无法保存、工具提示（Tooltip）闪烁、深色模式渲染异常、内容宽度溢出以及阅读器中标题截断的问题。</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.13.1 (2026.02.29)</title>
       <link>https://www.agrreader.com/zh/changelog/index</link>
@@ -1246,32 +1262,6 @@
 <li>fix: 修复多次点击返回会导致页面白屏的问题</li>
 <li>fix: 修复同步过程中发生异常导致同步状态未结束的问题</li>
 </ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.1.1 (2023.09.25)</title>
-      <link>https://www.agrreader.com/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.1.1</guid>
-      <pubDate>Mon, 25 Sep 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 点击振动反馈增加开关选项</li>
-<li>opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏</li>
-<li>opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率</li>
-<li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
-<li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
-<li>fix: 修复部分页面宽度溢出的问题</li>
-</ul>
-<p>😍下一步计划预告：支持FreshRSS</p>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 点击振动反馈增加开关选项</li>
-<li>opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏</li>
-<li>opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率</li>
-<li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
-<li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
-<li>fix: 修复部分页面宽度溢出的问题</li>
-</ul>
-<p>😍下一步计划预告：支持FreshRSS</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

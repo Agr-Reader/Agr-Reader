@@ -5,8 +5,24 @@
     <link>https://www.agrreader.com/changelog/index</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.14.0 (2026.03.09)</title>
+      <link>https://www.agrreader.com/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.14.0</guid>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>New Features: Added AI translation, customizable AI prompts, custom model paths, and OPML import from Import &amp; Export settings.</li>
+<li>Improvements: Added quick actions to mark articles read, jump to the next subscription, and bulk-mark recent items from the last 1 or 7 days.</li>
+<li>Bug Fixes: Fixed some feeds failing to parse, issues saving certain AI model settings, tooltip glitches, dark theme rendering, content width overflow, and title truncation in the reader.</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>New Features: Added AI translation, customizable AI prompts, custom model paths, and OPML import from Import &amp; Export settings.</li>
+<li>Improvements: Added quick actions to mark articles read, jump to the next subscription, and bulk-mark recent items from the last 1 or 7 days.</li>
+<li>Bug Fixes: Fixed some feeds failing to parse, issues saving certain AI model settings, tooltip glitches, dark theme rendering, content width overflow, and title truncation in the reader.</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.13.1 (2026.02.29)</title>
       <link>https://www.agrreader.com/changelog/index</link>
@@ -1252,32 +1268,6 @@
 <li>fix: 修复多次点击返回会导致页面白屏的问题</li>
 <li>fix: 修复同步过程中发生异常导致同步状态未结束的问题</li>
 </ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.1.1 (2023.09.25)</title>
-      <link>https://www.agrreader.com/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.1.1</guid>
-      <pubDate>Mon, 25 Sep 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 点击振动反馈增加开关选项</li>
-<li>opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏</li>
-<li>opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率</li>
-<li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
-<li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
-<li>fix: 修复部分页面宽度溢出的问题</li>
-</ul>
-<p>😍下一步计划预告：支持FreshRSS</p>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 点击振动反馈增加开关选项</li>
-<li>opt: 侧边栏展开时返回不再直接返回桌面而是优先收起侧边栏</li>
-<li>opt: 优化导入或添加订阅时的内存占用以减少OPML文件较大时OOM的概率</li>
-<li>opt: 优化网络缓存，大幅度减少App缓存大小占用</li>
-<li>opt: 优化图片内存占用，修复图片较多时概率闪退的问题</li>
-<li>fix: 修复部分页面宽度溢出的问题</li>
-</ul>
-<p>😍下一步计划预告：支持FreshRSS</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

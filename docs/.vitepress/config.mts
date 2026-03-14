@@ -14,8 +14,8 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       title: "Agr Reader",
-      titleTemplate: "Material3. Concise. Graceful. RSS Reader",
-      description: "A minimalist and elegant Material3-style RSS reader",
+      titleTemplate: "Lightweight. Full-Featured. AI-Powered RSS Reader",
+      description: "Elegant, powerful RSS Reader for a seamless, personalized experience.",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/logo.png',
@@ -79,8 +79,8 @@ export default defineConfig({
       lang: 'zh', // 可选，将作为 `lang` 属性添加到 `html` 标签中
       link: '/zh/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
       title: "Agr Reader",
-      titleTemplate: "Material3. Concise. Graceful. RSS Reader",
-      description: "简洁优美的Material You风格的RSS阅读器",
+      titleTemplate: "轻量、功能齐全、AI 驱动的 RSS 阅读器",
+      description: "优雅而强大的 RSS 阅读器，给你带来无缝且个性化的阅读体验。",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/logo.png',
