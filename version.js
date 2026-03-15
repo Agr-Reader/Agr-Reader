@@ -1,9 +1,22 @@
-const changelog = `- 新功能：新增 AI 翻译、自定义 AI 提示词（Prompts）、自定义模型路径，并在“导入与导出”设置中增加了 OPML 导入功能。
-- 功能改进：添加了快捷操作，支持快速标记文章为已读、跳转至下一个订阅源，以及批量标记过去 1 天或 7 天内的近期项目。
-- 问题修复：修复了部分订阅源解析失败、特定 AI 模型设置无法保存、工具提示（Tooltip）闪烁、深色模式渲染异常、内容宽度溢出以及阅读器中标题截断的问题。`;
+const changelog = `- 新增功能：
+  - 全新的基础与进阶主题预设（日落、新闻纸、单色）组合。
+  - 新增AI摘要的复制和分享功能。
+  - 新增切换文章解析引擎的选项，以提高全文解析的兼容性。
+  - 新增关闭Logo特殊字体选项。
+  - 新增文章封面图片抓取选项（头图/首图）。
 
-const versionName = "1.14.0";
-const versionCode = 101014000;
+- 改进：
+  - 增强阅读页沉浸式体验，优化BottomBar的样式与滚动收起动效。
+  - 为AI功能新增“重新生成”选项。
+  - 起始页Feed/Unread选项优化
+
+- 错误修复：
+   - 修复了Miniflux同步失败及相关数据获取问题。
+   - 修复了文章中数学公式的渲染问题和布局溢出问题。
+   - 修复了退出全屏视频时的卡顿问题，并减少了过渡动画期间的空白闪烁现象。`;
+
+const versionName = "1.15.0";
+const versionCode = 101015000;
 
 console.log(
   JSON.stringify({
@@ -11,6 +24,6 @@ console.log(
     versionCode: versionCode,
     changelog: changelog,
     fileKey: `Agr_Reader_${versionName}.apk`,
-    url: `https://resource.agrreader.com/f/0vsj/Agr_Reader_${versionName}.apk`,
+    url: `https://resource.agrreader.com/f/eouq/Agr_Reader_${versionName}.apk`,
   })
 );

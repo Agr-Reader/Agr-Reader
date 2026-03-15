@@ -12,7 +12,7 @@ hero:
     - theme: download-cn
       text: Android APK
       subtitle: 立即下载
-      link: https://resource.agrreader.com/f/0vsj/Agr_Reader_1.14.0.apk
+      link: https://resource.agrreader.com/f/eouq/Agr_Reader_1.15.0.apk
     - theme: download
       text: Windows
       subtitle: 立即下载

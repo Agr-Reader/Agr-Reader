@@ -1,6 +1,24 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.15.0(2026.03.15)
+- New features:
+  - Brand-new combinations of basic and advanced theme presets (Sunset, Newsprint, Monochrome).
+  - Added copy and share for AI summaries.
+  - Added an option to switch the article parsing engine to improve full-text extraction compatibility.
+  - Added an option to disable the logo’s special font.
+  - Added an option to fetch article cover images (header/lead image).
+
+- Improvements:
+  - Enhanced immersion on the reading page; optimized the BottomBar style and the scroll-to-collapse animation.
+  - Added a “Regenerate” option for AI features.
+  - Optimized the start page Feed/Unread options.
+
+- Bug fixes:
+   - Fixed Miniflux sync failures and related data fetching issues.
+   - Fixed math formula rendering issues in articles and layout overflow problems.
+   - Fixed stutter when exiting full-screen video and reduced blank flicker during transition animations.
+
 ## 1.14.0(2026.03.09)
 - New Features: Added AI translation, customizable AI prompts, custom model paths, and OPML import from Import & Export settings.
 - Improvements: Added quick actions to mark articles read, jump to the next subscription, and bulk-mark recent items from the last 1 or 7 days.
