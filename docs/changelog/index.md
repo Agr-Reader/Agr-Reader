@@ -1,6 +1,16 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.16.0(2026.03.23)
+- New features:
+  - AI Weekly Report: Added a new weekly summary feature to help you quickly catch up on past unread articles.
+  - Gesture Refactor: Rebuilt the article left-swipe gesture, now supporting a wider range of action options.
+- Improvements
+  - Theme Tuning: Optimized the color palettes for Grey and Monochrome themes.
+  - Universal Toast UI: Enhanced the visual style of Toast notifications across all platforms.
+- Fixes
+  - Resolved an issue where the AI model would trigger a context length error.
+
 ## 1.15.0(2026.03.15)
 - New features:
   - Brand-new combinations of basic and advanced theme presets (Sunset, Newsprint, Monochrome).
