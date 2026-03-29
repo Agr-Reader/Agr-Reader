@@ -5,8 +5,114 @@
     <link>https://www.agrreader.com/changelog/index</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.16.0 (2026.03.23)</title>
+      <link>https://www.agrreader.com/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.16.0</guid>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>New features:
+<ul>
+<li>AI Weekly Report: Added a new weekly summary feature to help you quickly catch up on past unread articles.</li>
+<li>Gesture Refactor: Rebuilt the article left-swipe gesture, now supporting a wider range of action options.</li>
+</ul>
+</li>
+<li>Improvements
+<ul>
+<li>Theme Tuning: Optimized the color palettes for Grey and Monochrome themes.</li>
+<li>Universal Toast UI: Enhanced the visual style of Toast notifications across all platforms.</li>
+</ul>
+</li>
+<li>Fixes
+<ul>
+<li>Resolved an issue where the AI model would trigger a context length error.</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>New features:
+<ul>
+<li>AI Weekly Report: Added a new weekly summary feature to help you quickly catch up on past unread articles.</li>
+<li>Gesture Refactor: Rebuilt the article left-swipe gesture, now supporting a wider range of action options.</li>
+</ul>
+</li>
+<li>Improvements
+<ul>
+<li>Theme Tuning: Optimized the color palettes for Grey and Monochrome themes.</li>
+<li>Universal Toast UI: Enhanced the visual style of Toast notifications across all platforms.</li>
+</ul>
+</li>
+<li>Fixes
+<ul>
+<li>Resolved an issue where the AI model would trigger a context length error.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
+    <item>
+      <title>1.15.0 (2026.03.15)</title>
+      <link>https://www.agrreader.com/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.15.0</guid>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>
+<p>New features:</p>
+<ul>
+<li>Brand-new combinations of basic and advanced theme presets (Sunset, Newsprint, Monochrome).</li>
+<li>Added copy and share for AI summaries.</li>
+<li>Added an option to switch the article parsing engine to improve full-text extraction compatibility.</li>
+<li>Added an option to disable the logo’s special font.</li>
+<li>Added an option to fetch article cover images (header/lead image).</li>
+</ul>
+</li>
+<li>
+<p>Improvements:</p>
+<ul>
+<li>Enhanced immersion on the reading page; optimized the BottomBar style and the scroll-to-collapse animation.</li>
+<li>Added a “Regenerate” option for AI features.</li>
+<li>Optimized the start page Feed/Unread options.</li>
+</ul>
+</li>
+<li>
+<p>Bug fixes:</p>
+<ul>
+<li>Fixed Miniflux sync failures and related data fetching issues.</li>
+<li>Fixed math formula rendering issues in articles and layout overflow problems.</li>
+<li>Fixed stutter when exiting full-screen video and reduced blank flicker during transition animations.</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>
+<p>New features:</p>
+<ul>
+<li>Brand-new combinations of basic and advanced theme presets (Sunset, Newsprint, Monochrome).</li>
+<li>Added copy and share for AI summaries.</li>
+<li>Added an option to switch the article parsing engine to improve full-text extraction compatibility.</li>
+<li>Added an option to disable the logo’s special font.</li>
+<li>Added an option to fetch article cover images (header/lead image).</li>
+</ul>
+</li>
+<li>
+<p>Improvements:</p>
+<ul>
+<li>Enhanced immersion on the reading page; optimized the BottomBar style and the scroll-to-collapse animation.</li>
+<li>Added a “Regenerate” option for AI features.</li>
+<li>Optimized the start page Feed/Unread options.</li>
+</ul>
+</li>
+<li>
+<p>Bug fixes:</p>
+<ul>
+<li>Fixed Miniflux sync failures and related data fetching issues.</li>
+<li>Fixed math formula rendering issues in articles and layout overflow problems.</li>
+<li>Fixed stutter when exiting full-screen video and reduced blank flicker during transition animations.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.14.0 (2026.03.09)</title>
       <link>https://www.agrreader.com/changelog/index</link>
@@ -1201,72 +1307,6 @@
 </ul>]]></description>
       <content:encoded><![CDATA[<ul>
 <li>fix: 修复标记所有文章已读的闪退问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.3.0 (2023.10.7)</title>
-      <link>https://www.agrreader.com/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.3.0</guid>
-      <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>refactor: 🎉文章列表数据加载逻辑部分重构</li>
-<li>feature: 增加标记选中文章所属订阅源的全部文章为已读功能</li>
-<li>feature: 文章列表增加右滑收藏左滑已读功能</li>
-<li>feature: 新增随滚动标记已读，默认关闭可选开启(交互设置中)</li>
-<li>feature: 设置中增加交互设置，点击反馈效果开关选项移至交互设置</li>
-<li>feature: 长按菜单改为弹出底部弹窗</li>
-<li>opt: 标记当前所有已读更改为FloatingButton</li>
-<li>opt: 有新版本时将在设置按钮处展示红点提醒</li>
-<li>fix: 修复“喷嚏”RSS文章内容乱码的问题</li>
-<li>fix: 修复“IT之家”图片加载失败的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>refactor: 🎉文章列表数据加载逻辑部分重构</li>
-<li>feature: 增加标记选中文章所属订阅源的全部文章为已读功能</li>
-<li>feature: 文章列表增加右滑收藏左滑已读功能</li>
-<li>feature: 新增随滚动标记已读，默认关闭可选开启(交互设置中)</li>
-<li>feature: 设置中增加交互设置，点击反馈效果开关选项移至交互设置</li>
-<li>feature: 长按菜单改为弹出底部弹窗</li>
-<li>opt: 标记当前所有已读更改为FloatingButton</li>
-<li>opt: 有新版本时将在设置按钮处展示红点提醒</li>
-<li>fix: 修复“喷嚏”RSS文章内容乱码的问题</li>
-<li>fix: 修复“IT之家”图片加载失败的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.2.0 (2023.10.2)</title>
-      <link>https://www.agrreader.com/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.2.0</guid>
-      <pubDate>Mon, 02 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 🎉现在支持FreshRSS（提供Greader Api）的自托管服务了！
-<ul>
-<li>从设置-&gt;通用-&gt;账户管理里添加FreshRSS服务</li>
-<li>目前仅支持以greader api形式接入，且FreshRSS分组暂不支持（未提供完备的Api）</li>
-<li>Pro版支持多个RSS账户切换（如本地和FreshRSS账户切换），非Pro版只支持显示一个当前账户</li>
-</ul>
-</li>
-<li>opt: 降低超时等待时间，避免一个订阅源因网络问题卡住后续同步进度</li>
-<li>fix: 修复阅读页面字体样式未持久化的问题</li>
-<li>fix: 修复多次点击返回会导致页面白屏的问题</li>
-<li>fix: 修复同步过程中发生异常导致同步状态未结束的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 🎉现在支持FreshRSS（提供Greader Api）的自托管服务了！
-<ul>
-<li>从设置-&gt;通用-&gt;账户管理里添加FreshRSS服务</li>
-<li>目前仅支持以greader api形式接入，且FreshRSS分组暂不支持（未提供完备的Api）</li>
-<li>Pro版支持多个RSS账户切换（如本地和FreshRSS账户切换），非Pro版只支持显示一个当前账户</li>
-</ul>
-</li>
-<li>opt: 降低超时等待时间，避免一个订阅源因网络问题卡住后续同步进度</li>
-<li>fix: 修复阅读页面字体样式未持久化的问题</li>
-<li>fix: 修复多次点击返回会导致页面白屏的问题</li>
-<li>fix: 修复同步过程中发生异常导致同步状态未结束的问题</li>
 </ul>]]></content:encoded>
     </item>
   </channel>
