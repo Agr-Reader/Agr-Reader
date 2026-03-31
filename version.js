@@ -1,14 +1,18 @@
 const changelog = `- 新增：
-  - AI每周报告：新增了每周摘要功能，帮助您快速补看过往未读文章
-  - 手势重构：重构左滑手势，现在支持更广泛的动作选项。
+  - iOS版本即将发布
+  - 增加跳转外部浏览器选项
+  - 全局关键词过滤：方便用户更轻松地隐藏不感兴趣的内容。
 - 改进：
-  - 优化Grey和Monochrome主题配色.
-  - 优化全平台Toast样式
+  - 文章左滑快捷手势优化，支持快速左滑标记已读
+  - 添加Android后台任务限制提示。
+  - 优化阅读页标题栏操作按钮排序与选项。
+  - 改进了全屏对话框和整体导航流程，带来更流畅的阅读体验。
+  - 改进了周报页面，方便用户打开文章并返回上次阅读的位置。
 - 修复：
-  - 修复AI模型上下文长度报错问题`;
+  - 修复了编辑订阅源、分组和筛选器时可能发生的崩溃问题。`;
 
-const versionName = "1.16.0";
-const versionCode = 101016000;
+const versionName = "1.16.2";
+const versionCode = 101016002;
 
 console.log(
   JSON.stringify({
@@ -16,6 +20,6 @@ console.log(
     versionCode: versionCode,
     changelog: changelog,
     fileKey: `Agr_Reader_${versionName}.apk`,
-    url: `https://resource.agrreader.com/f/j7hk/Agr_Reader_${versionName}.apk`,
+    url: `https://resource.agrreader.com/f/EoI6/Agr_Reader_${versionName}.apk`,
   })
 );

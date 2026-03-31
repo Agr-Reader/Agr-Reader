@@ -1,6 +1,19 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.16.2(2026.03.30)
+- New
+  - iOS Support: Coming soon.
+  - External Browser: Added option to open links externally.
+  - Global Filters: Easily hide content via keyword filtering.
+- Improvements
+  - Quick Swipe: Faster "mark as read" gesture for articles.
+  - Reading UX: Refined UI layout and smoother navigation flow.
+  - Weekly Reports: Improved article access and position tracking.
+  - Android: Added background task restriction prompts.
+- Fixes
+  - Resolved potential crashes when editing feeds, groups, or filters.
+
 ## 1.16.0(2026.03.23)
 - New features:
   - AI Weekly Report: Added a new weekly summary feature to help you quickly catch up on past unread articles.

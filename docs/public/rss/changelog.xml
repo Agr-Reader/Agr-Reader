@@ -5,8 +5,58 @@
     <link>https://www.agrreader.com/changelog/index</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.16.2 (2026.03.30)</title>
+      <link>https://www.agrreader.com/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.16.2</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>New
+<ul>
+<li>iOS Support: Coming soon.</li>
+<li>External Browser: Added option to open links externally.</li>
+<li>Global Filters: Easily hide content via keyword filtering.</li>
+</ul>
+</li>
+<li>Improvements
+<ul>
+<li>Quick Swipe: Faster &quot;mark as read&quot; gesture for articles.</li>
+<li>Reading UX: Refined UI layout and smoother navigation flow.</li>
+<li>Weekly Reports: Improved article access and position tracking.</li>
+<li>Android: Added background task restriction prompts.</li>
+</ul>
+</li>
+<li>Fixes
+<ul>
+<li>Resolved potential crashes when editing feeds, groups, or filters.</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>New
+<ul>
+<li>iOS Support: Coming soon.</li>
+<li>External Browser: Added option to open links externally.</li>
+<li>Global Filters: Easily hide content via keyword filtering.</li>
+</ul>
+</li>
+<li>Improvements
+<ul>
+<li>Quick Swipe: Faster &quot;mark as read&quot; gesture for articles.</li>
+<li>Reading UX: Refined UI layout and smoother navigation flow.</li>
+<li>Weekly Reports: Improved article access and position tracking.</li>
+<li>Android: Added background task restriction prompts.</li>
+</ul>
+</li>
+<li>Fixes
+<ul>
+<li>Resolved potential crashes when editing feeds, groups, or filters.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.16.0 (2026.03.23)</title>
       <link>https://www.agrreader.com/changelog/index</link>
@@ -1295,18 +1345,6 @@
 <li>opt: 优化封面图获取规则</li>
 <li>fix: 修复文章内容页面自定义字体不生效的问题</li>
 <li>fix: 修复文章列表偶现闪退的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.3.1 (2023.10.7)</title>
-      <link>https://www.agrreader.com/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/changelog/index#1.3.1</guid>
-      <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<ul>
-<li>fix: 修复标记所有文章已读的闪退问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<ul>
-<li>fix: 修复标记所有文章已读的闪退问题</li>
 </ul>]]></content:encoded>
     </item>
   </channel>

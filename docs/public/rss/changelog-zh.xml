@@ -5,8 +5,60 @@
     <link>https://www.agrreader.com/zh/changelog/index</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.16.2 (2026.03.30)</title>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.16.2</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新增：
+<ul>
+<li>iOS版本即将发布</li>
+<li>增加跳转外部浏览器选项</li>
+<li>全局关键词过滤：方便用户更轻松地隐藏不感兴趣的内容。</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>文章左滑快捷手势优化，支持快速左滑标记已读</li>
+<li>添加Android后台任务限制提示。</li>
+<li>优化阅读页标题栏操作按钮排序与选项。</li>
+<li>改进了全屏对话框和整体导航流程，带来更流畅的阅读体验。</li>
+<li>改进了周报页面，方便用户打开文章并返回上次阅读的位置。</li>
+</ul>
+</li>
+<li>修复：
+<ul>
+<li>修复了编辑订阅源、分组和筛选器时可能发生的崩溃问题。</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新增：
+<ul>
+<li>iOS版本即将发布</li>
+<li>增加跳转外部浏览器选项</li>
+<li>全局关键词过滤：方便用户更轻松地隐藏不感兴趣的内容。</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>文章左滑快捷手势优化，支持快速左滑标记已读</li>
+<li>添加Android后台任务限制提示。</li>
+<li>优化阅读页标题栏操作按钮排序与选项。</li>
+<li>改进了全屏对话框和整体导航流程，带来更流畅的阅读体验。</li>
+<li>改进了周报页面，方便用户打开文章并返回上次阅读的位置。</li>
+</ul>
+</li>
+<li>修复：
+<ul>
+<li>修复了编辑订阅源、分组和筛选器时可能发生的崩溃问题。</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.16.0 (2026.03.23)</title>
       <link>https://www.agrreader.com/zh/changelog/index</link>
@@ -1289,18 +1341,6 @@
 <li>opt: 优化封面图获取规则</li>
 <li>fix: 修复文章内容页面自定义字体不生效的问题</li>
 <li>fix: 修复文章列表偶现闪退的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.3.1 (2023.10.7)</title>
-      <link>https://www.agrreader.com/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.3.1</guid>
-      <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<ul>
-<li>fix: 修复标记所有文章已读的闪退问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<ul>
-<li>fix: 修复标记所有文章已读的闪退问题</li>
 </ul>]]></content:encoded>
     </item>
   </channel>
