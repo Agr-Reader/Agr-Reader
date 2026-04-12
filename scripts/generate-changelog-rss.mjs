@@ -10,7 +10,7 @@ const FEED_CONFIGS = [
   {
     sourcePath: 'docs/changelog/index.md',
     outputPath: 'docs/public/rss/changelog.xml',
-    channelPath: '/changelog/index',
+    channelPath: '/rss/changelog.xml',
     selfPath: '/rss/changelog.xml',
     title: 'Agr Reader Changelog',
     description: 'Agr Reader release notes and updates.',
@@ -19,7 +19,7 @@ const FEED_CONFIGS = [
   {
     sourcePath: 'docs/zh/changelog/index.md',
     outputPath: 'docs/public/rss/changelog-zh.xml',
-    channelPath: '/zh/changelog/index',
+    channelPath: '/rss/changelog-zh.xml',
     selfPath: '/rss/changelog-zh.xml',
     title: 'Agr Reader Changelog (Chinese)',
     description: 'Agr Reader release notes and updates in Chinese.',
