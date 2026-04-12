@@ -1,18 +1,17 @@
-const changelog = `- 新增：
-  - iOS版本即将发布
-  - 增加跳转外部浏览器选项
-  - 全局关键词过滤：方便用户更轻松地隐藏不感兴趣的内容。
+const changelog = `- 新增功能：
+  - 在阅读器中新增顶部和底部边缘拖动操作，方便更快捷地控制阅读。
+  - 新增自定义阅读字体，可根据您的喜好进行个性化设置。
 - 改进：
-  - 文章左滑快捷手势优化，支持快速左滑标记已读
-  - 添加Android后台任务限制提示。
-  - 优化阅读页标题栏操作按钮排序与选项。
-  - 改进了全屏对话框和整体导航流程，带来更流畅的阅读体验。
-  - 改进了周报页面，方便用户打开文章并返回上次阅读的位置。
-- 修复：
-  - 修复了编辑订阅源、分组和筛选器时可能发生的崩溃问题。`;
+  - 优化拖动手势的阻尼，带来更流畅的触控交互体验。
+  - 改进添加集成 RSS 服务时的错误反馈。
+  - 优化Feed列表空状态，使订阅源状态更加清晰。
+- 问题修复：
+  - 修复 AI 提供商（如 LongCat）集成问题。
+  - 修复阅读器中文章图片尺寸显示不正常的问题。
+  - 修复阅读和导出菜单的显示问题，带来更稳定的用户体验。`;
 
-const versionName = "1.16.2";
-const versionCode = 101016002;
+const versionName = "1.17.0";
+const versionCode = 101017000;
 
 console.log(
   JSON.stringify({
@@ -20,6 +19,6 @@ console.log(
     versionCode: versionCode,
     changelog: changelog,
     fileKey: `Agr_Reader_${versionName}.apk`,
-    url: `https://resource.agrreader.com/f/EoI6/Agr_Reader_${versionName}.apk`,
+    url: `https://resource.agrreader.com/f/yDHv/Agr_Reader_${versionName}.apk`,
   })
 );

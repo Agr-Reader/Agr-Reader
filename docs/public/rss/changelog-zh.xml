@@ -5,8 +5,58 @@
     <link>https://www.agrreader.com/zh/changelog/index</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.17.0 (2026.04.13)</title>
+      <link>https://www.agrreader.com/zh/changelog/index</link>
+      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.17.0</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新增功能：
+<ul>
+<li>在阅读器中新增顶部和底部边缘拖动操作，方便更快捷地控制阅读。</li>
+<li>新增自定义阅读字体，可根据您的喜好进行个性化设置。</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>优化拖动手势的阻尼，带来更流畅的触控交互体验。</li>
+<li>改进添加集成 RSS 服务时的错误反馈。</li>
+<li>优化Feed列表空状态，使订阅源状态更加清晰。</li>
+</ul>
+</li>
+<li>问题修复：
+<ul>
+<li>修复 AI 提供商（如 LongCat）集成问题。</li>
+<li>修复阅读器中文章图片尺寸显示不正常的问题。</li>
+<li>修复阅读和导出菜单的显示问题，带来更稳定的用户体验。</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新增功能：
+<ul>
+<li>在阅读器中新增顶部和底部边缘拖动操作，方便更快捷地控制阅读。</li>
+<li>新增自定义阅读字体，可根据您的喜好进行个性化设置。</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>优化拖动手势的阻尼，带来更流畅的触控交互体验。</li>
+<li>改进添加集成 RSS 服务时的错误反馈。</li>
+<li>优化Feed列表空状态，使订阅源状态更加清晰。</li>
+</ul>
+</li>
+<li>问题修复：
+<ul>
+<li>修复 AI 提供商（如 LongCat）集成问题。</li>
+<li>修复阅读器中文章图片尺寸显示不正常的问题。</li>
+<li>修复阅读和导出菜单的显示问题，带来更稳定的用户体验。</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.16.2 (2026.03.30)</title>
       <link>https://www.agrreader.com/zh/changelog/index</link>
@@ -1317,30 +1367,6 @@
 <li>fix: 修复订阅源详情页面功能失效的问题</li>
 <li>fix: 震动开关未设置时默认关闭的问题</li>
 <li>fix: FreshRSS缓存导致之前配置失败后无法成功的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.3.2 (2023.10.14)</title>
-      <link>https://www.agrreader.com/zh/changelog/index</link>
-      <guid isPermaLink="false">https://www.agrreader.com/zh/changelog/index#1.3.2</guid>
-      <pubDate>Sat, 14 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>opt: 优化启动时订阅源加载速度，预计相比之前快50%</li>
-<li>opt: apk大小优化，去除无用依赖</li>
-<li>opt: 优化内存占用</li>
-<li>opt: 优化封面图获取规则</li>
-<li>fix: 修复文章内容页面自定义字体不生效的问题</li>
-<li>fix: 修复文章列表偶现闪退的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>opt: 优化启动时订阅源加载速度，预计相比之前快50%</li>
-<li>opt: apk大小优化，去除无用依赖</li>
-<li>opt: 优化内存占用</li>
-<li>opt: 优化封面图获取规则</li>
-<li>fix: 修复文章内容页面自定义字体不生效的问题</li>
-<li>fix: 修复文章列表偶现闪退的问题</li>
 </ul>]]></content:encoded>
     </item>
   </channel>

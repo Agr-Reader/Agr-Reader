@@ -1,6 +1,19 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.17.0(2026.04.13)
+- New Features:
+  - Edge Drag Gestures: Added top and bottom edge drag actions in the reader for faster and more intuitive control.
+  - Custom Fonts: Added support for custom reading fonts, allowing for a more personalized reading experience.
+- Improvements:
+  - RSS Integration: Improved error feedback when adding or integrating RSS services.
+  - Feed List UI: Optimized the "empty state" of the Feed list to provide better clarity regarding your subscription status.
+- Bug Fixes:
+  - AI Integration: Resolved integration issues with AI providers (such as LongCat).
+  - Image Rendering: Fixed an issue where article images in the reader were displayed with incorrect dimensions.
+  - Menu Display: Fixed display glitches in the reading and export menus to ensure a more stable user experience.
+
+
 ## 1.16.2(2026.03.30)
 - New
   - iOS Support: Coming soon.
