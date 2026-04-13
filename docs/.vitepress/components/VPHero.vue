@@ -56,9 +56,14 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
                 </div>
                 <slot name="home-hero-actions-after" />
                 <div style="margin-top: 8px;">
-                    <a href="https://github.com/Agr-Reader/Agr-Reader/releases" style="text-decoration: underline;" >
+                    <a href="https://github.com/Agr-Reader/Agr-Reader/releases" style="text-decoration: underline;">
                         Additional download options: Windows(Zip, Msi), Linux(Deb) and more
                     </a>
+                    <p v-if="actions[0].theme === 'download'" style="text-decoration: underline; padding-top: 4px;">
+                        <a href="/zh">
+                            国内用户可前往此处下载->
+                        </a>
+                    </p>
                 </div>
             </div>
             <div v-if="image || heroImageSlotExists" class="image">
