@@ -5,8 +5,20 @@
     <link>https://www.agrreader.com/rss/changelog.xml</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.17.1 (2026.04.15)</title>
+      <link>https://www.agrreader.com/rss/changelog.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#1.17.1</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>Fix the issue where the AI summary fails when the full text has not been retrieved.</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>Fix the issue where the AI summary fails when the full text has not been retrieved.</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.17.0 (2026.04.13)</title>
       <link>https://www.agrreader.com/rss/changelog.xml</link>
@@ -1350,26 +1362,6 @@
 <li>fix: 修复FreshRSS已读失效的问题</li>
 </ul>
 <p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.3.3 (2023.10.17)</title>
-      <link>https://www.agrreader.com/rss/changelog.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#1.3.3</guid>
-      <pubDate>Tue, 17 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>opt: 优化文章内容样式（实验性质）</li>
-<li>fix: 修复订阅源详情页面功能失效的问题</li>
-<li>fix: 震动开关未设置时默认关闭的问题</li>
-<li>fix: FreshRSS缓存导致之前配置失败后无法成功的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>opt: 优化文章内容样式（实验性质）</li>
-<li>fix: 修复订阅源详情页面功能失效的问题</li>
-<li>fix: 震动开关未设置时默认关闭的问题</li>
-<li>fix: FreshRSS缓存导致之前配置失败后无法成功的问题</li>
-</ul>]]></content:encoded>
     </item>
   </channel>
 </rss>

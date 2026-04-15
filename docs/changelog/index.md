@@ -1,6 +1,9 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.17.1(2026.04.15)
+- Fix the issue where the AI summary fails when the full text has not been retrieved.
+
 ## 1.17.0(2026.04.13)
 - New Features:
   - Edge Drag Gestures: Added top and bottom edge drag actions in the reader for faster and more intuitive control.
