@@ -1,6 +1,17 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.18.0(2026.04.23)
+- Keyword Search for Feeds: Added the ability to search by keywords when adding new subscription sources.
+- Folo Account Support: Added support for Folo accounts and optimized the Feedly login experience.
+- Desktop Keyboard Shortcuts: Introduced new keyboard shortcuts on desktop to enhance reading and navigation efficiency.
+- Enhanced Update Notifications: Improved notification content, now featuring article previews.
+- Improved Horizontal Swiping: Optimized swiping sensitivity on the reading page to reduce accidental triggers.
+- Bug Fixes:
+  - Resolved issues with duplicate article fetching and abnormal feed sorting in sync services.
+  - Fixed playback errors in Text-to-Speech (TTS) mode.
+  - Fixed full-text parsing errors on the desktop client.
+
 ## 1.17.1(2026.04.15)
 - Fix the issue where the AI summary fails when the full text has not been retrieved.
 

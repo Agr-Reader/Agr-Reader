@@ -8,6 +8,7 @@ const MAX_ITEMS = 50
 
 const FEED_CONFIGS = [
   {
+    siteUrl: "https://agrreader.com/",
     sourcePath: 'docs/changelog/index.md',
     outputPath: 'docs/public/rss/changelog.xml',
     channelPath: '/rss/changelog.xml',
@@ -17,6 +18,7 @@ const FEED_CONFIGS = [
     language: 'en-US'
   },
   {
+    siteUrl: "https://agrreader.com/zh",
     sourcePath: 'docs/zh/changelog/index.md',
     outputPath: 'docs/public/rss/changelog-zh.xml',
     channelPath: '/rss/changelog-zh.xml',
@@ -182,7 +184,7 @@ function buildFeedXml(config, entries, markdownRenderer) {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>${escapeXml(config.title)}</title>
-    <link>${escapeXml(channelLink)}</link>
+    <link>${escapeXml(config.siteUrl)}</link>
     <description>${escapeXml(config.description)}</description>
     <language>${escapeXml(config.language)}</language>
     <lastBuildDate>${lastBuildDate.toUTCString()}</lastBuildDate>

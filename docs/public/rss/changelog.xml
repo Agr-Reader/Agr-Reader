@@ -2,11 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Agr Reader Changelog</title>
-    <link>https://www.agrreader.com/rss/changelog.xml</link>
+    <link>https://agrreader.com/</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.18.0 (2026.04.23)</title>
+      <link>https://www.agrreader.com/rss/changelog.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#1.18.0</guid>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>Keyword Search for Feeds: Added the ability to search by keywords when adding new subscription sources.</li>
+<li>Folo Account Support: Added support for Folo accounts and optimized the Feedly login experience.</li>
+<li>Desktop Keyboard Shortcuts: Introduced new keyboard shortcuts on desktop to enhance reading and navigation efficiency.</li>
+<li>Enhanced Update Notifications: Improved notification content, now featuring article previews.</li>
+<li>Improved Horizontal Swiping: Optimized swiping sensitivity on the reading page to reduce accidental triggers.</li>
+<li>Bug Fixes:
+<ul>
+<li>Resolved issues with duplicate article fetching and abnormal feed sorting in sync services.</li>
+<li>Fixed playback errors in Text-to-Speech (TTS) mode.</li>
+<li>Fixed full-text parsing errors on the desktop client.</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>Keyword Search for Feeds: Added the ability to search by keywords when adding new subscription sources.</li>
+<li>Folo Account Support: Added support for Folo accounts and optimized the Feedly login experience.</li>
+<li>Desktop Keyboard Shortcuts: Introduced new keyboard shortcuts on desktop to enhance reading and navigation efficiency.</li>
+<li>Enhanced Update Notifications: Improved notification content, now featuring article previews.</li>
+<li>Improved Horizontal Swiping: Optimized swiping sensitivity on the reading page to reduce accidental triggers.</li>
+<li>Bug Fixes:
+<ul>
+<li>Resolved issues with duplicate article fetching and abnormal feed sorting in sync services.</li>
+<li>Fixed playback errors in Text-to-Speech (TTS) mode.</li>
+<li>Fixed full-text parsing errors on the desktop client.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.17.1 (2026.04.15)</title>
       <link>https://www.agrreader.com/rss/changelog.xml</link>
@@ -1328,40 +1362,6 @@
 <li>fix: 修复各类闪退问题</li>
 <li>fix: 回退封面图获取逻辑</li>
 </ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.4.0 (2023.10.22)</title>
-      <link>https://www.agrreader.com/rss/changelog.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#1.4.0</guid>
-      <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 目前已经支持Google Reader Api和Fever Api接入了！
-<ul>
-<li>除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入</li>
-</ul>
-</li>
-<li>feature: 增加订阅源重命名功能更</li>
-<li>opt: 文章列表左右滑动时增加振动反馈</li>
-<li>opt: 移除文章列表的下拉刷新移至订阅源列表</li>
-<li>fix: 修复滚动标记已读时偶尔全部标记已读的问题</li>
-<li>fix: 修复FreshRSS已读失效的问题</li>
-</ul>
-<p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 目前已经支持Google Reader Api和Fever Api接入了！
-<ul>
-<li>除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入</li>
-</ul>
-</li>
-<li>feature: 增加订阅源重命名功能更</li>
-<li>opt: 文章列表左右滑动时增加振动反馈</li>
-<li>opt: 移除文章列表的下拉刷新移至订阅源列表</li>
-<li>fix: 修复滚动标记已读时偶尔全部标记已读的问题</li>
-<li>fix: 修复FreshRSS已读失效的问题</li>
-</ul>
-<p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

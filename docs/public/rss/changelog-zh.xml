@@ -2,11 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Agr Reader Changelog (Chinese)</title>
-    <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
+    <link>https://agrreader.com/zh</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.18.0 (2026.04.23)</title>
+      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.18.0</guid>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>订阅源搜索：新增在添加订阅源时通过关键词进行搜索的功能。</li>
+<li>Folo 账号支持：新增对 Folo 账号的支持，并优化了 Feedly 的登录体验。</li>
+<li>桌面端键盘快捷键：在桌面端引入了新的键盘快捷键，以提升阅读与导航效率。</li>
+<li>增强的更新通知：优化了通知内容，现已支持显示文章预览。</li>
+<li>改进的横向滑动体验：优化了阅读页面的滑动灵敏度，以减少误触情况。</li>
+<li>Bug 修复：
+<ul>
+<li>解决了同步服务中文章重复抓取及订阅源排序异常的问题。</li>
+<li>修复了文本转语音（TTS）模式下的播放错误。</li>
+<li>修复了桌面客户端上的全文解析错误。</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>订阅源搜索：新增在添加订阅源时通过关键词进行搜索的功能。</li>
+<li>Folo 账号支持：新增对 Folo 账号的支持，并优化了 Feedly 的登录体验。</li>
+<li>桌面端键盘快捷键：在桌面端引入了新的键盘快捷键，以提升阅读与导航效率。</li>
+<li>增强的更新通知：优化了通知内容，现已支持显示文章预览。</li>
+<li>改进的横向滑动体验：优化了阅读页面的滑动灵敏度，以减少误触情况。</li>
+<li>Bug 修复：
+<ul>
+<li>解决了同步服务中文章重复抓取及订阅源排序异常的问题。</li>
+<li>修复了文本转语音（TTS）模式下的播放错误。</li>
+<li>修复了桌面客户端上的全文解析错误。</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.17.1 (2026.04.15)</title>
       <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
@@ -1326,40 +1360,6 @@
 <li>fix: 修复各类闪退问题</li>
 <li>fix: 回退封面图获取逻辑</li>
 </ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.4.0 (2023.10.22)</title>
-      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.4.0</guid>
-      <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 目前已经支持Google Reader Api和Fever Api接入了！
-<ul>
-<li>除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入</li>
-</ul>
-</li>
-<li>feature: 增加订阅源重命名功能更</li>
-<li>opt: 文章列表左右滑动时增加振动反馈</li>
-<li>opt: 移除文章列表的下拉刷新移至订阅源列表</li>
-<li>fix: 修复滚动标记已读时偶尔全部标记已读的问题</li>
-<li>fix: 修复FreshRSS已读失效的问题</li>
-</ul>
-<p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 目前已经支持Google Reader Api和Fever Api接入了！
-<ul>
-<li>除FreshRSS外，Tiny Tiny RSS和MinuFlux可采用以上两种方式接入</li>
-</ul>
-</li>
-<li>feature: 增加订阅源重命名功能更</li>
-<li>opt: 文章列表左右滑动时增加振动反馈</li>
-<li>opt: 移除文章列表的下拉刷新移至订阅源列表</li>
-<li>fix: 修复滚动标记已读时偶尔全部标记已读的问题</li>
-<li>fix: 修复FreshRSS已读失效的问题</li>
-</ul>
-<p><strong>价格调整预告</strong>：Agr Reader将在11月进行价格上调，感谢早期支持Agr Reader的用户！</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
