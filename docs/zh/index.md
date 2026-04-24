@@ -32,30 +32,53 @@ hero:
       iconHtml: |
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
 features:
+  - icon: 🧭
+    title: 将你的阅读内容集中到一处
+    details: 把博客、新闻网站、产品更新和各类网页统一收进一个 RSS 收件箱，按时间顺序清爽阅读，远离算法干扰。
+
   - icon: 🎨
-    title: Material You 动态配色的现代设计
-    details: 跟随壁纸与系统颜色的动态主题，界面简洁、精致且轻量。
+    title: 优雅的 Material You 设计
+    details: 享受简洁、精致的 Material3 体验，动态配色可跟随壁纸与系统主题变化，轻盈现代，观感舒适。
+
   - icon: 👍
-    title: 随时随地阅读（全文 + 离线）
-    details: 全文提取与离线阅读，让你无需来回跳转页面也能读完文章；通勤、飞行或弱网环境都很好用。
+    title: 随时随地阅读，离线也可以
+    details: 全文提取与离线阅读让你无需反复跳转网页，也能完整读完文章，非常适合通勤、飞行和弱网环境。
+
   - icon: 👏
-    title: 与工作流契合的 RSS 同步
-    details: 通过 Feedly、Feedbin、The Old Reader、Bazqux 以及 FreshRSS、Miniflux、Tiny Tiny RSS 等自建服务同步订阅（以及阅读进度，取决于服务支持），并兼容 Google Reader / Fever API。
+    title: 适配你的 RSS 同步方式
+    details: 支持与你常用的 RSS 服务同步，包括 Feedly、Feedbin、The Old Reader、Bazquz、FreshRSS、Miniflux、Tiny Tiny RSS，以及 Google Reader 和 Fever API。
+
+  - icon: 🌐
+    title: 通过 RSSHub 发现更多内容
+    details: 内置 RSSHub 支持，帮助将更多网站转化为可订阅来源，让那些没有标准 RSS Feed 的内容也更容易被关注。
+
   - icon: 🤖
-    title: AI 助手，帮你更快理解
-    details: 支持自定义 Prompt，生成摘要、翻译、要点提炼与可分享的回顾文案。
-  - icon: 🛠️
-    title: 深度自定义，阅读更高效
-    details: 细调字号/字重、行距与布局，配置手势，并简化“滚动标记已读”“全部标记已读”等已读/未读操作流程。
+    title: 用 AI 更快理解内容
+    details: 使用自定义提示词快速总结文章、翻译内容、提取重点，并将长文转化为适合分享的摘要。
+
+  - icon: 🧩
+    title: 构建属于你的阅读工作流
+    details: 通过提示词串联总结、标记、翻译和分享流程，让每篇文章都能自然地从“阅读”进入“理解”与“行动”。
+
   - icon: 🔠
-    title: 舒适的多语言阅读体验
-    details: 支持列表标题翻译与文章双语对照阅读，适合语言学习与跨语言浏览。
+    title: 为多语言阅读而生
+    details: 支持标题翻译与双语文章视图，更轻松地阅读外语订阅源、学习语言，并浏览不同地区的内容。
+
+  - icon: 🛠️
+    title: 打造刚刚好的阅读体验
+    details: 自由调整字体、间距、布局、手势，以及已读/未读操作，例如“滚动时标为已读”或“一键全部标为已读”，让阅读更高效、更舒适。
+
   - icon: 📱
-    title: 跨设备也顺手
-    details: 平板/大屏分栏视图 + 桌面小组件，快速补读更方便。
+    title: 每块屏幕都有更好的体验
+    details: 在平板和大屏设备上使用分栏阅读，通过桌面小组件快速查看最新文章，让布局适应你的阅读方式。
+
+  - icon: 💻
+    title: 不止于 Android
+    details: 从 Android 开始，也可在 Windows 和 Linux 桌面端继续使用；iOS 与 macOS 支持也在规划中。
+
   - icon: ☁️
-    title: WebDAV 备份与恢复，更安心换机
-    details: 通过 WebDAV 备份与恢复，迁移更省心，降低意外丢失风险。
+    title: 换机迁移更安心
+    details: WebDAV 备份与恢复帮助保护你的阅读配置，降低意外数据丢失风险，也让迁移到新设备更顺畅。
 ---
 
 ## 截图

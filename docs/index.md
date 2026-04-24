@@ -34,30 +34,53 @@ hero:
       iconHtml: |
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
 features:
+  - icon: 🧭
+    title: Bring your reading into one place
+    details: Collect blogs, news sites, product updates, and websites in a single RSS inbox, then read them in a clean chronological flow without algorithmic noise.
+
   - icon: 🎨
-    title: Material You design with dynamic theming
-    details: Fully compliant with Material3 guidelines, providing a visually consistent experience with customizable theme colors.
+    title: Elegant Material You design
+    details: Enjoy a clean, polished Material3 experience with dynamic colors that follow your wallpaper and system theme — lightweight, modern, and easy on the eyes.
+
   - icon: 👍
-    title: Read anywhere (Full text + Offline)
-    details: Full-text extraction and offline reading help you finish articles without jumping between pages — great for commuting, flights, and low-signal areas.
+    title: Read anywhere, even offline
+    details: Full-text extraction and offline reading let you finish articles without opening multiple web pages — ideal for commuting, flights, and low-signal moments.
+
   - icon: 👏
-    title: RSS sync that fits your workflow
-    details: Keep subscriptions (and reading progress, depending on service support) in sync via Feedly, Feedbin, The Old Reader, Bazqux, and self-hosted services like FreshRSS, Miniflux, and Tiny Tiny RSS — plus Google Reader / Fever APIs.
+    title: RSS sync for your setup
+    details: Keep your feeds in sync with the services you already use, including Feedly, Feedbin, The Old Reader, Bazqux, FreshRSS, Miniflux, Tiny Tiny RSS, plus Google Reader and Fever APIs.
+
+  - icon: 🌐
+    title: Discover more with RSSHub
+    details: Built-in RSSHub support helps turn more websites into subscribable sources, making it easier to follow content that does not provide a standard RSS feed.
+
   - icon: 🤖
-    title: Faster understanding with AI assistant
-    details: Run custom prompts to generate summaries, translations, key takeaways, and share-ready recaps.
-  - icon: 🛠️
-    title: Deep customization for speed and comfort
-    details: Fine-tune typography and layout, set up gestures, and streamline actions like “mark as read on scroll” and “mark all as read”.
+    title: Understand more with AI
+    details: Use custom prompts to summarize articles, translate content, extract key takeaways, and turn long reads into share-ready recaps in seconds.
+
+  - icon: 🧩
+    title: Build your own reading workflow
+    details: Chain prompts for summarizing, tagging, translating, and sharing, so each article can move naturally from reading to understanding to action.
+
   - icon: 🔠
-    title: Comfortable multilingual reading
-    details: Translated titles plus a bilingual article view for smoother language learning and cross-language browsing.
+    title: Built for multilingual reading
+    details: Translated titles and bilingual article views make it easier to follow foreign-language feeds, learn languages, and browse content across regions.
+
+  - icon: 🛠️
+    title: Make reading feel just right
+    details: Fine-tune typography, spacing, layout, gestures, and read/unread workflows like “mark as read on scroll” or “mark all as read” for a faster, more comfortable routine.
+
   - icon: 📱
-    title: Modern across devices
-    details: Tablet / large-screen split view, plus home screen widgets for quick catch-up.
+    title: A better experience on every screen
+    details: Use split-view reading on tablets and large screens, catch up faster with home screen widgets, and enjoy a layout that adapts to how you read.
+
+  - icon: 💻
+    title: Available beyond Android
+    details: Start on Android and continue with desktop options for Windows and Linux, with iOS and macOS support planned for the future.
+
   - icon: ☁️
-    title: Safer migration with WebDAV backup
-    details: Backup & restore via WebDAV to move devices confidently and reduce accidental data loss.
+    title: Move devices with confidence
+    details: WebDAV backup and restore help protect your reading setup, reduce accidental data loss, and make migration to a new device smoother.
 ---
 
 ## Screenshots
