@@ -1,5 +1,5 @@
 
-RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
+Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 
 ## 1.18.1(2026.05.08)
 - Added predictive back gesture support for smoother navigation
