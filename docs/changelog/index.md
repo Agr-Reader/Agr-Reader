@@ -1,6 +1,11 @@
 
 RSS订阅地址：https://www.agrreader.com/rss/changelog.xml
 
+## 1.18.1(2026.05.08)
+- Added predictive back gesture support for smoother navigation
+- Improved desktop widget UI for a better experience
+- Added progress indicators when syncing with RSS services (e.g., FreshRSS).
+
 ## 1.18.0(2026.04.23)
 - Keyword Search for Feeds: Added the ability to search by keywords when adding new subscription sources.
 - Folo Account Support: Added support for Folo accounts and optimized the Feedly login experience.

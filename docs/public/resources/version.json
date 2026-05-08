@@ -1,7 +1,7 @@
 {
-    "versionName": "1.18.0",
-    "versionCode": 101018000,
-    "changelog": "- 订阅源搜索：新增在添加订阅源时通过关键词进行搜索的功能。\n- Folo 账号支持：新增对 Folo 账号的支持，并优化了 Feedly 的登录体验。\n- 桌面端键盘快捷键：在桌面端引入了新的键盘快捷键，以提升阅读与导航效率。\n- 增强的更新通知：优化了通知内容，现已支持显示文章预览。\n- 改进的横向滑动体验：优化了阅读页面的滑动灵敏度，以减少误触情况。\n- Bug 修复：\n  - 解决了同步服务中文章重复抓取及订阅源排序异常的问题。 \n  - 修复了文本转语音（TTS）模式下的播放错误。 \n  - 修复了桌面客户端上的全文解析错误。",
-    "fileKey": "Agr_Reader_1.18.0.apk",
-    "url": "https://resource.agrreader.com/f/mVfz/Agr_Reader_1.18.0.apk"
+    "versionName": "1.18.1",
+    "versionCode": 101018001,
+    "changelog": "- 新增预测返回手势支持，带来更加流畅的页面切换效果\n- 改进桌面小部件用户界面，支持标记以上已读，带来更佳的体验\n- 新增与 RSS 服务（例如 FreshRSS）同步时的进度指示器。",
+    "fileKey": "Agr_Reader_1.18.1.apk",
+    "url": "https://resource.agrreader.com/f/lZCx/Agr_Reader_1.18.1.apk"
 }
