@@ -1,6 +1,17 @@
 
 Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 
+## 1.18.2(2026.06.02)
+- New Features:
+  - Added AI explanations to help clarify article content.
+  - Added support for sharing images.
+  - Added pinned feeds for quicker access to important sources.
+- Improvements:
+  - Improved navigation transitions with smoother shadow and scrim effects.
+- Bug Fixes:
+  - Fixed navigation bar padding issues.
+  - Fixed an issue where downloading images did not show a toast notification.
+
 ## 1.18.1(2026.05.08)
 - Added predictive back gesture support for smoother navigation
 - Improved desktop widget UI for a better experience

@@ -1,9 +1,15 @@
-const changelog = `- 新增预测返回手势支持，带来更加流畅的页面切换效果
-- 改进桌面小部件用户界面，支持标记以上已读，带来更佳的体验
-- 新增与 RSS 服务（例如 FreshRSS）同步时的进度指示器。`;
+const changelog = `- 新增功能：
+  - 添加了 AI 注释，帮助读者更好地理解文章内容。
+  - 添加了图片分享功能。
+  - 添加了置顶订阅源，方便用户快速访问重要信息。
+- 改进：
+  - 优化了预测性返回过渡效果。
+- 问题修复：
+  - 修复了导航栏边距问题。
+  - 修复了下载图片时未显示提示信息的问题。`;
 
-const versionName = "1.18.1";
-const versionCode = 101018001;
+const versionName = "1.18.2";
+const versionCode = 101018002;
 
 console.log(
   JSON.stringify({
