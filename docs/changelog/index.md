@@ -1,6 +1,12 @@
 
 Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 
+## 1.18.3(2026.08.07)
+- Added AI unread digests for subscriptions, groups, and feeds, with key takeaways, themes, recommended reading, and source citations
+- Improved AI weekly reports with clearer date selection, generation, regeneration, and article navigation
+- Improved Android home screen widgets with system wallpaper-based dynamic colors and automatic theme refresh
+- Fixed article range handling when marking items as read
+
 ## 1.18.2(2026.06.02)
 - New Features:
   - Added AI explanations to help clarify article content.
