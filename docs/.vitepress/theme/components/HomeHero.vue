@@ -22,8 +22,8 @@ const data = computed(() => homeData[localeIndex.value === 'zh' ? 'zh' : 'root']
       </div>
       <div class="agr-hero-visual">
         <div class="agr-hero-glow" aria-hidden="true"></div>
-        <DeviceMock class="agr-hero-desktop" src="/screenshots/gallery-macos.png" alt="Agr Reader on macOS" kind="desktop" />
-        <DeviceMock class="agr-hero-phone" src="/screenshots/gallery-iphone.png" alt="Agr Reader on iPhone" kind="phone" />
+        <DeviceMock class="agr-hero-desktop" src="/screenshots/gallery-macos.webp" alt="Agr Reader on macOS" kind="desktop" />
+        <DeviceMock class="agr-hero-phone" src="/screenshots/gallery-iphone.webp" alt="Agr Reader on iPhone" kind="phone" />
       </div>
     </div>
   </div>
