@@ -24,29 +24,49 @@ interface Action {
 
 // hero 下载按钮（自两份 index.md 的 frontmatter hero.actions 迁移至此：
 // ZH 的 APK 链接来自 version.mjs 单一数据源，YAML 无法引用构建期变量）
-const actions = computed<Action[]>(() => {
+// 按移动端 / 桌面端分两组渲染（移动端组在上）。iOS 已上架 App Store；
+// macOS 仍未发布（href 空字符串 → 渲染不可点链接）。
+const APP_STORE_URL = 'https://apps.apple.com/app/agr-reader/id6760940767'
+
+const mobileActions = computed<Action[]>(() => {
   if (localeIndex.value === 'zh') {
     return [
       // 无 iconSvg → 使用内置下载箭头（与原 frontmatter 行为一致）
       { theme: 'download-cn', text: 'Android APK', subtitle: '立即下载', href: apkUrl },
-      { theme: 'download', text: 'Windows', subtitle: '立即下载', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
-      { theme: 'download', text: 'Linux', subtitle: '立即下载', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
-      // href 空字符串 = iOS 未发布，渲染不可点链接（保持现状）
-      { theme: 'download', text: 'iOS/Macos', subtitle: '即将到来', href: '', iconSvg: SVG.apple }
+      { theme: 'download', text: 'App Store', subtitle: '立即下载', href: APP_STORE_URL, iconSvg: SVG.apple }
     ]
   }
   return [
     { theme: 'download', text: 'Google Play', subtitle: 'Available on', href: 'https://play.google.com/store/apps/details?id=com.lowae.agrreader', iconSvg: SVG.googlePlay },
+    { theme: 'download', text: 'App Store', subtitle: 'Available on', href: APP_STORE_URL, iconSvg: SVG.apple }
+  ]
+})
+
+const desktopActions = computed<Action[]>(() => {
+  if (localeIndex.value === 'zh') {
+    return [
+      { theme: 'download', text: 'Windows', subtitle: '立即下载', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
+      { theme: 'download', text: 'Linux', subtitle: '立即下载', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
+      // href 空字符串 = macOS 未发布，渲染不可点链接（保持现状）
+      { theme: 'download', text: 'macOS', subtitle: '即将到来', href: '', iconSvg: SVG.apple }
+    ]
+  }
+  return [
     { theme: 'download', text: 'Windows', subtitle: 'Available on', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
     { theme: 'download', text: 'Linux', subtitle: 'Available on', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
-    { theme: 'download', text: 'iOS/Macos', subtitle: 'Coming soon', href: '', iconSvg: SVG.apple }
+    { theme: 'download', text: 'macOS', subtitle: 'Coming soon', href: '', iconSvg: SVG.apple }
   ]
 })
 </script>
 
 <template>
   <div class="actions" style="align-items: center;">
-    <div v-for="a in actions" :key="a.text" class="action">
+    <div v-for="a in mobileActions" :key="a.text" class="action">
+      <HeroDownloadButton :text="a.text" :subtitle="a.subtitle" :href="a.href" :theme="a.theme" :icon-svg="a.iconSvg" />
+    </div>
+  </div>
+  <div class="actions" style="align-items: center;">
+    <div v-for="a in desktopActions" :key="a.text" class="action">
       <HeroDownloadButton :text="a.text" :subtitle="a.subtitle" :href="a.href" :theme="a.theme" :icon-svg="a.iconSvg" />
     </div>
   </div>

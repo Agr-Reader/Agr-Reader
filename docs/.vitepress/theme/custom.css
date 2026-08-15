@@ -414,6 +414,11 @@
   justify-content: flex-start;
   max-width: none;
 }
+/* 分组下载按钮：第二组（桌面端）贴紧第一组（移动端），
+   收敛其继承的整段 padding-top，仅保留组间距 */
+.agr-hero-copy .actions + .actions {
+  padding-top: 16px;
+}
 
 /* Hero 视觉：桌面机身 + 叠加手机 + 品牌光晕 */
 .agr-hero-visual {
