@@ -760,14 +760,17 @@
     padding: var(--agr-space-4) 0 var(--agr-space-5);
     text-align: center;
   }
-  .agr-hero-tagline {
+  /* 提高特异性以覆盖 .agr-home p 的 margin: 0，恢复 auto 居中 */
+  .agr-home .agr-hero-tagline {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
   .agr-hero-copy .actions {
     justify-content: center;
   }
   .agr-hero-visual {
+    width: 100%;
     min-height: 300px;
     max-width: 560px;
     margin: 0 auto;
