@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agr Reader — 首页方向对比 Demo</title>
+<!--
+  三方向对比 Demo：A Material You 呼应 / B Linear 风 / C 编辑阅读感
+  三个 <section class="dir"> 的 DOM 完全相同，差异全部在各自的 token/装饰 CSS ——
+  与正式实现的 home.css（结构层）+ home-skin.css（皮肤层）同构，换方向 = 换一个皮肤文件。
+  注意：截图走相对路径 docs/public/…，请从仓库根目录用浏览器直接打开本文件。
+-->
+<style>
+/* ========== 页面外壳（对比工具，非方向样式） ========== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #dfe2da;
+  color: #222;
+}
+html.dark body { background: #131512; color: #ddd; }
+
+.ctrl {
+  position: sticky; top: 0; z-index: 99;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 10px 20px;
+  background: #1f2419; color: #eaf0dc;
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+.ctrl strong { font-size: 14px; }
+.ctrl .jump { display: flex; gap: 8px; flex-wrap: wrap; }
+.ctrl .jump a {
+  color: #cfe3a2; text-decoration: none; font-size: 13px;
+  padding: 4px 10px; border: 1px solid #46512f; border-radius: 999px;
+}
+.ctrl .jump a:hover { background: #333d22; }
+.ctrl button {
+  margin-left: auto; cursor: pointer; font-size: 13px;
+  padding: 6px 14px; border-radius: 999px; border: 1px solid #46512f;
+  background: #63a002; color: #fff; font-weight: 600;
+}
+.hint {
+  padding: 6px 20px; font-size: 12px; color: #6a705b;
+  background: rgba(0,0,0,.03);
+}
+html.dark .hint { color: #8b917c; background: rgba(255,255,255,.03); }
+
+.tag-head {
+  display: flex; align-items: center; gap: 14px;
+  padding: 40px 20px 16px; max-width: 1152px; margin: 0 auto;
+}
+.tag-head .letter {
+  flex-shrink: 0; display: grid; place-items: center;
+  width: 44px; height: 44px; border-radius: 12px;
+  font-weight: 800; font-size: 22px; color: #fff;
+}
+.tag-head h2 { margin: 0; font-size: 20px; }
+.tag-head p { margin: 2px 0 0; font-size: 13px; opacity: .7; }
+#a  .letter { background: #63a002; }
+#b  .letter { background: #2b2f3a; }
+#c  .letter { background: #8a7f5c; }
+#a  .letter { outline: 3px solid #b9e07a; outline-offset: 2px; }
+
+.footnote {
+  text-align: center; padding: 28px 20px 48px; font-size: 13px; opacity: .65;
+}
+
+/* ============================================================
+   结构层（三个方向共享，只消费 token） —— 对应 home.css
+   ============================================================ */
+.dir {
+  --bg: #fff; --surface: #fff; --surface-2: #eee;
+  --text: #111; --text-2: #666; --border: #ddd;
+  --accent: #63a002; --accent-2: #4d9d98; --on-accent: #fff;
+  --r-card: 12px; --r-btn: 10px;
+  --shadow-card: 0 2px 8px rgba(0,0,0,.06);
+  --hero-glow: none;
+  background: var(--bg); color: var(--text);
+  transition: background .25s ease, color .25s ease;
+  overflow-x: clip;
+}
+.wrap { max-width: 1152px; margin: 0 auto; padding: 0 24px; }
+
+/* --- 导航 mock --- */
+.dnav { position: sticky; top: 0; z-index: 5; border-bottom: 1px solid var(--border); background: var(--bg); }
+.dnav-in { max-width: 1152px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 20px; }
+.dnav img { height: 28px; display: block; }
+.dnav-links { display: flex; gap: 18px; margin-left: 8px; }
+.dnav-links a { color: var(--text-2); text-decoration: none; font-size: 14px; font-weight: 500; }
+.dnav-links a:hover { color: var(--text); }
+.dnav-right { margin-left: auto; display: flex; align-items: center; gap: 16px; }
+.dnav-right svg { width: 22px; height: 22px; fill: var(--text-2); }
+.dnav-right svg:hover { fill: var(--text); }
+.nav-cta {
+  text-decoration: none; font-size: 14px; font-weight: 600;
+  padding: 8px 20px; border-radius: var(--r-btn);
+  background: var(--accent); color: var(--on-accent);
+}
+
+/* --- Hero --- */
+.hero {
+  position: relative;
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center;
+  padding: 64px 0 72px;
+}
+.hero::before {
+  content: ""; position: absolute; inset: -10% -5% auto; height: 80%;
+  background: var(--hero-glow); pointer-events: none;
+}
+.hero-main { position: relative; z-index: 1; }
+.ph {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; color: var(--text-2);
+  font-size: 12px; font-weight: 600;
+  padding: 5px 12px 5px 6px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface);
+  margin-bottom: 20px;
+}
+.ph-mark {
+  display: grid; place-items: center; width: 20px; height: 20px;
+  border-radius: 5px; background: #da552f; color: #fff; font-weight: 800; font-size: 12px;
+}
+.h-name { font-size: 22px; margin: 0 0 6px; color: var(--accent); }
+.h-text { font-size: 46px; line-height: 1.1; font-weight: 800; margin: 0; letter-spacing: -0.02em; }
+.h-tag { font-size: 17px; line-height: 1.55; color: var(--text-2); margin: 14px 0 0; max-width: 46ch; }
+.h-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  border-radius: var(--r-btn); cursor: pointer;
+  padding: 9px 18px; text-decoration: none; font-weight: 600; font-size: 14px;
+  border: 1px solid transparent;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+}
+.btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+.btn .two { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
+.btn .s { font-size: 10.5px; font-weight: 500; opacity: .8; }
+.btn .t { font-size: 15px; }
+.btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: var(--shadow-card); }
+.btn-ghost { background: var(--surface); color: var(--text); border-color: var(--border); }
+.btn-soon {
+  background: transparent; color: var(--text-2); border-color: var(--border);
+  border-style: dashed; cursor: default;
+}
+.h-meta { margin: 14px 0 0; font-size: 13px; color: var(--text-2); }
+.h-meta a { color: var(--accent); text-decoration: none; }
+.h-meta a:hover { text-decoration: underline; }
+
+.hero-art { position: relative; z-index: 1; }
+.art-frame { border-radius: var(--r-card); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border); }
+.art-frame img { display: block; width: 100%; height: auto; }
+
+/* --- 区块标题 --- */
+.s-title { font-size: 28px; margin: 0 0 6px; }
+.s-sub { margin: 0 0 28px; color: var(--text-2); font-size: 15px; }
+
+/* --- 特性卡 --- */
+.feat { padding: 28px 0 8px; }
+.fgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.fcard {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-card); padding: 22px 22px 24px;
+  box-shadow: var(--shadow-card);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.fico { font-size: 26px; line-height: 1; margin-bottom: 14px; }
+.fcard h3 { margin: 0 0 8px; font-size: 17px; }
+.fcard p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-2); }
+
+/* --- 同步服务条 --- */
+.sync { padding: 44px 0 8px; text-align: center; }
+.sync-title { font-size: 15px; font-weight: 600; color: var(--text-2); margin: 0 0 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.chip {
+  font-size: 13.5px; font-weight: 600; padding: 7px 16px;
+  border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text);
+}
+
+/* --- 截图条 --- */
+.shots { padding: 48px 0 8px; }
+.strip {
+  display: flex; gap: 16px; overflow-x: auto; padding: 8px 4px 20px;
+  scroll-snap-type: x proximity;
+}
+.shot { flex-shrink: 0; margin: 0; scroll-snap-align: start; }
+.shot-bar { display: none; }
+.shot .frame {
+  border-radius: var(--r-card); overflow: hidden; border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.shot img { display: block; height: 300px; width: auto; }
+
+/* --- 亮点块 --- */
+.hl { padding: 44px 0 8px; max-width: 720px; }
+.hl h3 { font-size: 22px; margin: 0 0 10px; }
+.hl p { font-size: 15px; line-height: 1.7; color: var(--text-2); margin: 0 0 14px; }
+.hl-link { color: var(--accent); font-weight: 600; text-decoration: none; font-size: 15px; }
+.hl-link:hover { text-decoration: underline; }
+
+/* --- RSSHub 卡 --- */
+.rsshub-sec { padding: 44px 0 64px; display: flex; justify-content: center; }
+.rsshub {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-card); box-shadow: var(--shadow-card);
+  padding: 32px 48px; max-width: 520px;
+}
+.rsshub img { width: 88px; margin-bottom: 16px; }
+.rsshub h3 { margin: 0 0 18px; font-size: 20px; }
+.rsshub h3 a { color: var(--accent); text-decoration: none; }
+.go {
+  background: #ff5722; color: #fff; font-weight: 700; font-size: 15px;
+  padding: 10px 44px; border-radius: var(--r-btn); text-decoration: none;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+/* --- 页脚 mock --- */
+.dfoot {
+  border-top: 1px solid var(--border); padding: 26px 24px; text-align: center;
+  font-size: 13.5px; color: var(--text-2);
+}
+
+@media (max-width: 920px) {
+  .hero { grid-template-columns: 1fr; padding-top: 40px; gap: 28px; }
+  .hero-art { max-width: 640px; }
+  .fgrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .fgrid { grid-template-columns: 1fr; }
+  .dnav-links { display: none; }
+  .h-text { font-size: 34px; }
+}
+
+/* ============================================================
+   方向 A —— Material You 呼应（推荐：与 App 本体同语言）
+   ============================================================ */
+#dir-a {
+  --bg: #f6faf0; --surface: #ffffff; --surface-2: #eaf3dc;
+  --text: #1b2114; --text-2: #5c6650; --border: #dde7cb;
+  --accent: #63a002; --on-accent: #ffffff;
+  --r-card: 24px; --r-btn: 999px;
+  --shadow-card: 0 2px 6px rgba(52, 74, 12, 0.08);
+  --hero-glow:
+    radial-gradient(600px 320px at 18% 8%, rgba(154, 205, 50, .28), transparent 70%),
+    radial-gradient(520px 300px at 78% 30%, rgba(77, 157, 152, .18), transparent 70%);
+}
+html.dark #dir-a {
+  --bg: #10130c; --surface: #1a2013; --surface-2: #242c1a;
+  --text: #e7edda; --text-2: #a4ae93; --border: #2e3722;
+  --accent: #9ccc3f; --on-accent: #16220a;
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.4);
+  --hero-glow:
+    radial-gradient(600px 320px at 18% 8%, rgba(124, 178, 23, .16), transparent 70%),
+    radial-gradient(520px 300px at 78% 30%, rgba(61, 124, 119, .12), transparent 70%);
+}
+#dir-a .h-text { letter-spacing: -0.025em; }
+#dir-a .fico {
+  display: inline-grid; place-items: center;
+  width: 52px; height: 52px; border-radius: 18px;
+  background: var(--surface-2); font-size: 24px;
+}
+#dir-a .fcard:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(52, 74, 12, 0.14); }
+html.dark #dir-a .fcard:hover { box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55); }
+#dir-a .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(99, 160, 2, 0.35); }
+#dir-a .btn-ghost:hover { background: var(--surface-2); }
+#dir-a .shot .frame:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(52, 74, 12, 0.18); }
+html.dark #dir-a .shot .frame:hover { box-shadow: 0 14px 34px rgba(0, 0, 0, 0.6); }
+#dir-a .go:hover { transform: scale(1.05); background: #e64a19; }
+#dir-a .chip { border-color: transparent; }
+
+/* ============================================================
+   方向 B —— Linear / Raycast（暗色优先，玻璃拟态 + 辉光）
+   ============================================================ */
+#dir-b {
+  --bg: #f7f8fa; --surface: #ffffff; --surface-2: #eef0f4;
+  --text: #17181c; --text-2: #585d68; --border: #e2e5ec;
+  --accent: #63a002; --on-accent: #ffffff;
+  --r-card: 12px; --r-btn: 10px;
+  --shadow-card: 0 1px 3px rgba(20, 22, 30, 0.06);
+  --hero-glow:
+    radial-gradient(700px 340px at 70% 10%, rgba(99, 160, 2, .10), transparent 65%),
+    radial-gradient(500px 300px at 25% 40%, rgba(77, 157, 152, .09), transparent 70%);
+}
+html.dark #dir-b {
+  --bg: #0a0a0f; --surface: rgba(255, 255, 255, 0.028); --surface-2: rgba(255, 255, 255, 0.05);
+  --text: #eceef2; --text-2: #8b8f9a; --border: rgba(255, 255, 255, 0.09);
+  --accent: #8ed332; --on-accent: #101903;
+  --shadow-card: 0 0 0 0 transparent;
+  --hero-glow:
+    radial-gradient(760px 380px at 70% 6%, rgba(120, 190, 20, .14), transparent 62%),
+    radial-gradient(560px 340px at 22% 44%, rgba(64, 150, 145, .11), transparent 70%);
+}
+#dir-b .h-text { letter-spacing: -0.035em; font-size: 52px; }
+#dir-b .h-name {
+  display: inline-block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  border: 1px solid var(--border); padding: 4px 10px; border-radius: 999px; color: var(--text-2);
+}
+#dir-b .fcard, #dir-b .rsshub { backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+#dir-b .fcard:hover { border-color: rgba(142, 211, 50, 0.5); box-shadow: inset 0 0 24px rgba(142, 211, 50, 0.06); }
+#dir-b .btn-primary { box-shadow: 0 0 0 1px rgba(142, 211, 50, .35), 0 0 24px rgba(142, 211, 50, .25); }
+html:not(.dark) #dir-b .btn-primary { box-shadow: 0 1px 2px rgba(20,22,30,.2); }
+#dir-b .btn-primary:hover { background: var(--accent); filter: brightness(1.08); }
+#dir-b .btn-ghost:hover { border-color: rgba(142, 211, 50, 0.45); }
+#dir-b .fico { font-size: 18px; opacity: 0.9; letter-spacing: 0.06em; }
+#dir-b .chip { border-radius: 8px; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; font-weight: 500; }
+/* 截图 = 玻璃窗口（红绿灯） */
+#dir-b .shot-bar {
+  display: flex; gap: 7px; padding: 11px 14px 0;
+}
+#dir-b .shot-bar i {
+  width: 10px; height: 10px; border-radius: 50%; display: block;
+}
+#dir-b .shot-bar i:nth-child(1) { background: #ff5f57; }
+#dir-b .shot-bar i:nth-child(2) { background: #febc2e; }
+#dir-b .shot-bar i:nth-child(3) { background: #28c840; }
+#dir-b .shot { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); overflow: hidden; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+#dir-b .shot .frame { border: 0; border-radius: 0; box-shadow: none; }
+#dir-b .shot img { height: 276px; }
+#dir-b .shot:hover { border-color: rgba(142, 211, 50, 0.4); }
+#dir-b .art-frame { backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+#dir-b .go { border-radius: 8px; }
+#dir-b .go:hover { box-shadow: 0 0 20px rgba(255, 87, 34, 0.45); background: #ff6a3d; }
+
+/* ============================================================
+   方向 C —— 编辑 / 阅读感（纸面排版，衬线标题）
+   ============================================================ */
+#dir-c {
+  --bg: #faf9f5; --surface: #fffdf8; --surface-2: #f1efe6;
+  --text: #1f2328; --text-2: #57606a; --border: #e5e1d3;
+  --accent: #4d7c0f; --on-accent: #ffffff;
+  --r-card: 6px; --r-btn: 6px;
+  --shadow-card: 0 1px 2px rgba(31, 35, 40, 0.05);
+  --hero-glow: none;
+}
+html.dark #dir-c {
+  --bg: #1e1c18; --surface: #262420; --surface-2: #2e2b25;
+  --text: #e8e4da; --text-2: #a29c8e; --border: #3a362e;
+  --accent: #a3c26a; --on-accent: #1c2209;
+}
+#dir-c .h-name { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 16px; color: var(--text-2); }
+#dir-c .h-text {
+  font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 42px; letter-spacing: 0; line-height: 1.18;
+}
+#dir-c .h-tag { max-width: 52ch; }
+#dir-c .hero { grid-template-columns: 1.15fr 1fr; }
+#dir-c .fcard h3, #dir-c .s-title, #dir-c .hl h3, #dir-c .rsshub h3 {
+  font-family: Georgia, "Times New Roman", serif; font-weight: 600;
+}
+#dir-c .fico { font-size: 15px; }
+#dir-c .fcard:hover h3 { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--accent); }
+#dir-c .hl-link i { font-style: normal; display: inline-block; transition: transform .2s ease; }
+#dir-c .hl-link:hover i { transform: translateX(3px); }
+#dir-c .chip { border-radius: 4px; font-weight: 500; }
+#dir-c .btn { font-weight: 500; }
+#dir-c .btn .s { font-family: Georgia, serif; font-style: italic; }
+#dir-c .go { border-radius: 4px; }
+#dir-c .go:hover { background: #e64a19; }
+#dir-c .shot .frame:hover { border-color: var(--accent); }
+#dir-c .ph { font-family: Georgia, serif; font-style: italic; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn, .fcard, .shot .frame, .go { transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="ctrl">
+  <strong>Agr Reader — 首页方向对比</strong>
+  <nav class="jump">
+    <a href="#a">A · Material You</a>
+    <a href="#b">B · Linear 风</a>
+    <a href="#c">C · 编辑阅读感</a>
+  </nav>
+  <button id="theme-toggle" type="button">🌙 暗色</button>
+</header>
+<p class="hint">同一套 DOM、三个皮肤 —— 切换右上角明暗对比各方向暗色表现。截图走相对路径，请从仓库根目录打开本文件。</p>
+
+<!-- ======================= 方向 A ======================= -->
+<div class="tag-head" id="a">
+  <span class="letter">A</span>
+  <div>
+    <h2>Material You 呼应 <span style="font-size:12px;color:#63a002">（推荐）</span></h2>
+    <p>大圆角 · 品牌绿 tonal 表面 · 与 App 本体 Material 3 同语言，网页到 App 零认知断层</p>
+  </div>
+</div>
+
+<section class="dir" id="dir-a">
+  <nav class="dnav">
+    <div class="dnav-in">
+      <img src="docs/public/logo.png" alt="Agr Reader logo">
+      <div class="dnav-links">
+        <a href="#a">Home</a><a href="#a">Articles</a><a href="#a">Navigation</a><a href="#a">Changelog</a><a href="#a">Privacy</a>
+      </div>
+      <div class="dnav-right">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <a class="nav-cta" href="#dir-a">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-main">
+        <a class="ph" href="#dir-a"><span class="ph-mark">P</span><span>#3 Product of the Day · Featured</span></a>
+        <h1 class="h-name">Agr Reader</h1>
+        <p class="h-text">Lightweight. Full-Featured. AI-Powered</p>
+        <p class="h-tag">Elegant, powerful RSS Reader for a seamless, personalized experience.</p>
+        <div class="h-actions">
+          <a class="btn btn-primary" href="#dir-a">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M293.6 234.3L72.9 13 353.7 174.2 293.6 234.3zM15.3 0C2.3 6.8-6.4 19.2-6.4 35.3l0 441.3c0 16.1 8.7 28.5 21.7 35.3L271.9 255.9 15.3 0zM440.5 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM72.9 499L353.7 337.8 293.6 277.7 72.9 499z"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Google Play</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#dir-a">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M0 93.7l183.6-25.3 0 177.4-183.6 0 0-152.1zM0 418.3l183.6 25.3 0-175.2-183.6 0 0 149.9zm203.8 28l244.2 33.7 0-211.6-244.2 0 0 177.9zm0-380.6l0 180.1 244.2 0 0-213.8-244.2 33.7z"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Windows</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#dir-a">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19c-.39.31-.75.29-1.14-.01c-.2-.16-1.53-.92-1.95-1.19c-.48-.31-.45-.7.08-.92c1.64-.69 3.28-.64 4.91.03c.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.3 4.3 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01c-.2-.88-.29-1.78-.7-2.61c-.73-1.58-2-2.4-3.84-2.47c-1.81.05-3.16.81-3.95 2.4c-.21.43-.36.88-.46 1.34c-.17.76-.32 1.55-.5 2.32c-.15.65-.45 1.21-.96 1.71c-1.61 1.57-2.9 3.37-3.88 5.35c-.14.29-.28.58-.37.88c-.19.66.29 1.12.99.96c.44-.09.88-.18 1.3-.31c.41-.15.57-.05.67.35c.65 2.15 2.07 3.66 4.24 4.5c4.12 1.56 8.93-.66 9.97-4.58c.07-.27.17-.37.47-.27c.46.14.93.24 1.4.35c.49.09.85-.16.92-.64c.03-.26-.06-.49-.16-.73"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Linux</span></span>
+          </a>
+          <span class="btn btn-soon">
+            <svg viewBox="0 0 384 512" fill="currentColor"><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="two"><span class="s">Coming soon</span><span class="t">iOS / macOS</span></span>
+          </span>
+        </div>
+        <p class="h-meta"><a href="#dir-a">Additional download options: Windows (Zip, Msi), Linux (Deb) and more →</a></p>
+      </div>
+      <div class="hero-art">
+        <div class="art-frame">
+          <img src="docs/public/screenshots/desktop_cover.webp" alt="Agr Reader on desktop">
+        </div>
+      </div>
+    </div>
+
+    <div class="feat">
+      <h2 class="s-title">Everything you need to read</h2>
+      <p class="s-sub">A complete reading experience, deliberately crafted.</p>
+      <div class="fgrid">
+        <div class="fcard"><div class="fico">🧭</div><h3>Everything you read, in one place</h3><p>Blogs, news, product updates and websites in a single RSS inbox — chronological, no algorithmic noise. Full-text extraction and offline reading included.</p></div>
+        <div class="fcard"><div class="fico">🎨</div><h3>Elegant Material You design</h3><p>Polished Material 3 with dynamic colors that follow your wallpaper and system theme — including tablet split view and home screen widgets.</p></div>
+        <div class="fcard"><div class="fico">👏</div><h3>Sync with your own setup</h3><p>Feedly, Feedbin, The Old Reader, Bazqux, FreshRSS, Miniflux, Tiny Tiny RSS, plus Google Reader and Fever APIs.</p></div>
+        <div class="fcard"><div class="fico">🌐</div><h3>Discover more with RSSHub</h3><p>Built-in RSSHub support turns websites without feeds into subscribable sources, so you can follow more of what you care about.</p></div>
+        <div class="fcard"><div class="fico">🤖</div><h3>Understand more with AI</h3><p>Custom prompts summarize, translate and extract key takeaways; chain them into a reading workflow from comprehension to share-ready recaps.</p></div>
+        <div class="fcard"><div class="fico">☁️</div><h3>Yours everywhere</h3><p>Android today, Windows and Linux desktops too, iOS and macOS planned. WebDAV backup and restore for confident device migration.</p></div>
+      </div>
+    </div>
+
+    <div class="sync">
+      <p class="sync-title">Works with the services you already use</p>
+      <div class="chips">
+        <span class="chip">Feedly</span><span class="chip">Feedbin</span><span class="chip">The Old Reader</span><span class="chip">Bazqux</span>
+        <span class="chip">FreshRSS</span><span class="chip">Miniflux</span><span class="chip">Tiny Tiny RSS</span><span class="chip">Google Reader / Fever APIs</span>
+      </div>
+    </div>
+
+    <div class="shots">
+      <h2 class="s-title">Screenshots</h2>
+      <p class="s-sub">Scroll → and click any image for the full view.</p>
+      <div class="strip">
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/mobile_cover.webp" alt="Android widgets"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/desktop_cover.webp" alt="Desktop"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/1.webp" alt="Material 3 design"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/2.webp" alt="Full-text parsing"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/3.webp" alt="Widgets"></div></figure>
+      </div>
+    </div>
+
+    <div class="hl">
+      <h3>Read anywhere — full text + offline</h3>
+      <p>Finish articles without jumping between pages: full-text extraction and offline reading are perfect for commuting, flights and low-signal areas. Your reading progress travels with you.</p>
+      <a class="hl-link" href="#dir-a">Learn more <i>→</i></a>
+    </div>
+
+    <div class="rsshub-sec">
+      <div class="rsshub">
+        <img src="docs/public/images/rsshub-logo.webp" alt="RSSHub">
+        <h3>Welcome to <a href="#dir-a">Agr Reader's</a> RSSHub!</h3>
+        <a class="go" href="#dir-a">GO!</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="dfoot">Made with ❤️ by Lowae · Copyright © 2024-present Lowae</footer>
+</section>
+
+<!-- ======================= 方向 B ======================= -->
+<div class="tag-head" id="b">
+  <span class="letter">B</span>
+  <div>
+    <h2>Linear / Raycast 风 <span style="font-size:12px;opacity:.6">（建议切暗色查看）</span></h2>
+    <p>暗色优先 · 渐变辉光 · 玻璃拟态 · 「现代感」最强，但与产品本体的 Material You 气质脱节</p>
+  </div>
+</div>
+
+<section class="dir" id="dir-b">
+  <nav class="dnav">
+    <div class="dnav-in">
+      <img src="docs/public/logo.png" alt="Agr Reader logo">
+      <div class="dnav-links">
+        <a href="#b">Home</a><a href="#b">Articles</a><a href="#b">Navigation</a><a href="#b">Changelog</a><a href="#b">Privacy</a>
+      </div>
+      <div class="dnav-right">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <a class="nav-cta" href="#dir-b">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-main">
+        <a class="ph" href="#dir-b"><span class="ph-mark">P</span><span>#3 Product of the Day · Featured</span></a>
+        <h1 class="h-name">Agr Reader</h1>
+        <p class="h-text">Lightweight. Full-Featured. AI-Powered</p>
+        <p class="h-tag">Elegant, powerful RSS Reader for a seamless, personalized experience.</p>
+        <div class="h-actions">
+          <a class="btn btn-primary" href="#dir-b">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M293.6 234.3L72.9 13 353.7 174.2 293.6 234.3zM15.3 0C2.3 6.8-6.4 19.2-6.4 35.3l0 441.3c0 16.1 8.7 28.5 21.7 35.3L271.9 255.9 15.3 0zM440.5 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM72.9 499L353.7 337.8 293.6 277.7 72.9 499z"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Google Play</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#dir-b">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M0 93.7l183.6-25.3 0 177.4-183.6 0 0-152.1zM0 418.3l183.6 25.3 0-175.2-183.6 0 0 149.9zm203.8 28l244.2 33.7 0-211.6-244.2 0 0 177.9zm0-380.6l0 180.1 244.2 0 0-213.8-244.2 33.7z"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Windows</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#dir-b">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19c-.39.31-.75.29-1.14-.01c-.2-.16-1.53-.92-1.95-1.19c-.48-.31-.45-.7.08-.92c1.64-.69 3.28-.64 4.91.03c.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.3 4.3 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01c-.2-.88-.29-1.78-.7-2.61c-.73-1.58-2-2.4-3.84-2.47c-1.81.05-3.16.81-3.95 2.4c-.21.43-.36.88-.46 1.34c-.17.76-.32 1.55-.5 2.32c-.15.65-.45 1.21-.96 1.71c-1.61 1.57-2.9 3.37-3.88 5.35c-.14.29-.28.58-.37.88c-.19.66.29 1.12.99.96c.44-.09.88-.18 1.3-.31c.41-.15.57-.05.67.35c.65 2.15 2.07 3.66 4.24 4.5c4.12 1.56 8.93-.66 9.97-4.58c.07-.27.17-.37.47-.27c.46.14.93.24 1.4.35c.49.09.85-.16.92-.64c.03-.26-.06-.49-.16-.73"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Linux</span></span>
+          </a>
+          <span class="btn btn-soon">
+            <svg viewBox="0 0 384 512" fill="currentColor"><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="two"><span class="s">Coming soon</span><span class="t">iOS / macOS</span></span>
+          </span>
+        </div>
+        <p class="h-meta"><a href="#dir-b">Additional download options: Windows (Zip, Msi), Linux (Deb) and more →</a></p>
+      </div>
+      <div class="hero-art">
+        <div class="art-frame">
+          <img src="docs/public/screenshots/desktop_cover.webp" alt="Agr Reader on desktop">
+        </div>
+      </div>
+    </div>
+
+    <div class="feat">
+      <h2 class="s-title">Everything you need to read</h2>
+      <p class="s-sub">A complete reading experience, deliberately crafted.</p>
+      <div class="fgrid">
+        <div class="fcard"><div class="fico">🧭</div><h3>Everything you read, in one place</h3><p>Blogs, news, product updates and websites in a single RSS inbox — chronological, no algorithmic noise. Full-text extraction and offline reading included.</p></div>
+        <div class="fcard"><div class="fico">🎨</div><h3>Elegant Material You design</h3><p>Polished Material 3 with dynamic colors that follow your wallpaper and system theme — including tablet split view and home screen widgets.</p></div>
+        <div class="fcard"><div class="fico">👏</div><h3>Sync with your own setup</h3><p>Feedly, Feedbin, The Old Reader, Bazqux, FreshRSS, Miniflux, Tiny Tiny RSS, plus Google Reader and Fever APIs.</p></div>
+        <div class="fcard"><div class="fico">🌐</div><h3>Discover more with RSSHub</h3><p>Built-in RSSHub support turns websites without feeds into subscribable sources, so you can follow more of what you care about.</p></div>
+        <div class="fcard"><div class="fico">🤖</div><h3>Understand more with AI</h3><p>Custom prompts summarize, translate and extract key takeaways; chain them into a reading workflow from comprehension to share-ready recaps.</p></div>
+        <div class="fcard"><div class="fico">☁️</div><h3>Yours everywhere</h3><p>Android today, Windows and Linux desktops too, iOS and macOS planned. WebDAV backup and restore for confident device migration.</p></div>
+      </div>
+    </div>
+
+    <div class="sync">
+      <p class="sync-title">Works with the services you already use</p>
+      <div class="chips">
+        <span class="chip">Feedly</span><span class="chip">Feedbin</span><span class="chip">The Old Reader</span><span class="chip">Bazqux</span>
+        <span class="chip">FreshRSS</span><span class="chip">Miniflux</span><span class="chip">Tiny Tiny RSS</span><span class="chip">Google Reader / Fever APIs</span>
+      </div>
+    </div>
+
+    <div class="shots">
+      <h2 class="s-title">Screenshots</h2>
+      <p class="s-sub">Scroll → and click any image for the full view.</p>
+      <div class="strip">
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/mobile_cover.webp" alt="Android widgets"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/desktop_cover.webp" alt="Desktop"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/1.webp" alt="Material 3 design"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/2.webp" alt="Full-text parsing"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/3.webp" alt="Widgets"></div></figure>
+      </div>
+    </div>
+
+    <div class="hl">
+      <h3>Read anywhere — full text + offline</h3>
+      <p>Finish articles without jumping between pages: full-text extraction and offline reading are perfect for commuting, flights and low-signal areas. Your reading progress travels with you.</p>
+      <a class="hl-link" href="#dir-b">Learn more <i>→</i></a>
+    </div>
+
+    <div class="rsshub-sec">
+      <div class="rsshub">
+        <img src="docs/public/images/rsshub-logo.webp" alt="RSSHub">
+        <h3>Welcome to <a href="#dir-b">Agr Reader's</a> RSSHub!</h3>
+        <a class="go" href="#dir-b">GO!</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="dfoot">Made with ❤️ by Lowae · Copyright © 2024-present Lowae</footer>
+</section>
+
+<!-- ======================= 方向 C ======================= -->
+<div class="tag-head" id="c">
+  <span class="letter">C</span>
+  <div>
+    <h2>编辑 / 阅读感</h2>
+    <p>衬线标题 · 纸感排版 · 内容为王，呼应「阅读器」本质，但观感偏保守</p>
+  </div>
+</div>
+
+<section class="dir" id="dir-c">
+  <nav class="dnav">
+    <div class="dnav-in">
+      <img src="docs/public/logo.png" alt="Agr Reader logo">
+      <div class="dnav-links">
+        <a href="#c">Home</a><a href="#c">Articles</a><a href="#c">Navigation</a><a href="#c">Changelog</a><a href="#c">Privacy</a>
+      </div>
+      <div class="dnav-right">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <a class="nav-cta" href="#dir-c">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-main">
+        <a class="ph" href="#dir-c"><span class="ph-mark">P</span><span>#3 Product of the Day · Featured</span></a>
+        <h1 class="h-name">Agr Reader</h1>
+        <p class="h-text">Lightweight. Full-Featured. AI-Powered</p>
+        <p class="h-tag">Elegant, powerful RSS Reader for a seamless, personalized experience.</p>
+        <div class="h-actions">
+          <a class="btn btn-primary" href="#dir-c">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M293.6 234.3L72.9 13 353.7 174.2 293.6 234.3zM15.3 0C2.3 6.8-6.4 19.2-6.4 35.3l0 441.3c0 16.1 8.7 28.5 21.7 35.3L271.9 255.9 15.3 0zM440.5 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM72.9 499L353.7 337.8 293.6 277.7 72.9 499z"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Google Play</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#dir-c">
+            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M0 93.7l183.6-25.3 0 177.4-183.6 0 0-152.1zM0 418.3l183.6 25.3 0-175.2-183.6 0 0 149.9zm203.8 28l244.2 33.7 0-211.6-244.2 0 0 177.9zm0-380.6l0 180.1 244.2 0 0-213.8-244.2 33.7z"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Windows</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#dir-c">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19c-.39.31-.75.29-1.14-.01c-.2-.16-1.53-.92-1.95-1.19c-.48-.31-.45-.7.08-.92c1.64-.69 3.28-.64 4.91.03c.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.3 4.3 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01c-.2-.88-.29-1.78-.7-2.61c-.73-1.58-2-2.4-3.84-2.47c-1.81.05-3.16.81-3.95 2.4c-.21.43-.36.88-.46 1.34c-.17.76-.32 1.55-.5 2.32c-.15.65-.45 1.21-.96 1.71c-1.61 1.57-2.9 3.37-3.88 5.35c-.14.29-.28.58-.37.88c-.19.66.29 1.12.99.96c.44-.09.88-.18 1.3-.31c.41-.15.57-.05.67.35c.65 2.15 2.07 3.66 4.24 4.5c4.12 1.56 8.93-.66 9.97-4.58c.07-.27.17-.37.47-.27c.46.14.93.24 1.4.35c.49.09.85-.16.92-.64c.03-.26-.06-.49-.16-.73"/></svg>
+            <span class="two"><span class="s">Available on</span><span class="t">Linux</span></span>
+          </a>
+          <span class="btn btn-soon">
+            <svg viewBox="0 0 384 512" fill="currentColor"><path d="M319.1 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-55.8 .9-115.1 44.5-115.1 133.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.5 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="two"><span class="s">Coming soon</span><span class="t">iOS / macOS</span></span>
+          </span>
+        </div>
+        <p class="h-meta"><a href="#dir-c">Additional download options: Windows (Zip, Msi), Linux (Deb) and more →</a></p>
+      </div>
+      <div class="hero-art">
+        <div class="art-frame">
+          <img src="docs/public/screenshots/desktop_cover.webp" alt="Agr Reader on desktop">
+        </div>
+      </div>
+    </div>
+
+    <div class="feat">
+      <h2 class="s-title">Everything you need to read</h2>
+      <p class="s-sub">A complete reading experience, deliberately crafted.</p>
+      <div class="fgrid">
+        <div class="fcard"><div class="fico">🧭</div><h3>Everything you read, in one place</h3><p>Blogs, news, product updates and websites in a single RSS inbox — chronological, no algorithmic noise. Full-text extraction and offline reading included.</p></div>
+        <div class="fcard"><div class="fico">🎨</div><h3>Elegant Material You design</h3><p>Polished Material 3 with dynamic colors that follow your wallpaper and system theme — including tablet split view and home screen widgets.</p></div>
+        <div class="fcard"><div class="fico">👏</div><h3>Sync with your own setup</h3><p>Feedly, Feedbin, The Old Reader, Bazqux, FreshRSS, Miniflux, Tiny Tiny RSS, plus Google Reader and Fever APIs.</p></div>
+        <div class="fcard"><div class="fico">🌐</div><h3>Discover more with RSSHub</h3><p>Built-in RSSHub support turns websites without feeds into subscribable sources, so you can follow more of what you care about.</p></div>
+        <div class="fcard"><div class="fico">🤖</div><h3>Understand more with AI</h3><p>Custom prompts summarize, translate and extract key takeaways; chain them into a reading workflow from comprehension to share-ready recaps.</p></div>
+        <div class="fcard"><div class="fico">☁️</div><h3>Yours everywhere</h3><p>Android today, Windows and Linux desktops too, iOS and macOS planned. WebDAV backup and restore for confident device migration.</p></div>
+      </div>
+    </div>
+
+    <div class="sync">
+      <p class="sync-title">Works with the services you already use</p>
+      <div class="chips">
+        <span class="chip">Feedly</span><span class="chip">Feedbin</span><span class="chip">The Old Reader</span><span class="chip">Bazqux</span>
+        <span class="chip">FreshRSS</span><span class="chip">Miniflux</span><span class="chip">Tiny Tiny RSS</span><span class="chip">Google Reader / Fever APIs</span>
+      </div>
+    </div>
+
+    <div class="shots">
+      <h2 class="s-title">Screenshots</h2>
+      <p class="s-sub">Scroll → and click any image for the full view.</p>
+      <div class="strip">
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/mobile_cover.webp" alt="Android widgets"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/desktop_cover.webp" alt="Desktop"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/1.webp" alt="Material 3 design"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/2.webp" alt="Full-text parsing"></div></figure>
+        <figure class="shot"><div class="frame"><div class="shot-bar"><i></i><i></i><i></i></div><img src="docs/public/screenshots/en/3.webp" alt="Widgets"></div></figure>
+      </div>
+    </div>
+
+    <div class="hl">
+      <h3>Read anywhere — full text + offline</h3>
+      <p>Finish articles without jumping between pages: full-text extraction and offline reading are perfect for commuting, flights and low-signal areas. Your reading progress travels with you.</p>
+      <a class="hl-link" href="#dir-c">Learn more <i>→</i></a>
+    </div>
+
+    <div class="rsshub-sec">
+      <div class="rsshub">
+        <img src="docs/public/images/rsshub-logo.webp" alt="RSSHub">
+        <h3>Welcome to <a href="#dir-c">Agr Reader's</a> RSSHub!</h3>
+        <a class="go" href="#dir-c">GO!</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="dfoot">Made with ❤️ by Lowae · Copyright © 2024-present Lowae</footer>
+</section>
+
+<p class="footnote">同一套 DOM · 三个皮肤 —— 正式实现中换方向 = 换一个 home-skin.css 文件</p>
+
+<script>
+  const btn = document.getElementById('theme-toggle');
+  btn.addEventListener('click', () => {
+    const dark = document.documentElement.classList.toggle('dark');
+    btn.textContent = dark ? '☀️ 亮色' : '🌙 暗色';
+  });
+</script>
+</body>
+</html>

@@ -52,6 +52,7 @@ onBeforeUnmount(() => {
 <template>
   <section class="agr-section">
     <h2 class="agr-section-title">{{ data.screenshotsTitle }}</h2>
+    <p class="agr-section-subtitle">{{ data.screenshotsSubtitle }}</p>
 
     <div class="agr-gallery-wrap">
       <div ref="scroller" class="agr-gallery agr-gallery-fade">

@@ -13,6 +13,7 @@ const data = computed(() => homeData[localeIndex.value === 'zh' ? 'zh' : 'root']
       {{ data.rssHubTitle }}
       <span class="agr-badge">{{ data.rssHubBadge }}</span>
     </h2>
+    <p class="agr-section-subtitle">{{ data.rssHubSubtitle }}</p>
     <p class="agr-rsshub-link">
       <a :href="data.rssHubLinkHref">{{ data.rssHubLinkText }}</a>
     </p>

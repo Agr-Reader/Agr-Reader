@@ -11,6 +11,7 @@ const data = computed(() => homeData[localeIndex.value === 'zh' ? 'zh' : 'root']
 <template>
   <section class="agr-section">
     <h2 class="agr-section-title">{{ data.featuresTitle }}</h2>
+    <p class="agr-section-subtitle">{{ data.featuresSubtitle }}</p>
     <div class="agr-features-grid">
       <FeatureCard
         v-for="f in data.features"
@@ -20,6 +21,12 @@ const data = computed(() => homeData[localeIndex.value === 'zh' ? 'zh' : 'root']
         :details="f.details"
         :tint="f.tint"
       />
+    </div>
+    <div class="agr-sync">
+      <p class="agr-sync-title">{{ data.syncTitle }}</p>
+      <div class="agr-sync-chips">
+        <span v-for="s in data.syncServices" :key="s" class="agr-sync-chip">{{ s }}</span>
+      </div>
     </div>
   </section>
 </template>

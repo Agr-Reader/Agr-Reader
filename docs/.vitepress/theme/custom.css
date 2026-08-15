@@ -469,6 +469,41 @@
   background: var(--vp-c-brand-soft);
   border: 1px solid var(--vp-c-brand-1);
 }
+.agr-section-subtitle {
+  margin: var(--agr-space-2) auto 0;
+  max-width: 56ch;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+/* ---- 同步服务条 ---- */
+.agr-sync {
+  margin-top: var(--agr-space-4);
+  text-align: center;
+}
+.agr-sync-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  margin: 0 0 var(--agr-space-3);
+}
+.agr-sync-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.agr-sync-chip {
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-1);
+}
 
 /* ---- 特性卡片 ---- */
 .agr-features-grid {

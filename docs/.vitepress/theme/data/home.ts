@@ -22,10 +22,15 @@ export interface HomeData {
   heroText: string
   heroTagline: string
   featuresTitle: string
+  featuresSubtitle: string
   features: Feature[]
+  syncTitle: string
+  syncServices: string[]
   screenshotsTitle: string
+  screenshotsSubtitle: string
   screenshots: Screenshot[]
   rssHubTitle: string
+  rssHubSubtitle: string
   rssHubBadge: string
   rssHubLinkText: string
   rssHubLinkHref: string
@@ -45,7 +50,13 @@ const ICON = {
   language:
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free--><path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 192 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-192 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 192 0 0-256-192 0zM178.3 175.9c-3.2-8.1-9.8-15.9-18.3-15.9s-15.1 7.8-18.3 15.9l-64 144c-3.6 8.2 .6 17.5 8.9 21.1s17.5-.6 21.1-8.9l11.2-25.2 74.9 0 11.2 25.2c3.6 8.2 12.8 12.5 21.1 8.9s12.5-12.8 8.9-21.1l-64-144zm-18.3 96l18.3-41.2 18.3 41.2-36.6 0zM400 128c8.8 0 16 7.2 16 16l0 16 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-144c0-8.8 7.2-16 16-16z"/></svg>',
   display:
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free--><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-16 32-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l224 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0-16-32 176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"/></svg>'
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free--><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-16 32-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l224 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0-16-32 176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"/></svg>',
+  inbox:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free--><path fill="currentColor" d="M96 0c-35 0-64 28.7-64 64l0 352c0 35 29 64 64 64l384 0c35 0 64-29 64-64l0-352c0-35-29-64-64-64L96 0zM512 64l0 192-96 0c-17.7 0-32 14.3-32 32c0 35.3-28.7 64-64 64s-64-28.7-64-64c0-17.7-14.3-32-32-32l-96 0 0-192 384 0z"/></svg>',
+  cloud:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free--><path fill="currentColor" d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128l-368 0zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39L296 392c0 13.3 10.7 24 24 24s24-10.7 24-24l0-134.1 39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"/></svg>',
+  mobile:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free--><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l224 0 0-64L64 416 64 96l448 0 0 64 64 0 0-64c0-35.3-28.7-64-64-64L64 32zM352 224l0 224c0 17.7 14.3 32 32 32l160 0c17.7 0 32-14.3 32-32l0-224c0-17.7-14.3-32-32-32l-160 0c-17.7 0-32 14.3-32 32zm80 176c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16z"/></svg>'
 }
 
 export const homeData: Record<'root' | 'zh', HomeData> = {
@@ -74,7 +85,7 @@ export const homeData: Record<'root' | 'zh', HomeData> = {
         icon: ICON.rotate,
         title: 'RSS sync for your setup',
         details:
-          'Sync with the services you already use — Feedly, Feedbin, The Old Reader, Bazqux, FreshRSS, Miniflux, Tiny Tiny RSS, plus Google Reader and Fever APIs.',
+          'Sync with the services you already use — Feedly, Feedbin, The Old Reader, Bazqux, FreshRSS, Miniflux, Tiny Tiny RSS, Folo, plus Google Reader and Fever APIs.',
         tint: 'green'
       },
       {
@@ -97,7 +108,40 @@ export const homeData: Record<'root' | 'zh', HomeData> = {
         details:
           'Start on Android and continue on Windows and Linux, with iOS and macOS planned — a consistent experience on every screen.',
         tint: 'lime'
+      },
+      {
+        icon: ICON.inbox,
+        title: 'Everything you read, in one place',
+        details:
+          'Collect blogs, news, product updates and websites in a single RSS inbox — chronological, no algorithmic noise.',
+        tint: 'green'
+      },
+      {
+        icon: ICON.cloud,
+        title: 'Move devices with confidence',
+        details:
+          'WebDAV backup and restore protect your reading setup and make migrating to a new device smooth and worry-free.',
+        tint: 'teal'
+      },
+      {
+        icon: ICON.mobile,
+        title: 'A better experience on every screen',
+        details:
+          'Split-view reading on tablets and large screens, plus home screen widgets — a layout that adapts to how you read.',
+        tint: 'slate'
       }
+    ],
+    syncTitle: 'Works with the services you already use',
+    syncServices: [
+      'Feedly',
+      'Feedbin',
+      'The Old Reader',
+      'Bazqux',
+      'FreshRSS',
+      'Miniflux',
+      'Tiny Tiny RSS',
+      'Folo',
+      'Google Reader / Fever APIs'
     ],
     screenshotsTitle: 'Screenshots',
     screenshots: [
@@ -133,7 +177,7 @@ export const homeData: Record<'root' | 'zh', HomeData> = {
       {
         icon: ICON.rotate,
         title: '适配你的 RSS 同步方式',
-        details: '支持与你常用的 RSS 服务同步，包括 Feedly、Feedbin、The Old Reader、Bazqux、FreshRSS、Miniflux、Tiny Tiny RSS 等。',
+        details: '支持与你常用的 RSS 服务同步，包括 Feedly、Feedbin、The Old Reader、Bazqux、FreshRSS、Miniflux、Tiny Tiny RSS、Folo 等。',
         tint: 'green'
       },
       {
@@ -153,7 +197,37 @@ export const homeData: Record<'root' | 'zh', HomeData> = {
         title: '不止于 Android',
         details: '从 Android 开始，也可在 Windows 和 Linux 桌面端继续使用；iOS 与 macOS 支持也在规划中。',
         tint: 'lime'
+      },
+      {
+        icon: ICON.inbox,
+        title: '将你的阅读内容集中到一处',
+        details: '把博客、新闻、产品更新和各类网页统一收进一个 RSS 收件箱，按时间顺序清爽阅读，远离算法干扰。',
+        tint: 'green'
+      },
+      {
+        icon: ICON.cloud,
+        title: '换机迁移更安心',
+        details: 'WebDAV 备份与恢复帮助保护你的阅读配置，让迁移到新设备更顺畅、更安心。',
+        tint: 'teal'
+      },
+      {
+        icon: ICON.mobile,
+        title: '每块屏幕都有更好的体验',
+        details: '在平板和大屏设备上使用分栏阅读，通过桌面小组件快速查看最新文章，让布局适应你的阅读方式。',
+        tint: 'slate'
       }
+    ],
+    syncTitle: '与你常用的服务无缝同步',
+    syncServices: [
+      'Feedly',
+      'Feedbin',
+      'The Old Reader',
+      'Bazqux',
+      'FreshRSS',
+      'Miniflux',
+      'Tiny Tiny RSS',
+      'Folo',
+      'Google Reader / Fever APIs'
     ],
     screenshotsTitle: '截图',
     screenshots: [
