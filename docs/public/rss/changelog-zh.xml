@@ -5,8 +5,88 @@
     <link>https://agrreader.com/zh</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.18.3 (2026.08.07)</title>
+      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.18.3</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新增针对订阅、群组和信息源的 AI 未读内容摘要，包含关键要点、主题、推荐阅读及来源引用</li>
+<li>优化 AI 周报功能，改进了日期选择、生成与重新生成机制以及文章导航体验</li>
+<li>改进 Android 主屏幕小组件，支持基于系统壁纸的动态配色及主题自动刷新</li>
+<li>修复了将内容标记为已读时对文章范围的处理问题</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新增针对订阅、群组和信息源的 AI 未读内容摘要，包含关键要点、主题、推荐阅读及来源引用</li>
+<li>优化 AI 周报功能，改进了日期选择、生成与重新生成机制以及文章导航体验</li>
+<li>改进 Android 主屏幕小组件，支持基于系统壁纸的动态配色及主题自动刷新</li>
+<li>修复了将内容标记为已读时对文章范围的处理问题</li>
+</ul>]]></content:encoded>
+    </item>
+    <item>
+      <title>1.18.2 (2026.06.02)</title>
+      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.18.2</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新增功能：
+<ul>
+<li>添加了 AI 注释，帮助读者更好地理解文章内容。</li>
+<li>添加了图片分享功能。</li>
+<li>添加了置顶订阅源，方便用户快速访问重要信息。</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>优化了预测性返回过渡效果。</li>
+</ul>
+</li>
+<li>问题修复：
+<ul>
+<li>修复了导航栏边距问题。</li>
+<li>修复了下载图片时未显示提示信息的问题。</li>
+</ul>
+</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新增功能：
+<ul>
+<li>添加了 AI 注释，帮助读者更好地理解文章内容。</li>
+<li>添加了图片分享功能。</li>
+<li>添加了置顶订阅源，方便用户快速访问重要信息。</li>
+</ul>
+</li>
+<li>改进：
+<ul>
+<li>优化了预测性返回过渡效果。</li>
+</ul>
+</li>
+<li>问题修复：
+<ul>
+<li>修复了导航栏边距问题。</li>
+<li>修复了下载图片时未显示提示信息的问题。</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+    </item>
+    <item>
+      <title>1.18.1 (2026.05.08)</title>
+      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.18.1</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>新增预测返回手势支持，带来更加流畅的页面切换效果</li>
+<li>改进桌面小部件用户界面，支持标记以上已读，带来更佳的体验</li>
+<li>新增与 RSS 服务（例如 FreshRSS）同步时的进度指示器。</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>新增预测返回手势支持，带来更加流畅的页面切换效果</li>
+<li>改进桌面小部件用户界面，支持标记以上已读，带来更佳的体验</li>
+<li>新增与 RSS 服务（例如 FreshRSS）同步时的进度指示器。</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.18.0 (2026.04.23)</title>
       <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
@@ -1243,122 +1323,6 @@
 <li>fix: 修复查看图片后返回异常跳转的问题</li>
 <li>fix: 修复部分闪退的问题</li>
 <li>fix: 修复部分RSS订阅源文章抓取不全的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.4.3 (2023.11.06)</title>
-      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.4.3</guid>
-      <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 扩展复制长按菜单选项
-<ul>
-<li>现在可以在文章内容页复制文字使用词典类应用了</li>
-</ul>
-</li>
-<li>opt: 搜索时不再搜索文章减少订阅等待时间</li>
-<li>opt: 优化自动隐藏菜单栏效果</li>
-<li>fix: 修复部分闪退问题</li>
-<li>fix: 修复今天文字错误显示时间的问题</li>
-<li>fix: 修复订阅详情页当订阅源内容过长展示不下的问题</li>
-<li>fix: 修复文章内容页当内容过长偶尔无法滑动的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 扩展复制长按菜单选项
-<ul>
-<li>现在可以在文章内容页复制文字使用词典类应用了</li>
-</ul>
-</li>
-<li>opt: 搜索时不再搜索文章减少订阅等待时间</li>
-<li>opt: 优化自动隐藏菜单栏效果</li>
-<li>fix: 修复部分闪退问题</li>
-<li>fix: 修复今天文字错误显示时间的问题</li>
-<li>fix: 修复订阅详情页当订阅源内容过长展示不下的问题</li>
-<li>fix: 修复文章内容页当内容过长偶尔无法滑动的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.4.2 (2023.11.01)</title>
-      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.4.2</guid>
-      <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 支持切换订阅源的文章内容来源
-<ul>
-<li>现在可以选择文章内容的默认展示方式</li>
-<li>全文解析：会对网页内容进行解析</li>
-<li>内容摘要：展示文章的RSS内容简介</li>
-<li>内嵌网页：以网页形式展示</li>
-</ul>
-</li>
-<li>feature: 订阅源增加是否拦截资源加载选项
-<ul>
-<li>当文章内容出现图片无法加载的情况下可尝试打开此选项</li>
-</ul>
-</li>
-<li>opt: 今天内的文章时间显示具体的小时</li>
-<li>opt: 缩减资源，减少apk大小</li>
-<li>fix: 修复FreshRSS及Greader Api的文章拉取不全的问题</li>
-<li>fix: 修复部分闪退问题</li>
-<li>fix: 修复部分视频宽度溢出的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 支持切换订阅源的文章内容来源
-<ul>
-<li>现在可以选择文章内容的默认展示方式</li>
-<li>全文解析：会对网页内容进行解析</li>
-<li>内容摘要：展示文章的RSS内容简介</li>
-<li>内嵌网页：以网页形式展示</li>
-</ul>
-</li>
-<li>feature: 订阅源增加是否拦截资源加载选项
-<ul>
-<li>当文章内容出现图片无法加载的情况下可尝试打开此选项</li>
-</ul>
-</li>
-<li>opt: 今天内的文章时间显示具体的小时</li>
-<li>opt: 缩减资源，减少apk大小</li>
-<li>fix: 修复FreshRSS及Greader Api的文章拉取不全的问题</li>
-<li>fix: 修复部分闪退问题</li>
-<li>fix: 修复部分视频宽度溢出的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.4.1 (2023.10.26)</title>
-      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.4.1</guid>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 订阅源列表增加默认过滤状态选项
-<ul>
-<li>现在在交互设置中可设置订阅源列表默认过滤项</li>
-</ul>
-</li>
-<li>opt: 优化左右横化体验，减少误触</li>
-<li>fix: 修复文章列表页调整阅读页后返回重置到未读Tab的问题</li>
-<li>fix: 修复FreshRSS全部已读失效的问题</li>
-<li>fix: 修复Fever拉取的文章内容展示不全、副标题展示内容不正常的问题</li>
-<li>fix: 修复各类闪退问题</li>
-<li>fix: 回退封面图获取逻辑</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 订阅源列表增加默认过滤状态选项
-<ul>
-<li>现在在交互设置中可设置订阅源列表默认过滤项</li>
-</ul>
-</li>
-<li>opt: 优化左右横化体验，减少误触</li>
-<li>fix: 修复文章列表页调整阅读页后返回重置到未读Tab的问题</li>
-<li>fix: 修复FreshRSS全部已读失效的问题</li>
-<li>fix: 修复Fever拉取的文章内容展示不全、副标题展示内容不正常的问题</li>
-<li>fix: 修复各类闪退问题</li>
-<li>fix: 回退封面图获取逻辑</li>
 </ul>]]></content:encoded>
     </item>
   </channel>

@@ -22,8 +22,27 @@
   --agr-download-text: #1e2c30;
   --agr-download-muted: #7b8b91;
   --agr-download-bg: #ffffff;
+  --agr-download-icon-bg: #f9fbfb;
   --agr-download-shadow: rgba(25, 34, 38, 0.08);
   --agr-download-hover: rgba(99, 160, 2, 0.12);
+
+  /* 首页各 section 的统一间距节奏 */
+  --agr-section-gap: 36px;
+
+  /* RSSHub 推广卡（RssHubCard.vue） */
+  --agr-rsshub-accent: #ff5722;
+  --agr-rsshub-accent-hover: #e64a19;
+}
+
+/* 暗色模式：下载按钮色板（亮色为白底深字，暗色改为深底浅字） */
+.dark {
+  --agr-download-border: #39454a;
+  --agr-download-text: #e5eaec;
+  --agr-download-muted: #96a3a8;
+  --agr-download-bg: #1e2427;
+  --agr-download-icon-bg: #262e32;
+  --agr-download-shadow: rgba(0, 0, 0, 0.4);
+  --agr-download-hover: rgba(99, 160, 2, 0.25);
 }
 
 .medium-zoom-overlay {
@@ -38,7 +57,7 @@
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  padding: 36px;
+  padding: var(--agr-section-gap);
 }
 
 .horizontal-scroll img {
@@ -61,16 +80,13 @@
   transition: all 0.3s ease-in-out;
   width: 100%;
 }
-.contact_container {
-  display: flex;
-  gap: 24px;
-}
 
 .VPHomeHero .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   margin: 0;
+  padding-top: 24px;
   justify-content: center;
   max-width: 760px;
 }
@@ -78,6 +94,20 @@
 .VPHomeHero.has-image .actions {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .VPHomeHero .actions {
+    padding-top: 32px;
+  }
+}
+
+/* 桌面端（≥960，hero 文案与侧图并排）：按钮跟随文案左对齐，
+   与移动端的居中区分（原 VPHero scoped 样式，迁移后由本文件接管） */
+@media (min-width: 960px) {
+  .VPHomeHero.has-image .actions {
+    justify-content: flex-start;
+  }
 }
 
 .VPHomeHero .action {
@@ -148,7 +178,7 @@
   transform: translateY(-50%);
   border-radius: 10px;
   border: 2px solid var(--agr-download-border);
-  background-color: #f9fbfb;
+  background-color: var(--agr-download-icon-bg);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -170,19 +200,6 @@
   letter-spacing: 0.2px;
 }
 
-.VPHomeHero .download-extra {
-  margin-top: 16px;
-  font-size: 14px;
-  color: var(--vp-c-text-2);
-  text-align: center;
-}
-
-.VPHomeHero .download-extra a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .ProductHunt-badge {
   display: flex;
   align-items: start;
@@ -194,4 +211,53 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+/* RSSHub 推广卡（theme/components/RssHubCard.vue，4 处页面共用） */
+.rsshub-card {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--vp-c-bg-soft);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rsshub-card img {
+  margin-bottom: 20px;
+}
+
+.rsshub-card-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rsshub-card-brand {
+  color: var(--vp-c-brand-1);
+}
+
+.rsshub-card-accent {
+  color: var(--agr-rsshub-accent);
+}
+
+.rsshub-card-go {
+  background-color: var(--agr-rsshub-accent);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.rsshub-card-go:hover {
+  background-color: var(--agr-rsshub-accent-hover);
+  transform: scale(1.05);
+}
+
+.rsshub-card-go:active {
+  transform: scale(1.02);
 }
