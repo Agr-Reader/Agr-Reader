@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { apkUrl } from './version.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

@@ -54,11 +54,6 @@ const actions = computed<Action[]>(() => {
     <a href="https://github.com/Agr-Reader/Agr-Reader/releases" style="text-decoration: underline;">
       Additional download options: Windows(Zip, Msi), Linux(Deb) and more
     </a>
-    <!-- 有意为之：这条中文提示只显示在 EN 首页（localeIndex === 'root'）。
-         原因：EN 页主按钮是 Google Play（国内无法访问），需要引导国内用户前往 /zh 下载 APK；
-         ZH 页主按钮本身就是 APK 直链，无需此提示。
-         旧实现以 actions[0].theme === 'download' 表达同一条件（EN 首个按钮 theme 为
-         'download'，ZH 为 'download-cn'）。请勿当作 bug "修复"成 ZH 显示。 -->
     <p v-if="localeIndex === 'root'" style="text-decoration: underline; padding-top: 4px;">
       <a href="/zh">
         国内用户可前往此处下载->

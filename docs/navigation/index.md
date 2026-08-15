@@ -22,7 +22,7 @@ For specific usage instructions, refer to the [RSSHub documentation](https://doc
 ### Recommended RSS Feed Sources:  
 - [RSSHub](https://rsshub.app/)
 - [RSS Source](https://rss-source.com/)
-  - <a href="https://www.agrreader.xyz/resources/AgrReader-rss-source.opml" download="AgrReader-rss-source.opml">Download all RSS sources as an OPML file</a>
+  - <a href="https://www.agrreader.com/resources/AgrReader-rss-source.opml" download="AgrReader-rss-source.opml">Download all RSS sources as an OPML file</a>
 - [ALL-about-RSS](https://github.com/AboutRSS/ALL-about-RSS)
 - [https://morerss.com/zh.php](https://morerss.com)
 - [https://plink.anyfeeder.com/](https://plink.anyfeeder.com/)

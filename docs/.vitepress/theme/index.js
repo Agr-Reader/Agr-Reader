@@ -1,20 +1,14 @@
 import DefaultTheme from "vitepress/theme";
-import { onMounted, watch, nextTick, h } from "vue";
+import { onMounted, watch, nextTick } from "vue";
 import { useRoute } from "vitepress";
 import mediumZoom from "medium-zoom";
 
 import "./custom.css";
-import HomeHeroBadge from "./components/HomeHeroBadge.vue";
-import HomeHeroActions from "./components/HomeHeroActions.vue";
 import RssHubCard from "./components/RssHubCard.vue";
+import CustomHome from "./components/CustomHome.vue";
 
 export default {
   extends: DefaultTheme,
-  Layout: () =>
-    h(DefaultTheme.Layout, null, {
-      "home-hero-info-before": () => h(HomeHeroBadge),
-      "home-hero-actions-after": () => h(HomeHeroActions),
-    }),
   setup() {
     const route = useRoute();
     const initZoom = () => {
@@ -29,8 +23,10 @@ export default {
       () => nextTick(() => initZoom())
     );
   },
-  // VitePress 1.2.2 无组件自动注册，markdown 中使用的组件必须在此手动注册
+  // VitePress 1.2.2 无组件自动注册，markdown 中使用的组件必须在此手动注册。
+  // RssHubCard 供首页（HomeRssHub）及两份导航页使用，保留全局注册；CustomHome 为首页入口组件。
   enhanceApp({ app }) {
     app.component("RssHubCard", RssHubCard);
+    app.component("CustomHome", CustomHome);
   },
 };

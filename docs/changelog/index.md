@@ -177,7 +177,7 @@ Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 - Optimize: Hide floating button when scrolling on the article list page
 
 ## 1.8.0(2024.12.29)
-- feat: RSSHub Agr Reader self-hosted service is now avaliable: rsshub.agrreader.xyz
+- feat: RSSHub Agr Reader self-hosted service is now avaliable: rsshub.agrreader.com
 
 ## 1.7.17 (2024.12.18)
 - fix: Fixed the problem that the unread articles in today's mode could not be opened

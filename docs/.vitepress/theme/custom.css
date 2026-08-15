@@ -32,6 +32,50 @@
   /* RSSHub 推广卡（RssHubCard.vue） */
   --agr-rsshub-accent: #ff5722;
   --agr-rsshub-accent-hover: #e64a19;
+
+  /* ===== 首页重构（CustomHome）设计令牌 ===== */
+  /* 品牌渐变光晕 */
+  --agr-glow-from: #4d9d98;
+  --agr-glow-mid: #bbf293;
+  --agr-glow-to: #63a002;
+  --agr-glow-opacity: 0.55;
+  --agr-glow-blur: 120px;
+
+  /* 间距节奏 */
+  --agr-space-1: 8px;
+  --agr-space-2: 16px;
+  --agr-space-3: 24px;
+  --agr-space-4: 40px;
+  --agr-space-5: 64px;
+  --agr-space-6: 96px;
+
+  /* 圆角 */
+  --agr-radius-sm: 10px;
+  --agr-radius-md: 16px;
+  --agr-radius-lg: 24px;
+  --agr-radius-device: 28px;
+
+  /* 阴影 */
+  --agr-shadow-card: 0 12px 48px rgba(17, 16, 62, 0.12);
+  --agr-shadow-device: 0 24px 64px rgba(17, 16, 62, 0.18);
+  /* 画廊截图：更柔和、更贴身，避免在边缘堆积出“截断感” */
+  --agr-shadow-gallery: 0 8px 24px rgba(17, 16, 62, 0.10);
+
+  /* 表面 */
+  --agr-card-bg: var(--vp-c-bg-soft);
+  --agr-card-border: var(--vp-c-divider);
+
+  /* 特性图标 */
+  --agr-icon-size: 28px;
+  --agr-icon-color: var(--vp-c-brand-1);
+
+  /* 特性图标彩色底（柔和 pastel， glyph 保持品牌绿） */
+  --agr-tint-green-bg: #e6f3d0;
+  --agr-tint-teal-bg: #d4ecea;
+  --agr-tint-lime-bg: #eef7c8;
+  --agr-tint-amber-bg: #fceed6;
+  --agr-tint-slate-bg: #e2e9f2;
+  --agr-tint-emerald-bg: #d9f2e4;
 }
 
 /* 暗色模式：下载按钮色板（亮色为白底深字，暗色改为深底浅字） */
@@ -43,6 +87,20 @@
   --agr-download-icon-bg: #262e32;
   --agr-download-shadow: rgba(0, 0, 0, 0.4);
   --agr-download-hover: rgba(99, 160, 2, 0.25);
+
+  /* 首页重构：暗色下降低光晕强度、加深阴影 */
+  --agr-glow-opacity: 0.35;
+  --agr-shadow-card: 0 12px 48px rgba(0, 0, 0, 0.5);
+  --agr-shadow-device: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --agr-shadow-gallery: 0 8px 24px rgba(0, 0, 0, 0.45);
+
+  /* 特性图标彩色底（暗色：低饱和深色底） */
+  --agr-tint-green-bg: #2c3a1b;
+  --agr-tint-teal-bg: #1e3533;
+  --agr-tint-lime-bg: #2f3a16;
+  --agr-tint-amber-bg: #3a2f16;
+  --agr-tint-slate-bg: #27303c;
+  --agr-tint-emerald-bg: #1e3527;
 }
 
 .medium-zoom-overlay {
@@ -53,32 +111,13 @@
   z-index: 31;
 }
 
-.horizontal-scroll {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: var(--agr-section-gap);
-}
-
-.horizontal-scroll img {
-  max-height: 400px;
-  /* Adjust the height as needed */
-  margin-right: 16px;
-  /* Space between images */
-}
-
-.horizontal-scroll img:last-child {
-  margin-right: 0;
-  /* No margin for the last image */
-}
-
 .image_screenshot {
-  border-radius: 16px;
-  box-shadow: 0 12px 48px rgba(17, 16, 62, 0.12);
-  cursor: pointer;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .VPHomeHero .actions {
@@ -213,51 +252,502 @@
   }
 }
 
-/* RSSHub 推广卡（theme/components/RssHubCard.vue，4 处页面共用） */
+/* RSSHub 推广卡（theme/components/RssHubCard.vue，4 处页面共用）——横向条状：logo · 标题+描述 · GO */
 .rsshub-card {
-  padding: 20px;
-  border-radius: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: var(--vp-c-bg-soft);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: var(--agr-space-3);
+  padding: var(--agr-space-3) var(--agr-space-4);
+  background-color: var(--agr-card-bg);
+  border: 1px solid var(--agr-card-border);
+  border-radius: var(--agr-radius-lg);
+  box-shadow: var(--agr-shadow-card);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.rsshub-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--agr-shadow-device);
 }
 
-.rsshub-card img {
-  margin-bottom: 20px;
+.rsshub-card-logo {
+  flex-shrink: 0;
+  border-radius: var(--agr-radius-md);
+}
+
+.rsshub-card-body {
+  flex: 1;
+  min-width: 0;
 }
 
 .rsshub-card-title {
-  margin-bottom: 20px;
-  text-align: center;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
 }
-
 .rsshub-card-brand {
   color: var(--vp-c-brand-1);
+  text-decoration: none;
 }
-
+.rsshub-card-brand:hover {
+  text-decoration: underline;
+}
 .rsshub-card-accent {
   color: var(--agr-rsshub-accent);
 }
 
-.rsshub-card-go {
-  background-color: var(--agr-rsshub-accent);
-  color: white;
-  padding: 10px 40px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
+.rsshub-card-desc {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
 }
 
+.rsshub-card-go {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  background-color: var(--agr-rsshub-accent);
+  color: var(--vp-c-white) !important;
+  padding: 9px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
 .rsshub-card-go:hover {
   background-color: var(--agr-rsshub-accent-hover);
-  transform: scale(1.05);
+  color: var(--vp-c-white) !important;
+  transform: translateY(-1px);
+}
+.rsshub-card-go:active {
+  transform: translateY(0);
 }
 
-.rsshub-card-go:active {
-  transform: scale(1.02);
+/* 窄屏：纵向堆叠，GO 按钮占满宽度 */
+@media (max-width: 639px) {
+  .rsshub-card {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--agr-space-2);
+  }
+  .rsshub-card-go {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   首页重构（CustomHome.vue）
+   ============================================================ */
+
+/* 首页为 layout: page，默认 VPPage 带侧边栏留白且内容被 .vp-doc 约束；
+   首页无侧边栏，去掉顶部留白并让自定义排版接管宽度 */
+.VPPage {
+  padding-top: 0 !important;
+}
+.agr-home {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 var(--agr-space-3);
+}
+.agr-home h2,
+.agr-home h3 {
+  margin: 0;
+  border-top: none;
+  padding-top: 0;
+  letter-spacing: -0.01em;
+}
+.agr-home p {
+  margin: 0;
+}
+
+/* ---- Hero ---- */
+.agr-hero {
+  position: relative;
+  padding: var(--agr-space-5) 0 var(--agr-space-6);
+}
+.agr-hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: var(--agr-space-5);
+}
+.agr-hero-copy {
+  min-width: 0;
+}
+.agr-hero-name {
+  margin: var(--agr-space-3) 0 0;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--agr-glow-from),
+    var(--agr-glow-mid),
+    var(--agr-glow-to)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.agr-hero-text {
+  margin-top: var(--agr-space-2);
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+.agr-hero-tagline {
+  margin-top: var(--agr-space-2);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  max-width: 46ch;
+}
+/* 复用的下载按钮在文档流中默认居中，此处靠左对齐 */
+.agr-hero-copy .actions {
+  justify-content: flex-start;
+  max-width: none;
+}
+
+/* Hero 视觉：桌面机身 + 叠加手机 + 品牌光晕 */
+.agr-hero-visual {
+  position: relative;
+  min-height: 360px;
+}
+.agr-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    closest-side,
+    var(--agr-glow-mid),
+    var(--agr-glow-from),
+    var(--agr-glow-to)
+  );
+  opacity: var(--agr-glow-opacity);
+  filter: blur(var(--agr-glow-blur));
+  transform: translateZ(0);
+  pointer-events: none;
+}
+.agr-hero-visual .agr-device {
+  position: absolute;
+  margin: 0;
+}
+.agr-hero-desktop {
+  inset: 0 8% 0 0;
+  width: 92%;
+}
+.agr-hero-phone {
+  right: 0;
+  bottom: -8%;
+  width: 34%;
+}
+
+/* ---- 通用 section ---- */
+.agr-section {
+  padding: var(--agr-space-4) 0 0;
+}
+.agr-section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+}
+.agr-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: var(--agr-space-2);
+  padding: 2px 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border: 1px solid var(--vp-c-brand-1);
+}
+
+/* ---- 特性卡片 ---- */
+.agr-features-grid {
+  margin-top: var(--agr-space-4);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--agr-space-3);
+}
+.agr-feature-card {
+  padding: var(--agr-space-3);
+  background: var(--agr-card-bg);
+  border: 1px solid var(--agr-card-border);
+  border-radius: var(--agr-radius-lg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.agr-feature-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--agr-shadow-card);
+}
+.agr-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--agr-tint-green-bg);
+  color: var(--agr-icon-color);
+  margin-bottom: var(--agr-space-3);
+  transition: transform 0.25s ease;
+}
+.agr-feature-card:hover .agr-feature-icon {
+  transform: scale(1.06);
+}
+/* 各 pastel 底色 */
+.agr-feature-icon.tint-green { background: var(--agr-tint-green-bg); }
+.agr-feature-icon.tint-teal { background: var(--agr-tint-teal-bg); }
+.agr-feature-icon.tint-lime { background: var(--agr-tint-lime-bg); }
+.agr-feature-icon.tint-amber { background: var(--agr-tint-amber-bg); }
+.agr-feature-icon.tint-slate { background: var(--agr-tint-slate-bg); }
+.agr-feature-icon.tint-emerald { background: var(--agr-tint-emerald-bg); }
+.agr-icon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+}
+.agr-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.agr-feature-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+.agr-feature-details {
+  margin-top: var(--agr-space-1);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+/* ---- 截图画廊（横向滚动条，统一高度，适配桌面与移动端） ---- */
+.agr-gallery-wrap {
+  position: relative;
+  margin-top: var(--agr-space-4);
+}
+.agr-gallery {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--agr-space-3);
+  overflow-x: auto;
+  padding: var(--agr-space-2) 0 var(--agr-space-3);
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  /* 隐藏原生滚动条（由箭头 + 进度条替代） */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.agr-gallery::-webkit-scrollbar {
+  display: none;
+}
+/* 两端渐隐，消除截断感 */
+.agr-gallery-fade {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 48px,
+    #000 calc(100% - 48px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 48px,
+    #000 calc(100% - 48px),
+    transparent 100%
+  );
+}
+/* 画廊内的截图条目：收缩到内容宽度、不随容器拉伸 */
+.agr-gallery .agr-device {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+/* 画廊内所有截图统一高度，宽度按自然纵横比自适应（不裁剪） */
+.agr-gallery .agr-device-frame {
+  width: auto;
+  max-width: none;
+  height: 480px;
+  aspect-ratio: auto;
+  /* 更柔和贴身的阴影，避免在渐隐边缘堆积 */
+  box-shadow: var(--agr-shadow-gallery);
+}
+.agr-gallery .image_screenshot {
+  width: auto;
+  height: 100%;
+}
+
+/* 画廊箭头（上一张 / 下一张） */
+.agr-gallery-arrow {
+  position: absolute;
+  top: calc(50% - 28px);
+  transform: translateY(-50%);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--agr-card-border);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  box-shadow: var(--agr-shadow-card);
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, background-color 0.2s ease;
+}
+.agr-gallery-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+.agr-gallery-arrow.prev {
+  left: 4px;
+}
+.agr-gallery-arrow.next {
+  right: 4px;
+}
+.agr-gallery-arrow:hover:not(.is-disabled) {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+}
+.agr-gallery-arrow.is-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 画廊进度条（细长、品牌化） */
+.agr-gallery-progress {
+  margin: var(--agr-space-3) auto 0;
+  width: 180px;
+  max-width: 60%;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--vp-c-divider);
+  overflow: hidden;
+}
+.agr-gallery-progress-fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--vp-c-brand-1);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.15s linear;
+}
+
+/* ---- 设备机身 ---- */
+.agr-device {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.agr-device-frame {
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--agr-card-border);
+  box-shadow: var(--agr-shadow-device);
+  transition: transform 0.3s ease;
+}
+.agr-device-phone .agr-device-frame {
+  border-radius: var(--agr-radius-device);
+}
+.agr-device-desktop .agr-device-frame {
+  border-radius: var(--agr-radius-md);
+}
+.agr-device-frame:hover {
+  transform: translateY(-4px);
+}
+.agr-device-caption {
+  margin-top: var(--agr-space-2);
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  text-align: center;
+}
+
+/* ---- RSSHub ---- */
+.agr-rsshub-link {
+  margin-top: var(--agr-space-3);
+  text-align: center;
+}
+.agr-home .agr-rsshub-link a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.agr-section .rsshub-card {
+  margin: var(--agr-space-4) auto;
+  max-width: 860px;
+}
+
+/* ---- 滚动渐显 ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .agr-reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .agr-reveal.agr-reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---- 响应式 ---- */
+@media (max-width: 959px) {
+  .agr-hero-inner {
+    grid-template-columns: 1fr;
+    gap: var(--agr-space-4);
+  }
+  .agr-hero {
+    padding: var(--agr-space-4) 0 var(--agr-space-5);
+    text-align: center;
+  }
+  .agr-hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .agr-hero-copy .actions {
+    justify-content: center;
+  }
+  .agr-hero-visual {
+    min-height: 300px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .agr-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ProductHunt-badge {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 639px) {
+  .agr-features-grid {
+    grid-template-columns: 1fr;
+  }
+  .agr-gallery .agr-device-frame {
+    height: 360px;
+  }
+  .agr-hero-visual {
+    min-height: 240px;
+  }
 }
