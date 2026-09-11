@@ -46,13 +46,13 @@ const desktopActions = computed<Action[]>(() => {
   if (localeIndex.value === 'zh') {
     return [
       { theme: 'download', text: 'Windows', subtitle: 'Microsoft Store', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
-      { theme: 'download', text: 'macOS', subtitle: 'App Store', href: 'https://apps.apple.com/us/app/agr-reader/id6760940767?platform=mac', iconSvg: SVG.apple }
+      { theme: 'download', text: 'macOS', subtitle: 'App Store', href: 'https://apps.apple.com/us/app/agr-reader/id6760940767?platform=mac', iconSvg: SVG.apple },
       { theme: 'download', text: 'Linux', subtitle: 'GitHub', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
     ]
   }
   return [
     { theme: 'download', text: 'Windows', subtitle: 'Microsoft Store', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
-    { theme: 'download', text: 'macOS', subtitle: 'App Store', href: 'https://apps.apple.com/us/app/agr-reader/id6760940767?platform=mac', iconSvg: SVG.apple }
+    { theme: 'download', text: 'macOS', subtitle: 'App Store', href: 'https://apps.apple.com/us/app/agr-reader/id6760940767?platform=mac', iconSvg: SVG.apple },
     { theme: 'download', text: 'Linux', subtitle: 'GitHub', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
   ]
 })

@@ -1,6 +1,34 @@
 import { defineConfig } from 'vitepress'
 import { apkUrl } from './version.mjs'
 
+const HOSTNAME = 'https://agrreader.com'
+const OG_IMAGE = `${HOSTNAME}/screenshots/gallery-macos.webp`
+
+// 结构化数据：SoftwareApplication
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Agr Reader',
+  operatingSystem: 'Android, iOS, Windows, macOS, Linux',
+  applicationCategory: 'NewsApplication',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD'
+  },
+  description: 'Lightweight, full-featured, AI-powered RSS reader supporting Material You, cross-device sync, offline reading, and RSSHub.',
+  screenshot: [
+    `${HOSTNAME}/screenshots/gallery-iphone.webp`,
+    `${HOSTNAME}/screenshots/gallery-android.webp`,
+    `${HOSTNAME}/screenshots/gallery-macos.webp`
+  ],
+  author: {
+    '@type': 'Person',
+    name: 'Lowae',
+    url: 'https://github.com/Lowae'
+  }
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   cleanUrls: true,
@@ -8,14 +36,57 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Agr Reader Changelog (EN)', href: '/rss/changelog.xml' }],
     ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Agr Reader Changelog (ZH)', href: '/rss/changelog-zh.xml' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Agr Reader' }],
+    ['meta', { property: 'og:image', content: OG_IMAGE }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: OG_IMAGE }],
   ],
+  transformHead({ pageData }) {
+    const rawPath = pageData.relativePath.replace(/\.md$/, '').replace(/\/index$/, '')
+    const isZh = pageData.relativePath.startsWith('zh/')
+    const strippedPath = rawPath.replace(/^zh(\/|$)/, '')
+
+    // 规范化 URL 路径，使之与 cleanUrls: true 及 sitemap.xml 严格对齐
+    let enPath = '/'
+    let zhPath = '/zh/'
+    if (strippedPath && strippedPath !== 'index') {
+      enPath = `/${strippedPath}`
+      zhPath = `/zh/${strippedPath}`
+    }
+
+    const currentCanonical = isZh ? `${HOSTNAME}${zhPath}` : `${HOSTNAME}${enPath}`
+
+    const head: Array<[string, Record<string, string>]> = [
+      ['link', { rel: 'canonical', href: currentCanonical }],
+      ['link', { rel: 'alternate', hreflang: 'en', href: `${HOSTNAME}${enPath}` }],
+      ['link', { rel: 'alternate', hreflang: 'zh', href: `${HOSTNAME}${zhPath}` }],
+      ['link', { rel: 'alternate', hreflang: 'x-default', href: `${HOSTNAME}${enPath}` }],
+      ['meta', { property: 'og:url', content: currentCanonical }],
+      ['meta', { property: 'og:title', content: pageData.title ? `${pageData.title} | ${isZh ? '轻量、功能齐全、AI 驱动的 RSS 阅读器' : 'Lightweight. Full-Featured. AI-Powered RSS Reader'}` : 'Agr Reader' }],
+      ['meta', { property: 'og:description', content: pageData.description || (isZh ? 'Agr Reader 是一款轻量、优雅且 AI 驱动的跨平台 RSS 阅读器。' : 'Lightweight, full-featured, AI-powered RSS reader with Material You design.') }],
+      ['meta', { name: 'twitter:title', content: pageData.title ? `${pageData.title} | Agr Reader` : 'Agr Reader' }],
+      ['meta', { name: 'twitter:description', content: pageData.description || (isZh ? 'Agr Reader 是一款轻量、优雅且 AI 驱动的跨平台 RSS 阅读器。' : 'Lightweight, full-featured, AI-powered RSS reader with Material You design.') }],
+    ]
+
+    // 仅在首页注入软件结构化数据
+    if (pageData.relativePath === 'index.md' || pageData.relativePath === 'zh/index.md') {
+      head.push([
+        'script',
+        { type: 'application/ld+json' },
+        JSON.stringify(softwareAppSchema)
+      ])
+    }
+
+    return head
+  },
   locales: {
     root: {
       label: 'English',
       lang: 'en',
       title: "Agr Reader",
       titleTemplate: "Lightweight. Full-Featured. AI-Powered RSS Reader",
-      description: "Elegant, powerful RSS Reader for a seamless, personalized experience.",
+      description: "Agr Reader is an elegant, AI-powered RSS reader with Material You design. Features AI summaries, full-text extraction, offline reading, RSSHub support, and sync across Android, iOS, Windows, macOS, and Linux.",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/logo.png',
@@ -74,7 +145,7 @@ export default defineConfig({
       link: '/zh/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
       title: "Agr Reader",
       titleTemplate: "轻量、功能齐全、AI 驱动的 RSS 阅读器",
-      description: "优雅而强大的 RSS 阅读器，给你带来无缝且个性化的阅读体验。",
+      description: "Agr Reader 是一款轻量、优雅且 AI 驱动的跨平台 RSS 阅读器。支持 Material You 动态主题、AI 智能全文总结、双语对照翻译、离线阅读、自建 RSSHub 与各大 RSS 服务无缝同步。",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/logo.png',

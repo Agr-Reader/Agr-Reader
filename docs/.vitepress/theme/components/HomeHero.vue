@@ -15,8 +15,11 @@ const data = computed(() => homeData[localeIndex.value === 'zh' ? 'zh' : 'root']
     <div class="agr-hero-inner">
       <div class="agr-hero-copy">
         <HomeHeroBadge />
-        <h1 class="agr-hero-name">{{ data.heroName }}</h1>
-        <p class="agr-hero-text">{{ data.heroText }}</p>
+        <h1 class="agr-hero-name">
+          <span>{{ data.heroName }}</span>
+          <span class="visually-hidden"> - {{ data.heroText }}</span>
+        </h1>
+        <p class="agr-hero-text" aria-hidden="true">{{ data.heroText }}</p>
         <p class="agr-hero-tagline">{{ data.heroTagline }}</p>
         <HomeHeroActions />
       </div>

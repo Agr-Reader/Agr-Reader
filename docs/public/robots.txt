@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /resources/version.json
+
+Sitemap: https://agrreader.com/sitemap.xml
