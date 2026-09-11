@@ -5,8 +5,28 @@
     <link>https://agrreader.com/</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.0.0 (2026.09.11)</title>
+      <link>https://www.agrreader.com/rss/changelog.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#2.0.0</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>Upgraded text-to-speech to a global floating player, controllable from anywhere in the app, with gesture controls for switching and seeking.</li>
+<li>Significantly improved loading performance when opening the reading page.</li>
+<li>Fixed an issue where feed notifications, pinned status, and keyword filters were reset after syncing (Feedly/Feedbin/Folo/GReader).</li>
+<li>Lists no longer automatically mark all articles as read when scrolling to the bottom.</li>
+<li>Improved Fever sync stability and fixed Microsoft Translator not</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>Upgraded text-to-speech to a global floating player, controllable from anywhere in the app, with gesture controls for switching and seeking.</li>
+<li>Significantly improved loading performance when opening the reading page.</li>
+<li>Fixed an issue where feed notifications, pinned status, and keyword filters were reset after syncing (Feedly/Feedbin/Folo/GReader).</li>
+<li>Lists no longer automatically mark all articles as read when scrolling to the bottom.</li>
+<li>Improved Fever sync stability and fixed Microsoft Translator not</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>1.18.3 (2026.08.07)</title>
       <link>https://www.agrreader.com/rss/changelog.xml</link>
@@ -1289,42 +1309,6 @@
 </li>
 <li>fix: 修复跳转官网部分机型的闪退问题</li>
 <li>fix: 修复修改订阅源链接的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.5.0 (2023.11.20)</title>
-      <link>https://www.agrreader.com/rss/changelog.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#1.5.0</guid>
-      <pubDate>Mon, 20 Nov 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 沉浸式翻译功能Beta已推出!
-<ul>
-<li>目前展示仅支持谷歌翻译（需要代理），仅支持其他语言翻译到中文</li>
-</ul>
-</li>
-<li>opt: 增加RSS服务不可用操作的toast提示</li>
-<li>opt: 退出阅读页时重置网页</li>
-<li>fix: 修复Fever分组的问题</li>
-<li>fix: 修复Fever Api的闪退问题</li>
-<li>fix: 修复查看图片后返回异常跳转的问题</li>
-<li>fix: 修复部分闪退的问题</li>
-<li>fix: 修复部分RSS订阅源文章抓取不全的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 沉浸式翻译功能Beta已推出!
-<ul>
-<li>目前展示仅支持谷歌翻译（需要代理），仅支持其他语言翻译到中文</li>
-</ul>
-</li>
-<li>opt: 增加RSS服务不可用操作的toast提示</li>
-<li>opt: 退出阅读页时重置网页</li>
-<li>fix: 修复Fever分组的问题</li>
-<li>fix: 修复Fever Api的闪退问题</li>
-<li>fix: 修复查看图片后返回异常跳转的问题</li>
-<li>fix: 修复部分闪退的问题</li>
-<li>fix: 修复部分RSS订阅源文章抓取不全的问题</li>
 </ul>]]></content:encoded>
     </item>
   </channel>
