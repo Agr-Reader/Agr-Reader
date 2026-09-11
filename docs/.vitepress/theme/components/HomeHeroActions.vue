@@ -32,29 +32,29 @@ const mobileActions = computed<Action[]>(() => {
   if (localeIndex.value === 'zh') {
     return [
       // 无 iconSvg → 使用内置下载箭头（与原 frontmatter 行为一致）
-      { theme: 'download-cn', text: 'Android APK', subtitle: '立即下载', href: apkUrl },
-      { theme: 'download', text: 'App Store', subtitle: '立即下载', href: APP_STORE_URL, iconSvg: SVG.apple }
+      { theme: 'download-cn', text: 'Android', subtitle: 'APK', href: apkUrl },
+      { theme: 'download', text: 'iOS', subtitle: 'App Store', href: APP_STORE_URL, iconSvg: SVG.apple }
     ]
   }
   return [
-    { theme: 'download', text: 'Google Play', subtitle: 'Available on', href: 'https://play.google.com/store/apps/details?id=com.lowae.agrreader', iconSvg: SVG.googlePlay },
-    { theme: 'download', text: 'App Store', subtitle: 'Available on', href: APP_STORE_URL, iconSvg: SVG.apple }
+    { theme: 'download', text: 'Android', subtitle: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.lowae.agrreader', iconSvg: SVG.googlePlay },
+    { theme: 'download', text: 'iOS', subtitle: 'App Store', href: APP_STORE_URL, iconSvg: SVG.apple }
   ]
 })
 
 const desktopActions = computed<Action[]>(() => {
   if (localeIndex.value === 'zh') {
     return [
-      { theme: 'download', text: 'Windows', subtitle: '立即下载', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
-      { theme: 'download', text: 'Linux', subtitle: '立即下载', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
+      { theme: 'download', text: 'Windows', subtitle: 'Microsoft Store', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
+      { theme: 'download', text: 'Linux', subtitle: 'GitHub', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
       // href 空字符串 = macOS 未发布，渲染不可点链接（保持现状）
-      { theme: 'download', text: 'macOS', subtitle: '即将到来', href: '', iconSvg: SVG.apple }
+      { theme: 'download', text: 'macOS', subtitle: 'App Store', href: 'https://apps.apple.com/us/app/agr-reader/id6760940767?platform=mac', iconSvg: SVG.apple }
     ]
   }
   return [
-    { theme: 'download', text: 'Windows', subtitle: 'Available on', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
-    { theme: 'download', text: 'Linux', subtitle: 'Available on', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
-    { theme: 'download', text: 'macOS', subtitle: 'Coming soon', href: '', iconSvg: SVG.apple }
+    { theme: 'download', text: 'Windows', subtitle: 'Microsoft Store', href: 'https://apps.microsoft.com/detail/9NLQHVGWG5D2', iconSvg: SVG.windows },
+    { theme: 'download', text: 'Linux', subtitle: 'GitHub', href: 'https://github.com/Agr-Reader/Agr-Reader/releases', iconSvg: SVG.linux },
+    { theme: 'download', text: 'macOS', subtitle: 'App Store', href: 'https://apps.apple.com/us/app/agr-reader/id6760940767?platform=mac', iconSvg: SVG.apple }
   ]
 })
 </script>
