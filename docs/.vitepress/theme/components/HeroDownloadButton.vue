@@ -53,7 +53,6 @@ const fallbackDownloadIcon =
 
 .VPButton.download {
   display: inline-flex;
-  text-align: center;
   white-space: nowrap;
   align-items: center;
 }
