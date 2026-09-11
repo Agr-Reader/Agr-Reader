@@ -1,1 +1,7 @@
-{"versionName":"1.18.3","versionCode":101018003,"changelog":"• 新增针对订阅、群组和信息源的 AI 未读内容摘要，包含关键要点、主题、推荐阅读及来源引用\n• 优化 AI 周报功能，改进了日期选择、生成与重新生成机制以及文章导航体验\n• 改进 Android 主屏幕小组件，支持基于系统壁纸的动态配色及主题自动刷新\n• 修复了将内容标记为已读时对文章范围的处理问题","fileKey":"Agr_Reader_1.18.3.apk","url":"https://resource.agrreader.com/f/d/DwI2/Agr_Reader_1.18.3.apk"}
+{
+    "versionName": "2.0.0",
+    "versionCode": 102000000,
+    "changelog": "- 朗读升级为全局悬浮播放器，App 内任意界面都能控制，支持手势切换与快进\n- 阅读页打开性能大幅优化\n- 修复同步后订阅源的通知、置顶、过滤关键词被重置（Feedly/Feedbin/Folo/GReader）\n- 列表滚动到底部不再自动标记全部已读\n- 提升 Fever 同步稳定性，修复微软翻译失效",
+    "fileKey": "Agr_Reader_2.0.0.apk",
+    "url": "https://resource.agrreader.com/f/d/LDHl/Agr_Reader_2.0.0.apk"
+}

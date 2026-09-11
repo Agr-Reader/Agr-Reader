@@ -1,6 +1,14 @@
 
 Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 
+## 2.0.0(2026.09.11)
+- Upgraded text-to-speech to a global floating player, controllable from anywhere in the app, with gesture controls for switching and seeking.
+- Significantly improved loading performance when opening the reading page.
+- Fixed an issue where feed notifications, pinned status, and keyword filters were reset after syncing (Feedly/Feedbin/Folo/GReader).
+- Lists no longer automatically mark all articles as read when scrolling to the bottom.
+- Improved Fever sync stability and fixed Microsoft Translator not
+
+
 ## 1.18.3(2026.08.07)
 - Added AI unread digests for subscriptions, groups, and feeds, with key takeaways, themes, recommended reading, and source citations
 - Improved AI weekly reports with clearer date selection, generation, regeneration, and article navigation
