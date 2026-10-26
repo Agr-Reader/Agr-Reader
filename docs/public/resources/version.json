@@ -1,7 +1,7 @@
 {
-    "versionName": "2.0.0",
-    "versionCode": 102000000,
-    "changelog": "- 朗读升级为全局悬浮播放器，App 内任意界面都能控制，支持手势切换与快进\n- 阅读页打开性能大幅优化\n- 修复同步后订阅源的通知、置顶、过滤关键词被重置（Feedly/Feedbin/Folo/GReader）\n- 列表滚动到底部不再自动标记全部已读\n- 提升 Fever 同步稳定性，修复微软翻译失效",
-    "fileKey": "Agr_Reader_2.0.0.apk",
-    "url": "https://resource.agrreader.com/f/d/LDHl/Agr_Reader_2.0.0.apk"
+    "versionName": "2.0.2",
+    "versionCode": 102000002,
+    "changelog": "- 修复面包多激活问题\n- 优化平板模式以支持自适应折叠屏/大屏等多类设备",
+    "fileKey": "Agr_Reader_2.0.2.apk",
+    "url": "https://resource.agrreader.com/f/d/nBtb/Agr_Reader_2.0.2.apk"
 }

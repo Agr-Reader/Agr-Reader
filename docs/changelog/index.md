@@ -1,6 +1,9 @@
 
 Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 
+## 2.0.2(2026.10.26)
+- Optimized tablet mode to better adapt to various device types, including foldable phones and large-screen devices.
+
 ## 2.0.0(2026.09.11)
 - Upgraded text-to-speech to a global floating player, controllable from anywhere in the app, with gesture controls for switching and seeking.
 - Significantly improved loading performance when opening the reading page.

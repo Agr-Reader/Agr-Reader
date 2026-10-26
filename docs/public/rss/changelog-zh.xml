@@ -5,8 +5,22 @@
     <link>https://agrreader.com/zh</link>
     <description>Agr Reader release notes and updates in Chinese.</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 11 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog-zh.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.0.2 (2026.10.26)</title>
+      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#2.0.2</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>修复面包多激活问题</li>
+<li>优化平板模式以支持自适应折叠屏/大屏等多类设备</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>修复面包多激活问题</li>
+<li>优化平板模式以支持自适应折叠屏/大屏等多类设备</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>2.0.0 (2026.09.11)</title>
       <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
@@ -1281,32 +1295,6 @@
 <li>feature: 文章列表左右滑动开放自定义（目前可选已/未读、收藏/未收藏和无）</li>
 <li>opt: 优化了刷新订阅源的性能，减少内存使用</li>
 <li>opt: 微调文章列表左右滑判定的阈值，减少误触</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.5.2 (2023.12.05)</title>
-      <link>https://www.agrreader.com/rss/changelog-zh.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog-zh.xml#1.5.2</guid>
-      <pubDate>Tue, 05 Dec 2023 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 沉浸式翻译功能支持设置微软翻译接口
-<ul>
-<li>需要Agr Reader Pro</li>
-</ul>
-</li>
-<li>fix: 修复跳转官网部分机型的闪退问题</li>
-<li>fix: 修复修改订阅源链接的问题</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 沉浸式翻译功能支持设置微软翻译接口
-<ul>
-<li>需要Agr Reader Pro</li>
-</ul>
-</li>
-<li>fix: 修复跳转官网部分机型的闪退问题</li>
-<li>fix: 修复修改订阅源链接的问题</li>
 </ul>]]></content:encoded>
     </item>
   </channel>
