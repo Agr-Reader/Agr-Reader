@@ -1,6 +1,12 @@
 
 Changelog RSS：https://www.agrreader.com/rss/changelog.xml
 
+## 2.0.3(2026.10.31)
+- AI Sync Highlights: Automatically extract key topics from freshly synced articles, with weekly free trial for non-Pro users.
+- Cache Management: Easily clear temporary files and image caches in Settings to free up storage.
+- Lightning-fast Sync: Optimized sync strategy by deferring full-text downloads, drastically cutting sync time.
+- Large Screen & Foldables: Enhanced adaptive dual-pane layout for tablets and unfolded foldable devices.
+
 ## 2.0.2(2026.10.26)
 - Optimized tablet mode to better adapt to various device types, including foldable phones and large-screen devices.
 

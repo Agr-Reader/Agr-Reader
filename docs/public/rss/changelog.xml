@@ -5,8 +5,26 @@
     <link>https://agrreader.com/</link>
     <description>Agr Reader release notes and updates.</description>
     <language>en-US</language>
-    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.agrreader.com/rss/changelog.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.0.3 (2026.10.31)</title>
+      <link>https://www.agrreader.com/rss/changelog.xml</link>
+      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#2.0.3</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<ul>
+<li>AI Sync Highlights: Automatically extract key topics from freshly synced articles, with weekly free trial for non-Pro users.</li>
+<li>Cache Management: Easily clear temporary files and image caches in Settings to free up storage.</li>
+<li>Lightning-fast Sync: Optimized sync strategy by deferring full-text downloads, drastically cutting sync time.</li>
+<li>Large Screen &amp; Foldables: Enhanced adaptive dual-pane layout for tablets and unfolded foldable devices.</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<ul>
+<li>AI Sync Highlights: Automatically extract key topics from freshly synced articles, with weekly free trial for non-Pro users.</li>
+<li>Cache Management: Easily clear temporary files and image caches in Settings to free up storage.</li>
+<li>Lightning-fast Sync: Optimized sync strategy by deferring full-text downloads, drastically cutting sync time.</li>
+<li>Large Screen &amp; Foldables: Enhanced adaptive dual-pane layout for tablets and unfolded foldable devices.</li>
+</ul>]]></content:encoded>
+    </item>
     <item>
       <title>2.0.2 (2026.10.26)</title>
       <link>https://www.agrreader.com/rss/changelog.xml</link>
@@ -1263,38 +1281,6 @@
 <li>opt: 其他不显性的优化</li>
 <li>fix: 修复订阅源未读数刷新不及时的问题</li>
 <li>fix: 增加Fever Api的兼容性，修复部分无法更新的问题</li>
-</ul>]]></content:encoded>
-    </item>
-    <item>
-      <title>1.5.3 (2024.01.03)</title>
-      <link>https://www.agrreader.com/rss/changelog.xml</link>
-      <guid isPermaLink="false">https://www.agrreader.com/rss/changelog.xml#1.5.3</guid>
-      <pubDate>Wed, 03 Jan 2024 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 增加刷新单个订阅源和分组内订阅源的逻辑（仅限本地账号，RSS托管服务都为全局刷新）
-<ul>
-<li>单个订阅源的文章列表下拉刷新仅更新当前订阅源</li>
-<li>分组文章列表下拉刷新仅更新分组内订阅源</li>
-</ul>
-</li>
-<li>feature: 文章列表增加仅标题样式</li>
-<li>feature: 文章列表左右滑动开放自定义（目前可选已/未读、收藏/未收藏和无）</li>
-<li>opt: 优化了刷新订阅源的性能，减少内存使用</li>
-<li>opt: 微调文章列表左右滑判定的阈值，减少误触</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>🥰当前版本变化:</p>
-<ul>
-<li>feature: 增加刷新单个订阅源和分组内订阅源的逻辑（仅限本地账号，RSS托管服务都为全局刷新）
-<ul>
-<li>单个订阅源的文章列表下拉刷新仅更新当前订阅源</li>
-<li>分组文章列表下拉刷新仅更新分组内订阅源</li>
-</ul>
-</li>
-<li>feature: 文章列表增加仅标题样式</li>
-<li>feature: 文章列表左右滑动开放自定义（目前可选已/未读、收藏/未收藏和无）</li>
-<li>opt: 优化了刷新订阅源的性能，减少内存使用</li>
-<li>opt: 微调文章列表左右滑判定的阈值，减少误触</li>
 </ul>]]></content:encoded>
     </item>
   </channel>
